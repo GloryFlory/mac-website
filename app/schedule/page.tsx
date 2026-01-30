@@ -141,10 +141,10 @@ export default function SchedulePage() {
             </p>
             <div className="rounded-2xl overflow-hidden border border-brand-sand/30 shadow-lg">
               <iframe
-                src="https://www.tryflowgrid.com/embed/mac-2025"
-                className="w-full h-[75vh] sm:h-[80vh]"
+                src="https://tryflowgrid.com/mac-2025/schedule"
+                className="w-full"
+                style={{ height: '800px', borderRadius: '8px' }}
                 title="MAC 2025 Schedule Preview"
-                allow="fullscreen"
               />
             </div>
             <p className="text-center text-sm text-zinc-500 mt-4">

@@ -147,13 +147,13 @@ export default function TeachersPage() {
           <Reveal delay={0.1}>
             <div className="flex flex-wrap gap-3 justify-center">
               <div className="px-6 py-2.5 rounded-full bg-brand-sand/20 text-brand-sea font-medium text-sm border border-brand-sand/40">
-                🎯 All Levels Welcome
+                All Levels Welcome
               </div>
               <div className="px-6 py-2.5 rounded-full bg-brand-sand/20 text-brand-sea font-medium text-sm border border-brand-sand/40">
-                🌟 Multiple Teaching Styles
+                Multiple Teaching Styles
               </div>
               <div className="px-6 py-2.5 rounded-full bg-brand-sand/20 text-brand-sea font-medium text-sm border border-brand-sand/40">
-                🌍 International Faculty
+                International Faculty
               </div>
             </div>
           </Reveal>

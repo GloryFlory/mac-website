@@ -33,12 +33,11 @@ const FlowGridEmbed: FC<FlowGridEmbedProps> = ({ className = '' }) => {
 
         {/* Iframe */}
         <iframe
-          src="https://www.tryflowgrid.com/embed/mac-2025"
+          src="https://tryflowgrid.com/mac-2025/schedule"
           title="Mediterranean Acro Convention 2026 Schedule - Interactive workshop timetable"
           className="w-full h-full"
           onLoad={handleLoad}
           loading="lazy"
-          allow="fullscreen"
           style={{
             border: 'none',
             opacity: isLoading ? 0 : 1,
