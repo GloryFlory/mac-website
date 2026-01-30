@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import { Metadata } from 'next';
 import TeacherCard from '../components/TeacherCard';
 import Button from '../components/Button';
@@ -127,18 +126,7 @@ const teachers: Teacher[] = [
   },
 ];
 
-type FilterLevel = 'All' | 'Beginner' | 'Intermediate' | 'Advanced';
-
 export default function TeachersPage() {
-  const [selectedLevel, setSelectedLevel] = useState<FilterLevel>('All');
-
-  const filteredTeachers = teachers.filter((teacher) => {
-    if (selectedLevel === 'All') return true;
-    return teacher.levels.includes(selectedLevel);
-  });
-
-  const filterOptions: FilterLevel[] = ['All', 'Beginner', 'Intermediate', 'Advanced'];
-
   return (
     <main className="min-h-screen">
       {/* Header Section */}
@@ -155,30 +143,25 @@ export default function TeachersPage() {
             </div>
           </Reveal>
 
-          {/* Filter Chips */}
+          {/* Teaching Styles Info */}
           <Reveal delay={0.1}>
             <div className="flex flex-wrap gap-3 justify-center">
-              {filterOptions.map((level) => (
-                <button
-                  key={level}
-                  onClick={() => setSelectedLevel(level)}
-                  className={`px-6 py-2.5 rounded-full font-medium text-sm transition-all duration-300 ${
-                    selectedLevel === level
-                      ? 'bg-brand-sea text-white shadow-lg scale-105'
-                      : 'bg-white text-zinc-700 border border-neutral-200/40 hover:border-brand-sea/50 hover:shadow-md'
-                  }`}
-                  aria-pressed={selectedLevel === level}
-                >
-                  {level === 'All' ? 'All Levels' : level}
-                </button>
-              ))}
+              <div className="px-6 py-2.5 rounded-full bg-brand-sand/20 text-brand-sea font-medium text-sm border border-brand-sand/40">
+                🎯 All Levels Welcome
+              </div>
+              <div className="px-6 py-2.5 rounded-full bg-brand-sand/20 text-brand-sea font-medium text-sm border border-brand-sand/40">
+                🌟 Multiple Teaching Styles
+              </div>
+              <div className="px-6 py-2.5 rounded-full bg-brand-sand/20 text-brand-sea font-medium text-sm border border-brand-sand/40">
+                🌍 International Faculty
+              </div>
             </div>
           </Reveal>
 
-          {/* Results Count */}
+          {/* Additional Info */}
           <Reveal delay={0.2}>
             <p className="text-center text-sm text-zinc-500 mt-6">
-              Showing {filteredTeachers.length} {filteredTeachers.length === 1 ? 'teacher' : 'teachers'}
+              Workshop levels are indicated in the interactive schedule — find the perfect classes for your journey!
             </p>
           </Reveal>
         </div>
@@ -188,7 +171,7 @@ export default function TeachersPage() {
       <section className="py-12 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-            {filteredTeachers.map((teacher, index) => (
+            {teachers.map((teacher, index) => (
               <Reveal key={teacher.id} delay={index * 0.05}>
                 <TeacherCard
                   name={teacher.name}
@@ -200,22 +183,6 @@ export default function TeachersPage() {
               </Reveal>
             ))}
           </div>
-
-          {/* Empty State */}
-          {filteredTeachers.length === 0 && (
-            <div className="text-center py-16">
-              <p className="text-lg text-zinc-500 mb-4">
-                No teachers found for this level.
-              </p>
-              <Button
-                variant="secondary"
-                size="md"
-                onClick={() => setSelectedLevel('All')}
-              >
-                Show All Teachers
-              </Button>
-            </div>
-          )}
         </div>
       </section>
 

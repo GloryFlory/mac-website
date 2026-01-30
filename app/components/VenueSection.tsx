@@ -90,15 +90,37 @@ const VenueSection: FC = () => {
                     <p className="text-zinc-600">Private beach area perfect for jam sessions and sunset flows</p>
                   </div>
                 </div>
+
+                <div className="flex items-start gap-3">
+                  <svg className="w-6 h-6 text-brand-sea flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <div>
+                    <h4 className="font-semibold text-brand-sea mb-1">Easy to Reach</h4>
+                    <p className="text-zinc-600">1 hour by bus or 30-45 minutes by car from Malta International Airport</p>
+                  </div>
+                </div>
               </div>
 
-              <Button
-                href="/info"
-                variant="secondary"
-                size="lg"
-              >
-                Learn More About the Venue
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button
+                  href="https://maps.app.goo.gl/9fstZkiCXVTqHPZZ8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="primary"
+                  size="lg"
+                >
+                  View on Google Maps
+                </Button>
+                <Button
+                  href="/info"
+                  variant="secondary"
+                  size="lg"
+                >
+                  More Venue Info
+                </Button>
+              </div>
             </div>
           </Reveal>
         </div>

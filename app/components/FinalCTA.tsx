@@ -16,12 +16,12 @@ const FinalCTA: FC = () => {
         <Reveal>
           <div className="space-y-8">
             {/* Headline */}
-            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">
+            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-4">
               Ready for MAC 2026?
             </h2>
             
             {/* Supportive Line */}
-            <p className="text-xl sm:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl sm:text-2xl text-black max-w-2xl mx-auto leading-relaxed">
               Join us in Malta for five unforgettable days of connection, growth, and Mediterranean magic.
             </p>
 

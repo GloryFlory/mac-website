@@ -84,19 +84,19 @@ export default function InfoPage() {
                 <div>
                   <h3 className="font-semibold text-zinc-900 mb-1">Walking</h3>
                   <p className="text-zinc-600">
-                    If staying near the venue, most things are within walking distance. Malta's compact size means you're never far from the sea!
+                    The hotel is located away from the city center, so walking isn't ideal for exploring. However, the nearest town is close and easily accessible.
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-zinc-900 mb-1">Public Transport</h3>
                   <p className="text-zinc-600">
-                    Reliable bus network covering the island. Tallinja card available for discounted fares. Buses run frequently between major towns.
+                    Buses are your best friend! Malta has a reliable bus network with frequent routes. The hotel is well-connected, and buses can take you anywhere on the island affordably. Get a Tallinja card for discounted fares.
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-zinc-900 mb-1">Rideshare & Taxis</h3>
                   <p className="text-zinc-600">
-                    Bolt and eCabs apps work well in Malta. Traditional taxis available but agree on fare beforehand.
+                    Bolt and eCabs apps work well in Malta for quick trips. Traditional taxis are also available – just agree on the fare beforehand.
                   </p>
                 </div>
               </div>
@@ -117,27 +117,27 @@ export default function InfoPage() {
                     Accommodation
                   </h2>
                   <p className="text-zinc-600 mb-4">
-                    We recommend booking early as October is a popular time in Malta. Various options to suit all budgets.
+                    Your accommodation at the Riviera Spa Hotel is included in your ticket price!
                   </p>
                 </div>
               </div>
               <div className="space-y-3 pl-14">
                 <div>
-                  <h3 className="font-semibold text-zinc-900 mb-1">Partner Hotels</h3>
+                  <h3 className="font-semibold text-zinc-900 mb-1">Included with Your Ticket</h3>
                   <p className="text-zinc-600">
-                    We've secured discounted rates at nearby hotels. Check your ticket confirmation email for booking codes.
+                    All MAC 2026 tickets include accommodation at the 4-star Riviera Spa Hotel. You'll be staying where the magic happens – no commute needed!
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-zinc-900 mb-1">Airbnb & Apartments</h3>
+                  <h3 className="font-semibold text-zinc-900 mb-1">Extending Your Stay</h3>
                   <p className="text-zinc-600">
-                    Many attendees share apartments for a more affordable and social experience. Consider teaming up with friends!
+                    Want to arrive early or stay longer to explore Malta? Contact the hotel directly about early check-in or late checkout options at an additional cost (subject to availability).
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-zinc-900 mb-1">Hostels</h3>
+                  <h3 className="font-semibold text-zinc-900 mb-1">Alternative Accommodation</h3>
                   <p className="text-zinc-600">
-                    Budget-friendly hostels available in nearby towns, great for solo travelers wanting to meet others.
+                    If you're extending your trip before or after the festival, Malta has many hotels, Airbnbs, and hostels in nearby towns like Mellieħa, St. Paul's Bay, and Valletta.
                   </p>
                 </div>
               </div>
@@ -165,31 +165,27 @@ export default function InfoPage() {
               <div className="pl-14">
                 <ul className="space-y-2 text-zinc-600">
                   <li className="flex items-start gap-2">
-                    <span className="text-brand-sea dark:text-brand-sun mt-1">•</span>
+                    <span className="text-brand-sea mt-1">•</span>
                     <span><strong>Comfortable acro wear:</strong> Leggings, shorts, fitted tops (no loose clothing)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-brand-sea dark:text-brand-sun mt-1">•</span>
-                    <span><strong>Yoga mat:</strong> For warm-ups and cooldowns</span>
+                    <span className="text-brand-sea mt-1">•</span>
+                    <span><strong>Swimwear:</strong> Essential for the pool and beach sessions!</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-brand-sea dark:text-brand-sun mt-1">•</span>
+                    <span className="text-brand-sea mt-1">•</span>
                     <span><strong>Water bottle:</strong> Stay hydrated throughout the day</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-brand-sea dark:text-brand-sun mt-1">•</span>
+                    <span className="text-brand-sea mt-1">•</span>
                     <span><strong>Sunscreen & hat:</strong> October sun is still strong in Malta</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-brand-sea dark:text-brand-sun mt-1">•</span>
+                    <span className="text-brand-sea mt-1">•</span>
                     <span><strong>Light jacket:</strong> Evenings can be cool by the sea</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-brand-sea dark:text-brand-sun mt-1">•</span>
-                    <span><strong>Swimwear:</strong> For beach jams and sunset sessions</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-brand-sea dark:text-brand-sun mt-1">•</span>
+                    <span className="text-brand-sea mt-1">•</span>
                     <span><strong>Notebook:</strong> Capture those new skills and insights</span>
                   </li>
                 </ul>
@@ -244,33 +240,39 @@ export default function InfoPage() {
               </div>
               <div className="pl-14 space-y-3">
                 <div>
-                  <h3 className="font-semibold text-zinc-900 mb-1">Consent is Everything</h3>
+                  <h3 className="font-semibold text-zinc-900 mb-1">Boundaries & Consent</h3>
                   <p className="text-zinc-600">
-                    Always ask before initiating physical contact. "Is it okay if I...?" No one owes you a yes, and no one needs a reason to say no.
+                    Always ask before initiating physical contact. We expect everyone to respect boundaries without coercing, shaming, or using manipulative language. "No" is a complete sentence.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-zinc-900 mb-1">Respect Boundaries</h3>
+                  <h3 className="font-semibold text-zinc-900 mb-1">Safety First</h3>
                   <p className="text-zinc-600">
-                    Everyone has different comfort levels. Honor them. Listen to your body and communicate your own needs clearly.
+                    Acroyoga involves risks. Use appropriate safety measures and practices. Repeated unsafe practice or putting others at significant risk will not be tolerated. We have zero tolerance for practicing under the influence of drugs or alcohol.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-zinc-900 mb-1">Inclusive Language</h3>
+                  <h3 className="font-semibold text-zinc-900 mb-1">Inclusivity & Respect</h3>
                   <p className="text-zinc-600">
-                    Be mindful of language. Avoid assumptions about gender, ability, or experience level. When in doubt, ask respectfully.
+                    We welcome participants of all nationalities, genders, body types, and backgrounds. We do not tolerate discrimination, racism, sexism, body shaming, or disrespect of any kind.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-zinc-900 mb-1">Physical Safety</h3>
+                  <h3 className="font-semibold text-zinc-900 mb-1">Sexual Harassment</h3>
                   <p className="text-zinc-600">
-                    Warm up properly, spot each other, and don't push beyond your limits. First aid will be available onsite.
+                    We have a zero tolerance policy on sexual harassment and assault. All complaints will be handled appropriately and remain confidential unless it affects our ability to maintain a safe environment.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-zinc-900 mb-1">Community Etiquette</h3>
+                  <p className="text-zinc-600">
+                    Be mindful of hygiene (nails, breath, sweat, cleanliness). Wear appropriate, well-fitted clothing that covers all private parts. Clean up after yourself and return the space as you found it.
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-zinc-900 mb-1">If Something's Wrong</h3>
                   <p className="text-zinc-600">
-                    Speak to any staff member in an orange wristband. We take all concerns seriously and will support you.
+                    Speak to any staff member in an orange wristband. Violations may result in warnings, removal from the event, or blacklisting from future MAC events.
                   </p>
                 </div>
               </div>
@@ -298,14 +300,20 @@ export default function InfoPage() {
               <div className="pl-14 space-y-2 text-zinc-600">
                 <p>
                   <strong>Email:</strong>{' '}
-                  <a href="mailto:hello@mac-convention.com" className="text-brand-sea hover:text-brand-sun transition-colors underline underline-offset-2">
-                    hello@mac-convention.com
+                  <a href="mailto:mediterraneanacroconvention@gmail.com" className="text-brand-sea hover:text-brand-sun transition-colors underline underline-offset-2">
+                    mediterraneanacroconvention@gmail.com
+                  </a>
+                </p>
+                <p>
+                  <strong>WhatsApp:</strong>{' '}
+                  <a href="https://wa.me/35699701254" target="_blank" rel="noopener noreferrer" className="text-brand-sea hover:text-brand-sun transition-colors underline underline-offset-2">
+                    +356 9970 1254
                   </a>
                 </p>
                 <p>
                   <strong>Instagram:</strong>{' '}
-                  <a href="https://instagram.com/mac_convention" target="_blank" rel="noopener noreferrer" className="text-brand-sea hover:text-brand-sun transition-colors underline underline-offset-2">
-                    @mac_convention
+                  <a href="https://instagram.com/mediterranean_acro_convention" target="_blank" rel="noopener noreferrer" className="text-brand-sea hover:text-brand-sun transition-colors underline underline-offset-2">
+                    @mediterranean_acro_convention
                   </a>
                 </p>
                 <p className="pt-2 text-sm">

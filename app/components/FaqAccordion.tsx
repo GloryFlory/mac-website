@@ -27,22 +27,22 @@ const faqs: FaqItem[] = [
   {
     id: 'refunds',
     question: 'What\'s your refund policy?',
-    answer: 'Full refunds are available until August 1st, 2026. Between August 1st and September 15th, we offer 50% refunds. After September 15th, tickets are non-refundable but transferable to another person. All refund requests must be submitted via email to hello@mac-convention.com.',
+    answer: 'Full refunds are available until August 1st, 2026. Between August 1st and September 15th, we offer 50% refunds. After September 15th, tickets are non-refundable but transferable to another person. All refund requests must be submitted via email to mediterraneanacroconvention@gmail.com.',
   },
   {
     id: 'accommodation',
     question: 'Is accommodation included in the ticket price?',
-    answer: 'No, accommodation is separate. However, we\'ve secured discounted rates at partner hotels near the venue—check your ticket confirmation email for booking codes. Many attendees also share Airbnb apartments for a more affordable and social experience. Visit our Info page for more details.',
+    answer: 'Yes! Your accommodation at the 4-star Riviera Spa Hotel is included in your ticket price. You\'ll be staying right where all the workshops happen. Want to arrive early or stay longer? Contact the hotel directly about extending your stay at an additional cost, subject to availability.',
   },
   {
     id: 'food',
     question: 'Are meals provided?',
-    answer: 'Meals are not included, but Malta has incredible (and affordable!) food options within walking distance of the venue. We\'ll share a list of recommended cafes and restaurants. Bring snacks and a water bottle to stay fueled throughout the day.',
+    answer: 'Meals are not included in the ticket price, but the Riviera Spa Hotel has on-site restaurants serving delicious international and Mediterranean cuisine. There are also food options in nearby towns, easily accessible by bus or taxi.',
   },
   {
     id: 'airport',
     question: 'How do I get from the airport to the venue?',
-    answer: 'Malta International Airport (MLA) is about 20-30 minutes from the venue. You can take a taxi, use Bolt rideshare, or hop on the X-route public bus. We\'ll send detailed transport info in your pre-event email, and there may be shared ride options in our attendee WhatsApp group.',
+    answer: 'The Riviera Spa Hotel is about 1 hour by bus or 30-45 minutes by car from Malta International Airport (MLA). You can take a taxi, use Bolt/eCabs rideshare, or take public buses. We\'ll send detailed transport info in your pre-event email, and there may be shared ride options in our attendee WhatsApp group.',
   },
   {
     id: 'schedule',
@@ -52,7 +52,7 @@ const faqs: FaqItem[] = [
   {
     id: 'what-to-bring',
     question: 'What should I bring?',
-    answer: 'Pack comfortable acro wear (fitted clothing, no loose items), a yoga mat, water bottle, sunscreen, and a light jacket for evenings. Bring swimwear for beach sessions and a notebook if you like to jot down new skills. Check our Info page for a complete packing list!',
+    answer: 'Pack comfortable acro wear (fitted clothing, no loose items), swimwear for the pool and beach, water bottle, sunscreen, and a light jacket for evenings. Bring a notebook if you like to jot down new skills. No need to bring a yoga mat—the venue provides equipment. Check our Info page for a complete packing list!',
   },
   {
     id: 'safety',

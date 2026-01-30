@@ -4,13 +4,15 @@ import { useEffect, useRef, useState, ReactNode } from 'react';
 import Image from 'next/image';
 
 interface ParallaxHeroProps {
-  backgroundUrl: string;
+  backgroundUrl?: string;
+  backgroundVideo?: string;
   children: ReactNode;
   overlay?: boolean;
 }
 
 export default function ParallaxHero({
   backgroundUrl,
+  backgroundVideo,
   children,
   overlay = true,
 }: ParallaxHeroProps) {
@@ -23,6 +25,8 @@ export default function ParallaxHero({
   const currentPosition = useRef({ x: 0, y: 0 });
   const animationFrameId = useRef<number | undefined>(undefined);
   const [imageLoaded, setImageLoaded] = useState(false);
+
+  const isVideo = !!backgroundVideo;
 
   useEffect(() => {
     // Check for reduced motion preference
@@ -38,8 +42,8 @@ export default function ParallaxHero({
   }, []);
 
   useEffect(() => {
-    // Skip parallax on mobile or if reduced motion is preferred
-    if (prefersReducedMotion || !containerRef.current) return;
+    // Skip parallax on video or mobile or if reduced motion is preferred
+    if (isVideo || prefersReducedMotion || !containerRef.current) return;
 
     // Check if device is mobile (basic check)
     const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
@@ -104,36 +108,52 @@ export default function ParallaxHero({
         cancelAnimationFrame(animationFrameId.current);
       }
     };
-  }, [prefersReducedMotion]);
+  }, [prefersReducedMotion, isVideo]);
 
   return (
     <div
       ref={containerRef}
       className="relative w-full h-screen overflow-hidden"
     >
-      {/* Background image with parallax - using Next.js Image for optimization */}
-      <div
-        ref={backgroundRef}
-        className="absolute inset-0 w-full h-full"
-        style={{
-          transform: prefersReducedMotion ? 'scale(1)' : 'scale(1.06)',
-          willChange: prefersReducedMotion ? 'auto' : 'transform',
-        }}
-      >
-        {!imageLoaded && (
-          <div className="absolute inset-0 bg-gradient-to-br from-brand-sea/20 to-brand-sand/20 animate-pulse" />
-        )}
-        <Image
-          src={backgroundUrl}
-          alt="Mediterranean coastline"
-          fill
-          priority
-          quality={85}
-          sizes="100vw"
-          className="object-cover"
-          onLoad={() => setImageLoaded(true)}
-        />
-      </div>
+      {/* Background - either video or image with parallax */}
+      {isVideo ? (
+        <div className="absolute inset-0 w-full h-full">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src={backgroundVideo} type="video/mp4" />
+          </video>
+        </div>
+      ) : (
+        <div
+          ref={backgroundRef}
+          className="absolute inset-0 w-full h-full"
+          style={{
+            transform: prefersReducedMotion ? 'scale(1)' : 'scale(1.06)',
+            willChange: prefersReducedMotion ? 'auto' : 'transform',
+          }}
+        >
+          {!imageLoaded && (
+            <div className="absolute inset-0 bg-gradient-to-br from-brand-sea/20 to-brand-sand/20 animate-pulse" />
+          )}
+          {backgroundUrl && (
+            <Image
+              src={backgroundUrl}
+              alt="Mediterranean coastline"
+              fill
+              priority
+              quality={85}
+              sizes="100vw"
+              className="object-cover"
+              onLoad={() => setImageLoaded(true)}
+            />
+          )}
+        </div>
+      )}
 
       {/* Optional dark overlay gradient for readability */}
       {overlay && (
