@@ -41,12 +41,12 @@ export default function Home() {
           </h1>
 
           {/* Date Line */}
-          <p className="text-xl sm:text-2xl md:text-3xl text-white font-light tracking-wide mb-8" style={{ textShadow: '0 2px 8px rgba(255,255,255,0.3)' }}>
-            Oct 7–11, 2026 <span className="text-white/80">•</span> Malta
+          <p className="text-xl sm:text-2xl md:text-3xl font-light tracking-wide mb-8" style={{ color: '#FFFFFF', textShadow: 'none' }}>
+            Oct 7–11, 2026 <span style={{ color: '#FFFFFF', opacity: 0.9 }}>•</span> Malta
           </p>
 
           {/* Tagline */}
-          <p className="text-lg sm:text-xl md:text-2xl text-white max-w-3xl mx-auto mb-12 leading-relaxed font-light" style={{ textShadow: '0 2px 8px rgba(255,255,255,0.3)' }}>
+          <p className="text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto mb-12 leading-relaxed font-light" style={{ color: '#FFFFFF', textShadow: 'none' }}>
             Five days of world-class training, connection, and Mediterranean sunsets with the global acro community.
           </p>
 

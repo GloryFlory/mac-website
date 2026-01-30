@@ -139,6 +139,20 @@ export default function SchedulePage() {
             <p className="text-center text-zinc-600 mb-4">
               The full 2026 schedule will be published soon. Below is last year's schedule as a preview of what to expect!
             </p>
+            
+            {/* Direct Link Button */}
+            <div className="flex justify-center mb-6">
+              <Button
+                href="https://tryflowgrid.com/mac-2025/schedule"
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="primary"
+                size="lg"
+              >
+                Open Schedule in New Tab
+              </Button>
+            </div>
+
             <div className="rounded-2xl overflow-hidden border border-brand-sand/30 shadow-lg">
               <iframe
                 src="https://tryflowgrid.com/mac-2025/schedule"
