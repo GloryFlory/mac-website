@@ -76,14 +76,14 @@ const FaqAccordion: FC = () => {
   };
 
   return (
-    <section className="py-20 sm:py-24 lg:py-32 px-6 bg-white dark:bg-zinc-950">
+    <section className="py-20 sm:py-24 lg:py-32 px-6 bg-white">
       <div className="max-w-3xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-brand-sea dark:text-white mb-4">
+          <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-brand-sea mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-400">
+          <p className="text-lg sm:text-xl text-zinc-600">
             Got questions? We've got answers.
           </p>
         </div>
@@ -96,7 +96,7 @@ const FaqAccordion: FC = () => {
             return (
               <div
                 key={faq.id}
-                className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 dark:from-zinc-900 dark:to-zinc-800 border border-neutral-200/20 dark:border-zinc-700 rounded-2xl overflow-hidden transition-all duration-300 hover:border-brand-sea/30"
+                className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 border border-neutral-200/20 rounded-2xl overflow-hidden transition-all duration-300 hover:border-brand-sea/30"
               >
                 {/* Question Button */}
                 <button
@@ -106,7 +106,7 @@ const FaqAccordion: FC = () => {
                   aria-controls={`faq-answer-${faq.id}`}
                   className="w-full text-left px-6 sm:px-8 py-6 flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-sea focus-visible:ring-offset-2 dark:focus-visible:ring-offset-zinc-900"
                 >
-                  <span className="font-semibold text-lg text-zinc-900 dark:text-white pr-4">
+                  <span className="font-semibold text-lg text-zinc-900 pr-4">
                     {faq.question}
                   </span>
                   <div
@@ -142,7 +142,7 @@ const FaqAccordion: FC = () => {
                   }`}
                 >
                   <div className="px-6 sm:px-8 pb-6 pt-2">
-                    <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                    <p className="text-zinc-600 leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>
@@ -154,7 +154,7 @@ const FaqAccordion: FC = () => {
 
         {/* Contact CTA */}
         <div className="mt-12 text-center">
-          <p className="text-zinc-600 dark:text-zinc-400 mb-4">
+          <p className="text-zinc-600 mb-4">
             Still have questions?
           </p>
           <a

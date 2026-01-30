@@ -16,14 +16,14 @@ const FlowGridEmbed: FC<FlowGridEmbedProps> = ({ className = '' }) => {
   return (
     <div className={`w-full ${className}`}>
       {/* Iframe Container */}
-      <div className="relative w-full h-[75vh] md:h-[80vh] rounded-2xl overflow-hidden border border-neutral-200/20 dark:border-zinc-800 bg-white dark:bg-zinc-900">
+      <div className="relative w-full h-[75vh] md:h-[80vh] rounded-2xl overflow-hidden border border-neutral-200/20 bg-white">
         {/* Loading Skeleton */}
         {isLoading && (
-          <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-zinc-100 via-zinc-200 to-zinc-100 dark:from-zinc-800 dark:via-zinc-700 dark:to-zinc-800 bg-[length:200%_100%]">
+          <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-zinc-100 via-zinc-200 to-zinc-100 dark:via-zinc-700 bg-[length:200%_100%]">
             <div className="flex items-center justify-center h-full">
               <div className="text-center space-y-4">
                 <div className="w-12 h-12 border-4 border-brand-sea border-t-transparent rounded-full animate-spin mx-auto" />
-                <p className="text-zinc-500 dark:text-zinc-400 text-sm font-medium">
+                <p className="text-zinc-500 text-sm font-medium">
                   Loading schedule...
                 </p>
               </div>
@@ -49,7 +49,7 @@ const FlowGridEmbed: FC<FlowGridEmbedProps> = ({ className = '' }) => {
 
       {/* Caption */}
       <div className="mt-4 text-center">
-        <p className="text-sm text-zinc-600 dark:text-zinc-400">
+        <p className="text-sm text-zinc-600">
           Schedule powered by{' '}
           <a
             href="https://tryflowgrid.com/"

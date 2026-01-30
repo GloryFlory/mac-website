@@ -67,16 +67,16 @@ const TeachersPreview: FC = () => {
   return (
     <section
       id="teachers"
-      className="py-20 sm:py-24 lg:py-32 px-6 bg-gradient-to-b from-brand-sand/20 to-brand-sand/10 dark:from-zinc-950 dark:to-zinc-900"
+      className="py-20 sm:py-24 lg:py-32 px-6 bg-gradient-to-b from-brand-sand/20 to-brand-sand/10"
     >
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <Reveal>
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-brand-sea dark:text-white mb-4">
+            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-brand-sea mb-4">
               Meet the Teachers
             </h2>
-            <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-zinc-600 max-w-2xl mx-auto">
               Learn from world-renowned instructors bringing expertise from across the globe.
             </p>
           </div>

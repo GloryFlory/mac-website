@@ -142,14 +142,14 @@ export default function TeachersPage() {
   return (
     <main className="min-h-screen">
       {/* Header Section */}
-      <section className="py-16 sm:py-20 lg:py-24 px-6 bg-gradient-to-b from-brand-sand/20 to-white dark:from-zinc-950 dark:to-zinc-900">
+      <section className="py-16 sm:py-20 lg:py-24 px-6 bg-gradient-to-b from-brand-sand/20 to-white">
         <div className="max-w-6xl mx-auto">
           <Reveal>
             <div className="text-center mb-12">
-              <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-brand-sea dark:text-white mb-6">
+              <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-brand-sea mb-6">
                 Our Teachers
               </h1>
-              <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-lg sm:text-xl text-zinc-600 max-w-2xl mx-auto leading-relaxed">
                 Learn from world-class instructors bringing diverse styles and decades of combined experience.
               </p>
             </div>
@@ -165,7 +165,7 @@ export default function TeachersPage() {
                   className={`px-6 py-2.5 rounded-full font-medium text-sm transition-all duration-300 ${
                     selectedLevel === level
                       ? 'bg-brand-sea text-white shadow-lg scale-105'
-                      : 'bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-neutral-200/40 dark:border-zinc-700 hover:border-brand-sea/50 hover:shadow-md'
+                      : 'bg-white text-zinc-700 border border-neutral-200/40 hover:border-brand-sea/50 hover:shadow-md'
                   }`}
                   aria-pressed={selectedLevel === level}
                 >
@@ -177,7 +177,7 @@ export default function TeachersPage() {
 
           {/* Results Count */}
           <Reveal delay={0.2}>
-            <p className="text-center text-sm text-zinc-500 dark:text-zinc-400 mt-6">
+            <p className="text-center text-sm text-zinc-500 mt-6">
               Showing {filteredTeachers.length} {filteredTeachers.length === 1 ? 'teacher' : 'teachers'}
             </p>
           </Reveal>
@@ -185,7 +185,7 @@ export default function TeachersPage() {
       </section>
 
       {/* Teachers Grid */}
-      <section className="py-12 px-6 bg-white dark:bg-zinc-900">
+      <section className="py-12 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             {filteredTeachers.map((teacher, index) => (
@@ -204,7 +204,7 @@ export default function TeachersPage() {
           {/* Empty State */}
           {filteredTeachers.length === 0 && (
             <div className="text-center py-16">
-              <p className="text-lg text-zinc-500 dark:text-zinc-400 mb-4">
+              <p className="text-lg text-zinc-500 mb-4">
                 No teachers found for this level.
               </p>
               <Button
@@ -220,14 +220,14 @@ export default function TeachersPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 sm:py-20 lg:py-24 px-6 bg-gradient-to-b from-white to-brand-sand/20 dark:from-zinc-900 dark:to-zinc-950">
+      <section className="py-16 sm:py-20 lg:py-24 px-6 bg-gradient-to-b from-white to-brand-sand/20">
         <div className="max-w-4xl mx-auto text-center">
           <Reveal>
             <div className="space-y-6">
-              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-brand-sea dark:text-white">
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-brand-sea">
                 Ready to learn from the best?
               </h2>
-              <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-lg sm:text-xl text-zinc-600 max-w-2xl mx-auto leading-relaxed">
                 Secure your spot at MAC 2026 and experience transformative workshops with our incredible teacher lineup.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">

@@ -17,9 +17,9 @@ const TeacherCard: FC<TeacherCardProps> = ({
   bio,
 }) => {
   return (
-    <article className="group bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-neutral-200/20 dark:border-zinc-800 hover:shadow-xl transition-all duration-300 hover:border-brand-sea/30">
+    <article className="group bg-white rounded-2xl overflow-hidden border border-neutral-200/20 hover:shadow-xl transition-all duration-300 hover:border-brand-sea/30">
       {/* Image */}
-      <div className="relative aspect-[3/4] overflow-hidden bg-brand-sand/10 dark:bg-zinc-800">
+      <div className="relative aspect-[3/4] overflow-hidden bg-brand-sand/10">
         <Image
           src={imageUrl}
           alt={`${name}, ${roleTags.join(', ')}`}
@@ -32,13 +32,13 @@ const TeacherCard: FC<TeacherCardProps> = ({
       {/* Content */}
       <div className="p-6">
         {/* Name */}
-        <h3 className="text-2xl font-serif font-bold text-brand-sea dark:text-white mb-2">
+        <h3 className="text-2xl font-serif font-bold text-brand-sea mb-2">
           {name}
         </h3>
 
         {/* Location */}
         {location && (
-          <p className="text-sm text-zinc-500 dark:text-zinc-400 mb-4 flex items-center gap-1">
+          <p className="text-sm text-zinc-500 mb-4 flex items-center gap-1">
             <svg
               className="w-4 h-4 text-brand-sea/60"
               fill="none"
@@ -69,7 +69,7 @@ const TeacherCard: FC<TeacherCardProps> = ({
           {roleTags.map((tag, index) => (
             <span
               key={index}
-              className="px-3 py-1 bg-brand-sand/20 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 text-xs font-medium rounded-full border border-brand-sand/30 dark:border-zinc-700"
+              className="px-3 py-1 bg-brand-sand/20 text-zinc-700 text-xs font-medium rounded-full border border-brand-sand/30"
             >
               {tag}
             </span>
@@ -78,7 +78,7 @@ const TeacherCard: FC<TeacherCardProps> = ({
 
         {/* Bio */}
         {bio && (
-          <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed line-clamp-2">
+          <p className="text-sm text-zinc-600 leading-relaxed line-clamp-2">
             {bio}
           </p>
         )}

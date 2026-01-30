@@ -73,15 +73,15 @@ const benefits: Benefit[] = [
 
 const WhatYouGet: FC = () => {
   return (
-    <section className="py-20 sm:py-24 lg:py-32 px-6 bg-white dark:bg-zinc-950">
+    <section className="py-20 sm:py-24 lg:py-32 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <Reveal>
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-brand-sea dark:text-white mb-4">
+            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-brand-sea mb-4">
               What You Get
             </h2>
-            <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-zinc-600 max-w-2xl mx-auto">
               Five unforgettable days packed with training, growth, and connection.
             </p>
           </div>
@@ -93,17 +93,17 @@ const WhatYouGet: FC = () => {
             <Reveal key={benefit.id} delay={index * 0.1}>
               <div className="group">
               {/* Icon */}
-              <div className="mb-4 text-brand-sea dark:text-white group-hover:text-brand-sun dark:group-hover:text-brand-sun transition-colors duration-300">
+              <div className="mb-4 text-brand-sea group-hover:text-brand-sun dark:group-hover:text-brand-sun transition-colors duration-300">
                 {benefit.icon}
               </div>
 
               {/* Title */}
-              <h3 className="text-xl sm:text-2xl font-bold text-zinc-900 dark:text-white mb-3">
+              <h3 className="text-xl sm:text-2xl font-bold text-zinc-900 mb-3">
                 {benefit.title}
               </h3>
 
               {/* Description */}
-                <p className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                <p className="text-zinc-600 leading-relaxed">
                   {benefit.description}
                 </p>
               </div>

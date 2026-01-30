@@ -12,13 +12,13 @@ export default function SchedulePage() {
   return (
     <main className="min-h-screen">
       {/* Header Section */}
-      <section className="py-16 sm:py-20 lg:py-24 px-6 bg-gradient-to-b from-brand-sand/20 to-white dark:from-zinc-950 dark:to-zinc-900">
+      <section className="py-16 sm:py-20 lg:py-24 px-6 bg-gradient-to-b from-brand-sand/20 to-white">
         <div className="max-w-6xl mx-auto text-center">
           <Reveal>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-brand-sea dark:text-white mb-6">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-brand-sea mb-6">
               MAC Schedule
             </h1>
-            <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-zinc-600 max-w-2xl mx-auto leading-relaxed">
               Interactive schedule — filter by level, teacher, or style to build your perfect convention experience.
             </p>
           </Reveal>
@@ -26,10 +26,10 @@ export default function SchedulePage() {
       </section>
 
       {/* FlowGrid Feature Card */}
-      <section className="py-12 px-6 bg-white dark:bg-zinc-900">
+      <section className="py-12 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <Reveal>
-            <div className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 dark:from-zinc-800 dark:to-zinc-900 border border-neutral-200/20 dark:border-zinc-700 rounded-2xl p-8 sm:p-10">
+            <div className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 border border-neutral-200/20 rounded-2xl p-8 sm:p-10">
               <div className="flex items-start gap-4 mb-6">
                 <div className="flex-shrink-0 w-12 h-12 rounded-full bg-brand-sun flex items-center justify-center">
                   <svg
@@ -48,10 +48,10 @@ export default function SchedulePage() {
                   </svg>
                 </div>
                 <div>
-                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-sea dark:text-white mb-2">
+                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-sea mb-2">
                     Built with FlowGrid
                   </h2>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <p className="text-zinc-600">
                     The modern scheduling platform designed for events like ours.
                   </p>
                 </div>
@@ -136,21 +136,24 @@ export default function SchedulePage() {
       <section className="py-12 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <Reveal delay={0.2}>
+            <p className="text-center text-zinc-600 mb-4">
+              The full 2026 schedule will be published soon. Below is last year's schedule as a preview of what to expect!
+            </p>
             <div className="rounded-2xl overflow-hidden border border-brand-sand/30 shadow-lg">
               <iframe
-                src="https://tryflowgrid.com/mac-2025/schedule"
+                src="https://www.tryflowgrid.com/embed/mac-2025"
                 className="w-full h-[75vh] sm:h-[80vh]"
-                title="MAC 2026 Interactive Schedule"
+                title="MAC 2025 Schedule Preview"
                 allow="fullscreen"
               />
             </div>
             <p className="text-center text-sm text-zinc-500 mt-4">
-              Powered by{' '}
+              Schedule powered by{' '}
               <a
                 href="https://tryflowgrid.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-brand-sea hover:text-brand-sun transition-colors underline underline-offset-2"
+                className="text-brand-sea hover:text-brand-sun transition-colors underline underline-offset-2 font-medium"
               >
                 FlowGrid
               </a>

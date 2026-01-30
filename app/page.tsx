@@ -7,6 +7,7 @@ import PricingSection from './components/PricingSection';
 import FaqAccordion from './components/FaqAccordion';
 import FinalCTA from './components/FinalCTA';
 import VenueSection from './components/VenueSection';
+import MediaGallery from './components/MediaGallery';
 import Button from './components/Button';
 import dynamic from 'next/dynamic';
 
@@ -103,24 +104,27 @@ export default function Home() {
         <TeachersPreview />
       </section>
 
-      {/* 6. Schedule Preview - White Background */}
+      {/* 6. Media Gallery Section - White Background */}
+      <MediaGallery />
+
+      {/* 7. Schedule Preview - White Background */}
       <section id="schedule" className="scroll-mt-20">
         <DynamicSchedulePreview />
       </section>
 
-      {/* 7. Pricing Section - Sand Background */}
+      {/* 8. Pricing Section - Sand Background */}
       <section id="pricing" className="scroll-mt-20">
         <DynamicPricingSection />
       </section>
 
-      {/* 8. FAQ Section - White Background */}
+      {/* 9. FAQ Section - White Background */}
       <section id="faq" className="py-20 bg-white scroll-mt-20">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
           <DynamicFaqAccordion />
         </div>
       </section>
 
-      {/* 9. Final CTA Section - Sea Background */}
+      {/* 10. Final CTA Section - Sea Background */}
       <FinalCTA />
     </main>
   );

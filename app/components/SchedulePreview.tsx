@@ -4,15 +4,15 @@ import Reveal from './Reveal';
 
 const SchedulePreview: FC = () => {
   return (
-    <section className="py-20 sm:py-24 lg:py-32 px-6 bg-white dark:bg-zinc-950">
+    <section className="py-20 sm:py-24 lg:py-32 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <Reveal>
           <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-brand-sea dark:text-white mb-4">
+            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-brand-sea mb-4">
               Interactive Schedule
             </h2>
-            <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl text-zinc-600 max-w-2xl mx-auto">
               Browse 40+ workshops across 5 days. Filter by level, teacher, or style to plan your perfect experience.
             </p>
           </div>
@@ -20,9 +20,9 @@ const SchedulePreview: FC = () => {
 
         {/* Preview Card */}
         <Reveal delay={0.2}>
-          <div className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 dark:from-zinc-800 dark:to-zinc-900 border border-neutral-200/20 dark:border-zinc-700 rounded-2xl p-8 sm:p-12 text-center">
+          <div className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 border border-neutral-200/20 rounded-2xl p-8 sm:p-12 text-center">
             {/* FlowGrid Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/60 dark:bg-zinc-900/60 backdrop-blur-sm rounded-full border border-neutral-200/40 dark:border-zinc-700 mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/60/60 backdrop-blur-sm rounded-full border border-neutral-200/40 mb-8">
               <svg
                 className="w-4 h-4 text-brand-sea dark:text-brand-sun"
                 fill="none"
@@ -37,7 +37,7 @@ const SchedulePreview: FC = () => {
                   d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                 />
               </svg>
-              <span className="text-sm text-zinc-600 dark:text-zinc-400 font-medium">
+              <span className="text-sm text-zinc-600 font-medium">
                 Powered by FlowGrid
               </span>
             </div>
@@ -61,10 +61,10 @@ const SchedulePreview: FC = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="font-semibold text-zinc-900 dark:text-white">
+                <h3 className="font-semibold text-zinc-900">
                   Filter by Level
                 </h3>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                <p className="text-sm text-zinc-600">
                   Find workshops matching your experience
                 </p>
               </div>
@@ -86,10 +86,10 @@ const SchedulePreview: FC = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="font-semibold text-zinc-900 dark:text-white">
+                <h3 className="font-semibold text-zinc-900">
                   Browse Teachers
                 </h3>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                <p className="text-sm text-zinc-600">
                   See all classes from your favorites
                 </p>
               </div>
@@ -111,10 +111,10 @@ const SchedulePreview: FC = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="font-semibold text-zinc-900 dark:text-white">
+                <h3 className="font-semibold text-zinc-900">
                   Mobile Friendly
                 </h3>
-                <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                <p className="text-sm text-zinc-600">
                   Access your schedule on the go
                 </p>
               </div>

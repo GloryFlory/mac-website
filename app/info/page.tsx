@@ -10,13 +10,13 @@ export default function InfoPage() {
   return (
     <main className="min-h-screen">
       {/* Header Section */}
-      <section className="py-16 sm:py-20 lg:py-24 px-6 bg-gradient-to-b from-brand-sand/20 to-white dark:from-zinc-950 dark:to-zinc-900">
+      <section className="py-16 sm:py-20 lg:py-24 px-6 bg-gradient-to-b from-brand-sand/20 to-white">
         <div className="max-w-4xl mx-auto text-center">
           <Reveal>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-brand-sea dark:text-white mb-6">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-brand-sea mb-6">
               Event Info
             </h1>
-            <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-zinc-600 max-w-2xl mx-auto leading-relaxed">
               Everything you need to know to make your MAC 2026 experience smooth, safe, and unforgettable.
             </p>
           </Reveal>
@@ -24,12 +24,12 @@ export default function InfoPage() {
       </section>
 
       {/* Content Sections */}
-      <section className="py-12 px-6 bg-white dark:bg-zinc-900">
+      <section className="py-12 px-6 bg-white">
         <div className="max-w-4xl mx-auto space-y-12">
           
           {/* Getting There */}
           <Reveal delay={0.1}>
-            <div className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 dark:from-zinc-800 dark:to-zinc-900 border border-neutral-200/20 dark:border-zinc-700 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 border border-neutral-200/20 rounded-2xl p-8">
               <div className="flex items-start gap-4 mb-4">
                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-brand-sun flex items-center justify-center">
                   <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -37,24 +37,24 @@ export default function InfoPage() {
                   </svg>
                 </div>
                 <div>
-                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-sea dark:text-white mb-2">
+                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-sea mb-2">
                     Getting There
                   </h2>
-                  <p className="text-zinc-600 dark:text-zinc-400 mb-4">
+                  <p className="text-zinc-600 mb-4">
                     Malta is well-connected to Europe and beyond, making it easy to reach our Mediterranean paradise.
                   </p>
                 </div>
               </div>
               <div className="space-y-3 pl-14">
                 <div>
-                  <h3 className="font-semibold text-zinc-900 dark:text-white mb-1">Airport</h3>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <h3 className="font-semibold text-zinc-900 mb-1">Airport</h3>
+                  <p className="text-zinc-600">
                     Fly into <strong>Malta International Airport (MLA)</strong>. Direct flights available from most major European cities. Flight time from London: ~3 hours.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-zinc-900 dark:text-white mb-1">From the Airport</h3>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <h3 className="font-semibold text-zinc-900 mb-1">From the Airport</h3>
+                  <p className="text-zinc-600">
                     The venue is approximately 20-30 minutes from the airport. Options include taxis, Bolt ride-sharing, or the public bus network (X-routes).
                   </p>
                 </div>
@@ -64,7 +64,7 @@ export default function InfoPage() {
 
           {/* Transport */}
           <Reveal delay={0.15}>
-            <div className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 dark:from-zinc-800 dark:to-zinc-900 border border-neutral-200/20 dark:border-zinc-700 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 border border-neutral-200/20 rounded-2xl p-8">
               <div className="flex items-start gap-4 mb-4">
                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-brand-sun flex items-center justify-center">
                   <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -72,30 +72,30 @@ export default function InfoPage() {
                   </svg>
                 </div>
                 <div>
-                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-sea dark:text-white mb-2">
+                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-sea mb-2">
                     Getting Around
                   </h2>
-                  <p className="text-zinc-600 dark:text-zinc-400 mb-4">
+                  <p className="text-zinc-600 mb-4">
                     Malta is small and easy to navigate. Here's how to get around during the convention.
                   </p>
                 </div>
               </div>
               <div className="space-y-3 pl-14">
                 <div>
-                  <h3 className="font-semibold text-zinc-900 dark:text-white mb-1">Walking</h3>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <h3 className="font-semibold text-zinc-900 mb-1">Walking</h3>
+                  <p className="text-zinc-600">
                     If staying near the venue, most things are within walking distance. Malta's compact size means you're never far from the sea!
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-zinc-900 dark:text-white mb-1">Public Transport</h3>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <h3 className="font-semibold text-zinc-900 mb-1">Public Transport</h3>
+                  <p className="text-zinc-600">
                     Reliable bus network covering the island. Tallinja card available for discounted fares. Buses run frequently between major towns.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-zinc-900 dark:text-white mb-1">Rideshare & Taxis</h3>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <h3 className="font-semibold text-zinc-900 mb-1">Rideshare & Taxis</h3>
+                  <p className="text-zinc-600">
                     Bolt and eCabs apps work well in Malta. Traditional taxis available but agree on fare beforehand.
                   </p>
                 </div>
@@ -105,7 +105,7 @@ export default function InfoPage() {
 
           {/* Accommodation */}
           <Reveal delay={0.2}>
-            <div className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 dark:from-zinc-800 dark:to-zinc-900 border border-neutral-200/20 dark:border-zinc-700 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 border border-neutral-200/20 rounded-2xl p-8">
               <div className="flex items-start gap-4 mb-4">
                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-brand-sun flex items-center justify-center">
                   <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -113,30 +113,30 @@ export default function InfoPage() {
                   </svg>
                 </div>
                 <div>
-                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-sea dark:text-white mb-2">
+                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-sea mb-2">
                     Accommodation
                   </h2>
-                  <p className="text-zinc-600 dark:text-zinc-400 mb-4">
+                  <p className="text-zinc-600 mb-4">
                     We recommend booking early as October is a popular time in Malta. Various options to suit all budgets.
                   </p>
                 </div>
               </div>
               <div className="space-y-3 pl-14">
                 <div>
-                  <h3 className="font-semibold text-zinc-900 dark:text-white mb-1">Partner Hotels</h3>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <h3 className="font-semibold text-zinc-900 mb-1">Partner Hotels</h3>
+                  <p className="text-zinc-600">
                     We've secured discounted rates at nearby hotels. Check your ticket confirmation email for booking codes.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-zinc-900 dark:text-white mb-1">Airbnb & Apartments</h3>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <h3 className="font-semibold text-zinc-900 mb-1">Airbnb & Apartments</h3>
+                  <p className="text-zinc-600">
                     Many attendees share apartments for a more affordable and social experience. Consider teaming up with friends!
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-zinc-900 dark:text-white mb-1">Hostels</h3>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <h3 className="font-semibold text-zinc-900 mb-1">Hostels</h3>
+                  <p className="text-zinc-600">
                     Budget-friendly hostels available in nearby towns, great for solo travelers wanting to meet others.
                   </p>
                 </div>
@@ -146,7 +146,7 @@ export default function InfoPage() {
 
           {/* What to Bring */}
           <Reveal delay={0.25}>
-            <div className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 dark:from-zinc-800 dark:to-zinc-900 border border-neutral-200/20 dark:border-zinc-700 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 border border-neutral-200/20 rounded-2xl p-8">
               <div className="flex items-start gap-4 mb-4">
                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-brand-sun flex items-center justify-center">
                   <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -154,16 +154,16 @@ export default function InfoPage() {
                   </svg>
                 </div>
                 <div>
-                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-sea dark:text-white mb-2">
+                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-sea mb-2">
                     What to Bring
                   </h2>
-                  <p className="text-zinc-600 dark:text-zinc-400 mb-4">
+                  <p className="text-zinc-600 mb-4">
                     Pack smart for a week of acro in the Mediterranean sun!
                   </p>
                 </div>
               </div>
               <div className="pl-14">
-                <ul className="space-y-2 text-zinc-600 dark:text-zinc-400">
+                <ul className="space-y-2 text-zinc-600">
                   <li className="flex items-start gap-2">
                     <span className="text-brand-sea dark:text-brand-sun mt-1">•</span>
                     <span><strong>Comfortable acro wear:</strong> Leggings, shorts, fitted tops (no loose clothing)</span>
@@ -199,7 +199,7 @@ export default function InfoPage() {
 
           {/* Weather */}
           <Reveal delay={0.3}>
-            <div className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 dark:from-zinc-800 dark:to-zinc-900 border border-neutral-200/20 dark:border-zinc-700 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 border border-neutral-200/20 rounded-2xl p-8">
               <div className="flex items-start gap-4 mb-4">
                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-brand-sun flex items-center justify-center">
                   <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -207,15 +207,15 @@ export default function InfoPage() {
                   </svg>
                 </div>
                 <div>
-                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-sea dark:text-white mb-2">
+                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-sea mb-2">
                     Weather
                   </h2>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <p className="text-zinc-600">
                     October in Malta offers perfect conditions: warm days, cooler evenings, and plenty of sunshine.
                   </p>
                 </div>
               </div>
-              <div className="pl-14 space-y-2 text-zinc-600 dark:text-zinc-400">
+              <div className="pl-14 space-y-2 text-zinc-600">
                 <p><strong>Average temperature:</strong> 22-26°C (72-79°F)</p>
                 <p><strong>Sea temperature:</strong> 23°C (73°F) — perfect for swimming!</p>
                 <p><strong>Sunshine:</strong> 8+ hours per day on average</p>
@@ -226,7 +226,7 @@ export default function InfoPage() {
 
           {/* Safety & Community Guidelines */}
           <Reveal delay={0.35}>
-            <div className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 dark:from-zinc-800 dark:to-zinc-900 border border-neutral-200/20 dark:border-zinc-700 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 border border-neutral-200/20 rounded-2xl p-8">
               <div className="flex items-start gap-4 mb-4">
                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-brand-sun flex items-center justify-center">
                   <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -234,42 +234,42 @@ export default function InfoPage() {
                   </svg>
                 </div>
                 <div>
-                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-sea dark:text-white mb-2">
+                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-sea mb-2">
                     Safety & Community Guidelines
                   </h2>
-                  <p className="text-zinc-600 dark:text-zinc-400 mb-4">
+                  <p className="text-zinc-600 mb-4">
                     MAC is a space for everyone to feel welcome, safe, and supported.
                   </p>
                 </div>
               </div>
               <div className="pl-14 space-y-3">
                 <div>
-                  <h3 className="font-semibold text-zinc-900 dark:text-white mb-1">Consent is Everything</h3>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <h3 className="font-semibold text-zinc-900 mb-1">Consent is Everything</h3>
+                  <p className="text-zinc-600">
                     Always ask before initiating physical contact. "Is it okay if I...?" No one owes you a yes, and no one needs a reason to say no.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-zinc-900 dark:text-white mb-1">Respect Boundaries</h3>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <h3 className="font-semibold text-zinc-900 mb-1">Respect Boundaries</h3>
+                  <p className="text-zinc-600">
                     Everyone has different comfort levels. Honor them. Listen to your body and communicate your own needs clearly.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-zinc-900 dark:text-white mb-1">Inclusive Language</h3>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <h3 className="font-semibold text-zinc-900 mb-1">Inclusive Language</h3>
+                  <p className="text-zinc-600">
                     Be mindful of language. Avoid assumptions about gender, ability, or experience level. When in doubt, ask respectfully.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-zinc-900 dark:text-white mb-1">Physical Safety</h3>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <h3 className="font-semibold text-zinc-900 mb-1">Physical Safety</h3>
+                  <p className="text-zinc-600">
                     Warm up properly, spot each other, and don't push beyond your limits. First aid will be available onsite.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-zinc-900 dark:text-white mb-1">If Something's Wrong</h3>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <h3 className="font-semibold text-zinc-900 mb-1">If Something's Wrong</h3>
+                  <p className="text-zinc-600">
                     Speak to any staff member in an orange wristband. We take all concerns seriously and will support you.
                   </p>
                 </div>
@@ -279,7 +279,7 @@ export default function InfoPage() {
 
           {/* Contact */}
           <Reveal delay={0.4}>
-            <div className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 dark:from-zinc-800 dark:to-zinc-900 border border-neutral-200/20 dark:border-zinc-700 rounded-2xl p-8">
+            <div className="bg-gradient-to-br from-brand-sand/10 to-brand-sand/5 border border-neutral-200/20 rounded-2xl p-8">
               <div className="flex items-start gap-4 mb-4">
                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-brand-sun flex items-center justify-center">
                   <svg className="w-5 h-5 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -287,15 +287,15 @@ export default function InfoPage() {
                   </svg>
                 </div>
                 <div>
-                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-sea dark:text-white mb-2">
+                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-sea mb-2">
                     Contact Us
                   </h2>
-                  <p className="text-zinc-600 dark:text-zinc-400">
+                  <p className="text-zinc-600">
                     Questions? We're here to help!
                   </p>
                 </div>
               </div>
-              <div className="pl-14 space-y-2 text-zinc-600 dark:text-zinc-400">
+              <div className="pl-14 space-y-2 text-zinc-600">
                 <p>
                   <strong>Email:</strong>{' '}
                   <a href="mailto:hello@mac-convention.com" className="text-brand-sea hover:text-brand-sun transition-colors underline underline-offset-2">
