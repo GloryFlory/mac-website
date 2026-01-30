@@ -8,8 +8,15 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  /* Typography */
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-display);
+  
+  /* MAC Brand Colors */
+  --color-brand-sun: #F1B139;
+  --color-brand-sea: #106EA9;
+  --color-brand-sand: #D2B48C;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +29,45 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), system-ui, -apple-system, sans-serif;
+}
+
+/* Headings use display font */
+h1, h2, h3 {
+  font-family: var(--font-display), serif;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-brand-sea);
+  outline-offset: 2px;
+}
+
+/* Performance: Reduce layout shifts */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optimize animations */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Improve rendering performance for cards */
+.group {
+  contain: layout style paint;
 }

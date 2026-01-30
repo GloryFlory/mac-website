@@ -1,65 +1,131 @@
-import Image from "next/image";
+import ParallaxHero from './components/ParallaxHero';
+import SocialProofStrip from './components/SocialProofStrip';
+import WhatYouGet from './components/WhatYouGet';
+import TeachersPreview from './components/TeachersPreview';
+import SchedulePreview from './components/SchedulePreview';
+import PricingSection from './components/PricingSection';
+import FaqAccordion from './components/FaqAccordion';
+import FinalCTA from './components/FinalCTA';
+import Button from './components/Button';
+import dynamic from 'next/dynamic';
+
+// Lazy load components below the fold for better initial load
+const DynamicSchedulePreview = dynamic(() => import('./components/SchedulePreview'), {
+  loading: () => <div className="py-20 bg-white" />,
+});
+
+const DynamicPricingSection = dynamic(() => import('./components/PricingSection'), {
+  loading: () => <div className="py-20" />,
+});
+
+const DynamicFaqAccordion = dynamic(() => import('./components/FaqAccordion'), {
+  loading: () => <div className="py-20 bg-white" />,
+});
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main>
+      {/* 1. Parallax Hero */}
+      <ParallaxHero
+        backgroundUrl="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=2670&auto=format&fit=crop"
+        overlay={true}
+      >
+        <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+          {/* Event Name */}
+          <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-6 leading-[1.1]">
+            Mediterranean Acro
+            <br />
+            Convention
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          {/* Date Line */}
+          <p className="text-xl sm:text-2xl md:text-3xl text-white/90 font-light tracking-wide mb-8">
+            Oct 7–11, 2026 <span className="text-white/60">•</span> Malta
           </p>
+
+          {/* Tagline */}
+          <p className="text-lg sm:text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
+            Five days of world-class training, connection, and Mediterranean sunsets with the global acro community.
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+            <Button
+              href="#pricing"
+              variant="primary"
+              size="lg"
+            >
+              Get Tickets
+            </Button>
+            <Button
+              href="#teachers"
+              variant="secondary"
+              size="lg"
+              className="text-white border-white/40 hover:bg-white/10 focus:ring-offset-black"
+            >
+              Meet the Teachers
+            </Button>
+          </div>
+
+          {/* Quick Stats Chips */}
+          <div className="flex flex-wrap gap-4 justify-center items-center">
+            <div className="px-6 py-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
+              <span className="text-white font-medium text-sm sm:text-base">
+                40+ Workshops
+              </span>
+            </div>
+            <div className="px-6 py-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
+              <span className="text-white font-medium text-sm sm:text-base">
+                All Levels Welcome
+              </span>
+            </div>
+            <div className="px-6 py-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
+              <span className="text-white font-medium text-sm sm:text-base">
+                Community Vibe
+              </span>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </ParallaxHero>
+
+      {/* 2. Social Proof Strip - Sand Background */}
+      <SocialProofStrip />
+
+      {/* 3. What You Get Section - White Background */}
+      <WhatYouGet />
+
+      {/* 4. Teachers Preview Section - Sand Background */}
+      <section id="teachers" className="scroll-mt-20">
+        <TeachersPreview />
+      </section>
+
+      {/* 5. Schedule Preview - White Background */}
+      <section id="schedule" className="scroll-mt-20">
+        <DynamicSchedulePreview />
+      </section>
+
+      {/* 6. Pricing Section - Sand Background */}
+      <section id="pricing" className="scroll-mt-20">
+        <DynamicPricingSection />
+      </section>
+
+      {/* 7. FAQ Section - White Background */}
+      <section id="faq" className="py-20 bg-white scroll-mt-20">
+        <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
+          <div className="text-center mb-12">
+            <h2 className="font-serif text-4xl sm:text-5xl font-bold text-brand-sea mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-lg text-gray-600">
+              Everything you need to know about MAC 2026
+            </p>
+          </div>
+          <DynamicFaqAccordion />
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* 8. Final CTA Section - Sea Background */}
+      <FinalCTA />
+    </main>
   );
 }
