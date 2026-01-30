@@ -13,22 +13,16 @@
   --font-sans: var(--font-body);
   --font-serif: var(--font-display);
   
-  /* MAC Brand Colors */
+  /* MAC Brand Colors - Vibrant Mediterranean Palette */
   --color-brand-sun: #F1B139;
   --color-brand-sea: #106EA9;
   --color-brand-sand: #D2B48C;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Force light mode - disable dark mode */
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: #ffffff;
+  color: #171717;
   font-family: var(--font-body), system-ui, -apple-system, sans-serif;
 }
 

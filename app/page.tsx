@@ -6,6 +6,7 @@ import SchedulePreview from './components/SchedulePreview';
 import PricingSection from './components/PricingSection';
 import FaqAccordion from './components/FaqAccordion';
 import FinalCTA from './components/FinalCTA';
+import VenueSection from './components/VenueSection';
 import Button from './components/Button';
 import dynamic from 'next/dynamic';
 
@@ -94,37 +95,32 @@ export default function Home() {
       {/* 3. What You Get Section - White Background */}
       <WhatYouGet />
 
-      {/* 4. Teachers Preview Section - Sand Background */}
+      {/* 4. Venue Section - White Background */}
+      <VenueSection />
+
+      {/* 5. Teachers Preview Section - Sand Background */}
       <section id="teachers" className="scroll-mt-20">
         <TeachersPreview />
       </section>
 
-      {/* 5. Schedule Preview - White Background */}
+      {/* 6. Schedule Preview - White Background */}
       <section id="schedule" className="scroll-mt-20">
         <DynamicSchedulePreview />
       </section>
 
-      {/* 6. Pricing Section - Sand Background */}
+      {/* 7. Pricing Section - Sand Background */}
       <section id="pricing" className="scroll-mt-20">
         <DynamicPricingSection />
       </section>
 
-      {/* 7. FAQ Section - White Background */}
+      {/* 8. FAQ Section - White Background */}
       <section id="faq" className="py-20 bg-white scroll-mt-20">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="text-center mb-12">
-            <h2 className="font-serif text-4xl sm:text-5xl font-bold text-brand-sea mb-4">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-lg text-gray-600">
-              Everything you need to know about MAC 2026
-            </p>
-          </div>
           <DynamicFaqAccordion />
         </div>
       </section>
 
-      {/* 8. Final CTA Section - Sea Background */}
+      {/* 9. Final CTA Section - Sea Background */}
       <FinalCTA />
     </main>
   );

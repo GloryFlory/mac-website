@@ -60,7 +60,7 @@ export default function SchedulePage() {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <svg
-                    className="w-5 h-5 text-brand-sea dark:text-brand-sun flex-shrink-0 mt-0.5"
+                    className="w-5 h-5 text-brand-sea flex-shrink-0 mt-0.5"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -71,13 +71,13 @@ export default function SchedulePage() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-zinc-700 dark:text-zinc-300">
-                    <strong className="font-semibold">Smart filters</strong> by skill level, teacher, and workshop type
+                  <span className="text-zinc-700">
+                    <strong className="font-semibold">View prerequisites</strong> — See required skill levels for each workshop
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg
-                    className="w-5 h-5 text-brand-sea dark:text-brand-sun flex-shrink-0 mt-0.5"
+                    className="w-5 h-5 text-brand-sea flex-shrink-0 mt-0.5"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -88,13 +88,13 @@ export default function SchedulePage() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-zinc-700 dark:text-zinc-300">
-                    <strong className="font-semibold">Mobile-friendly</strong> — access your schedule on the go, no app needed
+                  <span className="text-zinc-700">
+                    <strong className="font-semibold">Build your personal schedule</strong> — Select workshops and create your perfect day
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <svg
-                    className="w-5 h-5 text-brand-sea dark:text-brand-sun flex-shrink-0 mt-0.5"
+                    className="w-5 h-5 text-brand-sea flex-shrink-0 mt-0.5"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
@@ -105,8 +105,25 @@ export default function SchedulePage() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-zinc-700 dark:text-zinc-300">
-                    <strong className="font-semibold">Easy for organizers</strong> — update the schedule in real-time
+                  <span className="text-zinc-700">
+                    <strong className="font-semibold">Export to your calendar</strong> — Sync your schedule to Google Calendar, iCal, or Outlook
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <svg
+                    className="w-5 h-5 text-brand-sea flex-shrink-0 mt-0.5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                  <span className="text-zinc-700">
+                    <strong className="font-semibold">Mobile-friendly</strong> — Access your schedule on the go, no app needed
                   </span>
                 </li>
               </ul>
@@ -125,27 +142,22 @@ export default function SchedulePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 sm:py-20 lg:py-24 px-6 bg-gradient-to-b from-white to-brand-sand/20 dark:from-zinc-900 dark:to-zinc-950">
-        <div className="max-w-4xl mx-auto text-center">
-          <Reveal delay={0.3}>
-            <div className="space-y-6">
-              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-brand-sea dark:text-white">
-                Organising a retreat or festival?
-              </h2>
-              <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-                FlowGrid helps you create beautiful, interactive schedules that your participants will love.
-              </p>
-              <div className="pt-4">
-                <Button
-                  href="https://tryflowgrid.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  variant="primary"
-                  size="lg"
-                >
-                  Try FlowGrid
-                </Button>
-              </div>
+      <section className="py-16 sm:py-20 lg:py-24 px-6 bg-gradient-to-b from-white to-brand-sand/20">
+        <div className="max-w-3xl mx-auto text-center">
+          <Reveal>
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-sea mb-4">
+              Ready to Plan Your Perfect Convention?
+            </h2>
+            <p className="text-lg text-zinc-600 mb-8">
+              The full schedule will be available soon. Secure your spot now to get first access!
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button href="/#pricing" variant="primary" size="lg">
+                Get Tickets
+              </Button>
+              <Button href="/teachers" variant="secondary" size="lg">
+                Meet the Teachers
+              </Button>
             </div>
           </Reveal>
         </div>

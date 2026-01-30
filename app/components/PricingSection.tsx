@@ -17,25 +17,25 @@ const pricingTiers: PricingTier[] = [
     id: 'super-early',
     name: 'Super Early Bird',
     price: '€295',
-    description: 'Limited spots',
-    available: false,
-    availabilityText: 'Sold Out',
-    highlighted: false,
+    description: 'Limited spots - Book now!',
+    available: true,
+    availabilityText: 'Only 10 Left!',
+    highlighted: true,
   },
   {
     id: 'early-bird',
     name: 'Early Bird',
     price: '€345',
-    description: 'Best value',
+    description: 'Great savings',
     available: true,
     availabilityText: 'Available Now',
-    highlighted: true,
+    highlighted: false,
   },
   {
     id: 'regular',
     name: 'Regular',
     price: '€395',
-    description: 'Standard rate',
+    description: 'Full price',
     available: true,
     availabilityText: 'Available',
     highlighted: false,
@@ -45,6 +45,8 @@ const pricingTiers: PricingTier[] = [
 const included = [
   'Access to all 40+ workshops',
   'Full 5-day convention pass',
+  '4-star accommodation at Riviera Spa Hotel',
+  'All meals included (breakfast, lunch & dinner)',
   'Opening & closing ceremonies',
   'Beach jam sessions',
   'Community social events',
@@ -52,9 +54,9 @@ const included = [
 ];
 
 const notIncluded = [
-  'Accommodation',
-  'Meals (affordable local options nearby)',
-  'Travel to Malta',
+  'Flights to Malta',
+  'Airport transfers',
+  'Spa treatments (available on-site)',
   'Optional excursions & add-ons',
 ];
 
@@ -87,8 +89,8 @@ const PricingSection: FC = () => {
               >
                 {/* Highlighted Badge */}
                 {tier.highlighted && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-brand-sun text-black text-sm font-semibold rounded-full shadow-md">
-                    Best Value
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-brand-sun text-black text-sm font-bold rounded-full shadow-md animate-pulse">
+                    SAVE €100 💰
                   </div>
                 )}
 
