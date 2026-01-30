@@ -29,24 +29,24 @@ export default function Home() {
     <main>
       {/* 1. Parallax Hero */}
       <ParallaxHero
-        backgroundUrl="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?q=80&w=2670&auto=format&fit=crop"
+        backgroundVideo="/MAC.mp4"
         overlay={true}
       >
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           {/* Event Name */}
-          <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-6 leading-[1.1]">
+          <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-6 leading-[1.1]" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.3)' }}>
             Mediterranean Acro
             <br />
             Convention
           </h1>
 
           {/* Date Line */}
-          <p className="text-xl sm:text-2xl md:text-3xl text-white/90 font-light tracking-wide mb-8">
-            Oct 7–11, 2026 <span className="text-white/60">•</span> Malta
+          <p className="text-xl sm:text-2xl md:text-3xl text-white font-light tracking-wide mb-8" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
+            Oct 7–11, 2026 <span className="text-white/80">•</span> Malta
           </p>
 
           {/* Tagline */}
-          <p className="text-lg sm:text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
+          <p className="text-lg sm:text-xl md:text-2xl text-white max-w-3xl mx-auto mb-12 leading-relaxed font-light" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
             Five days of world-class training, connection, and Mediterranean sunsets with the global acro community.
           </p>
 

@@ -1,7 +1,18 @@
 import { FC } from 'react';
-import Image from 'next/image';
 import Reveal from './Reveal';
 import Button from './Button';
+import ImageCarousel from './ImageCarousel';
+
+const hotelImages = [
+  '/hotel/Indoorhotelpool.jpg',
+  '/hotel/PrivatehotelBeach.jpg',
+  '/hotel/Gymhotelspace.jpg',
+  '/hotel/Quadruplehotelroomhotelwithhotelpoolhotelview-hotelBalcony.jpg',
+  '/hotel/hotel.png',
+  '/hotel/Labranda-Riviera-Premium-Resort-Spa-hotel-Malta-3742488010.jpg',
+  '/hotel/Riviera+Hotel+0161-3154228205.jpg',
+  '/hotel/labranda-riviera-premium-264396273.jpg',
+];
 
 const VenueSection: FC = () => {
   return (
@@ -19,17 +30,12 @@ const VenueSection: FC = () => {
         </Reveal>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Image */}
+          {/* Image Carousel */}
           <Reveal delay={0.2}>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-              <Image
-                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop"
-                alt="Riviera Spa Hotel Malta - Luxury Resort"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-              />
-            </div>
+            <ImageCarousel 
+              images={hotelImages}
+              alt="Riviera Spa Hotel Malta - Luxury Resort"
+            />
           </Reveal>
 
           {/* Content */}
