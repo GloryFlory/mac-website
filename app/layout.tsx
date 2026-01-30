@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { inter, playfair } from './fonts';
+import Header from './components/Header';
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -28,6 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <body className="antialiased">
+        <Header />
         {children}
       </body>
     </html>

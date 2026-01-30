@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #2d3748;
 }
 
 @theme inline {
@@ -22,13 +22,19 @@
 /* Force light mode - disable dark mode */
 body {
   background: #ffffff;
-  color: #171717;
+  color: #2d3748;
   font-family: var(--font-body), system-ui, -apple-system, sans-serif;
 }
 
-/* Headings use display font */
+/* Headings use display font and sea blue color */
 h1, h2, h3 {
   font-family: var(--font-display), serif;
+  color: var(--color-brand-sea);
+}
+
+/* Paragraph text - warmer gray instead of black */
+p {
+  color: #4a5568;
 }
 
 /* Smooth scrolling for anchor links */

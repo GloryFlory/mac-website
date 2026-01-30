@@ -133,10 +133,28 @@ export default function SchedulePage() {
       </section>
 
       {/* Schedule Embed */}
-      <section className="py-12 px-6 bg-white dark:bg-zinc-900">
+      <section className="py-12 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <Reveal delay={0.2}>
-            <FlowGridEmbed />
+            <div className="rounded-2xl overflow-hidden border border-brand-sand/30 shadow-lg">
+              <iframe
+                src="https://tryflowgrid.com/mac-2025/schedule"
+                className="w-full h-[75vh] sm:h-[80vh]"
+                title="MAC 2026 Interactive Schedule"
+                allow="fullscreen"
+              />
+            </div>
+            <p className="text-center text-sm text-zinc-500 mt-4">
+              Powered by{' '}
+              <a
+                href="https://tryflowgrid.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand-sea hover:text-brand-sun transition-colors underline underline-offset-2"
+              >
+                FlowGrid
+              </a>
+            </p>
           </Reveal>
         </div>
       </section>
@@ -146,17 +164,23 @@ export default function SchedulePage() {
         <div className="max-w-3xl mx-auto text-center">
           <Reveal>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-brand-sea mb-4">
-              Ready to Plan Your Perfect Convention?
+              Love This Schedule System?
             </h2>
             <p className="text-lg text-zinc-600 mb-8">
-              The full schedule will be available soon. Secure your spot now to get first access!
+              FlowGrid makes it easy to create beautiful, interactive schedules for your events, retreats, and festivals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button href="/#pricing" variant="primary" size="lg">
-                Get Tickets
+              <Button 
+                href="https://tryflowgrid.com" 
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="secondary" 
+                size="lg"
+              >
+                Try FlowGrid for Your Event
               </Button>
-              <Button href="/teachers" variant="secondary" size="lg">
-                Meet the Teachers
+              <Button href="/#pricing" variant="primary" size="lg">
+                Get MAC Tickets
               </Button>
             </div>
           </Reveal>
