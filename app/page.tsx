@@ -34,19 +34,19 @@ export default function Home() {
       >
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
           {/* Event Name */}
-          <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-6 leading-[1.1]" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.3)' }}>
+          <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-6 leading-[1.1]" style={{ textShadow: '0 2px 10px rgba(255,255,255,0.5), 0 0 20px rgba(255,255,255,0.3)' }}>
             Mediterranean Acro
             <br />
             Convention
           </h1>
 
           {/* Date Line */}
-          <p className="text-xl sm:text-2xl md:text-3xl text-white font-light tracking-wide mb-8" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
+          <p className="text-xl sm:text-2xl md:text-3xl text-white font-light tracking-wide mb-8" style={{ textShadow: '0 2px 8px rgba(255,255,255,0.3)' }}>
             Oct 7–11, 2026 <span className="text-white/80">•</span> Malta
           </p>
 
           {/* Tagline */}
-          <p className="text-lg sm:text-xl md:text-2xl text-white max-w-3xl mx-auto mb-12 leading-relaxed font-light" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
+          <p className="text-lg sm:text-xl md:text-2xl text-white max-w-3xl mx-auto mb-12 leading-relaxed font-light" style={{ textShadow: '0 2px 8px rgba(255,255,255,0.3)' }}>
             Five days of world-class training, connection, and Mediterranean sunsets with the global acro community.
           </p>
 
