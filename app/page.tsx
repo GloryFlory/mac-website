@@ -152,10 +152,7 @@ export default function Home() {
               '/images/7I1A3130.jpg',
               '/images/7I1A3170.jpg',
               '/images/7I1A3220.jpg',
-              '/images/7I1A3257.jpg',
               '/images/7I1A3308.jpg',
-              '/images/7I1A3468.jpg',
-              '/images/7I1A3514.jpg',
             ]}
             imageHeight={320}
           />
