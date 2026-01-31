@@ -118,7 +118,20 @@ export default function ParallaxHero({
       {/* Background - either video or image with parallax */}
       {isVideo ? (
         <div className="absolute inset-0 w-full h-full overflow-hidden">
-          {/* Try local video first */}
+          {/* Google Drive Video Embed as Background */}
+          <iframe
+            src="https://drive.google.com/file/d/16ytvYrTRIoscoCpQLI8Inoog_PKbLaaT/preview?autoplay=1&loop=1&mute=1"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+            style={{
+              width: '177.77777778vh',
+              height: '100vh',
+              minWidth: '100vw',
+              minHeight: '56.25vw',
+              border: 'none',
+            }}
+            allow="autoplay"
+          />
+          {/* Fallback: Try local video if iframe doesn't load */}
           <video
             autoPlay
             loop
@@ -129,10 +142,7 @@ export default function ParallaxHero({
             style={{
               width: '100vw',
               height: '100vh',
-            }}
-            onError={(e) => {
-              // If video fails to load, hide it and show poster
-              e.currentTarget.style.display = 'none';
+              display: 'none',
             }}
           >
             <source src={backgroundVideo} type="video/mp4" />
