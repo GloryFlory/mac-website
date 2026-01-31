@@ -123,7 +123,12 @@ export default function ParallaxHero({
             loop
             muted
             playsInline
+            poster="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1920&q=80"
             className="absolute inset-0 w-full h-full object-cover"
+            onError={(e) => {
+              // If video fails to load, hide it and show poster
+              e.currentTarget.style.display = 'none';
+            }}
           >
             <source src={backgroundVideo} type="video/mp4" />
           </video>
