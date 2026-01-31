@@ -117,14 +117,18 @@ export default function ParallaxHero({
     >
       {/* Background - either video or image with parallax */}
       {isVideo ? (
-        <div className="absolute inset-0 w-full h-full">
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
           <video
             autoPlay
             loop
             muted
             playsInline
             poster="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=1920&q=80"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto object-cover"
+            style={{
+              width: '100vw',
+              height: '100vh',
+            }}
             onError={(e) => {
               // If video fails to load, hide it and show poster
               e.currentTarget.style.display = 'none';
