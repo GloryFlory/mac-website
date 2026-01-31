@@ -27,7 +27,7 @@ const faqs: FaqItem[] = [
   {
     id: 'refunds',
     question: 'What\'s your refund policy?',
-    answer: 'Tickets cannot be transferred to another person. Cancellations made before June 1st, 2026 will incur a 40 EUR administration fee. After June 1st, your deposit is non-refundable. All refund requests must be submitted via email to mediterraneanacroconvention@gmail.com.',
+    answer: 'Cancellations before 31 March 2026 are eligible for a refund minus a €40 admin fee. From 31 March onward, the €299 deposit becomes non-refundable and tickets cannot be refunded. Name changes are permitted until 15 September 2026 (€40 fee applies). We strongly recommend travel insurance. Submit all requests to mediterraneanacroconvention@gmail.com.',
   },
   {
     id: 'accommodation',
