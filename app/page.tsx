@@ -51,7 +51,7 @@ export default function Home() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <Button
               href="#pricing"
               variant="primary"
@@ -67,21 +67,6 @@ export default function Home() {
             >
               Meet the Teachers
             </Button>
-          </div>
-
-          {/* Watch Aftermovie Link */}
-          <div className="mb-16">
-            <a
-              href="https://www.youtube.com/watch?v=G-waKLp3U_8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-white/90 hover:text-white transition-colors text-sm sm:text-base group"
-            >
-              <svg className="w-5 h-5 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-              </svg>
-              <span className="underline">Watch MAC 2025 Aftermovie</span>
-            </a>
           </div>
 
           {/* Quick Stats Chips */}
@@ -122,13 +107,34 @@ export default function Home() {
       {/* 6. Memory Strip Section - Editorial Photo Strip */}
       <section className="py-12 sm:py-16 bg-gradient-to-b from-brand-sand/10 to-white">
         <div className="max-w-7xl mx-auto px-0">
+          {/* YouTube Video - MAC 2025 Aftermovie */}
+          <div className="max-w-5xl mx-auto px-6 mb-16">
+            <div className="text-center mb-8">
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-brand-sea mb-4">
+                MAC 2025 Aftermovie
+              </h2>
+              <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
+                Relive the magic from last year's unforgettable convention
+              </p>
+            </div>
+            <div className="relative w-full rounded-xl overflow-hidden shadow-2xl" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/G-waKLp3U_8?si=QenXpymwUFj1JsRO"
+                title="MAC 2025 Aftermovie"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+          </div>
+
+          {/* Photo Strip */}
           <div className="text-center mb-8 px-6">
-            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-brand-sea mb-4">
-              MAC 2025 Memories
-            </h2>
-            <p className="text-lg text-zinc-600 max-w-2xl mx-auto mb-2">
-              Relive the magic from last year's unforgettable convention
-            </p>
+            <h3 className="font-serif text-2xl sm:text-3xl font-bold text-brand-sea mb-4">
+              Photo Highlights
+            </h3>
             <a
               href="https://www.instagram.com/giusvisual/"
               target="_blank"
