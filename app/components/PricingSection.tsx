@@ -165,7 +165,7 @@ const PricingSection: FC = () => {
                 {/* CTA Button */}
                 {tier.available ? (
                   <Button
-                    href="https://tickets.example.com"
+                    href="https://www.wetravel.com/trips/mediterranean-acro-convention-2026-mediterranean-acro-convention-4587517817"
                     target="_blank"
                     rel="noopener noreferrer"
                     variant={tier.highlighted ? 'primary' : 'secondary'}
@@ -217,7 +217,7 @@ const PricingSection: FC = () => {
                     </div>
                   </div>
                   <Button
-                    href={tier.id === 'local' ? 'mailto:mediterraneanacroconvention@gmail.com?subject=Local Pass Inquiry' : 'https://tickets.example.com'}
+                    href={tier.id === 'local' ? 'mailto:mediterraneanacroconvention@gmail.com?subject=Local Pass Inquiry' : 'https://www.wetravel.com/trips/mediterranean-acro-convention-2026-mediterranean-acro-convention-4587517817'}
                     target={tier.id === 'local' ? undefined : '_blank'}
                     rel={tier.id === 'local' ? undefined : 'noopener noreferrer'}
                     variant="secondary"

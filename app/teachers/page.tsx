@@ -199,7 +199,7 @@ export default function TeachersPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <Button
-                  href="https://tickets.example.com"
+                  href="https://www.wetravel.com/trips/mediterranean-acro-convention-2026-mediterranean-acro-convention-4587517817"
                   target="_blank"
                   rel="noopener noreferrer"
                   variant="primary"
