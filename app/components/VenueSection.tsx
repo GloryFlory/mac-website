@@ -4,11 +4,11 @@ import Button from './Button';
 import ImageCarousel from './ImageCarousel';
 
 const hotelImages = [
+  '/hotel/hotel.png', // Photo 5 moved to #1
   '/hotel/Indoorhotelpool.jpg',
   '/hotel/PrivatehotelBeach.jpg',
   '/hotel/Gymhotelspace.jpg',
   '/hotel/Quadruplehotelroomhotelwithhotelpoolhotelview-hotelBalcony.jpg',
-  '/hotel/hotel.png',
   '/hotel/Labranda-Riviera-Premium-Resort-Spa-hotel-Malta-3742488010.jpg',
   '/hotel/Riviera+Hotel+0161-3154228205.jpg',
   '/hotel/labranda-riviera-premium-264396273.jpg',
@@ -82,8 +82,8 @@ const VenueSection: FC = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
                   </svg>
                   <div>
-                    <h4 className="font-semibold text-brand-sea mb-1">Gourmet Dining</h4>
-                    <p className="text-zinc-600">International cuisine with fresh Mediterranean ingredients</p>
+                    <h4 className="font-semibold text-brand-sea mb-1">Delicious Buffet</h4>
+                    <p className="text-zinc-600">Loads of options catering to all dietary requirements</p>
                   </div>
                 </div>
 
@@ -93,7 +93,7 @@ const VenueSection: FC = () => {
                   </svg>
                   <div>
                     <h4 className="font-semibold text-brand-sea mb-1">Beachfront Access</h4>
-                    <p className="text-zinc-600">Private beach area perfect for jam sessions and sunset flows</p>
+                    <p className="text-zinc-600">Accessible private beach area with stunning Mediterranean views</p>
                   </div>
                 </div>
 

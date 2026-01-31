@@ -22,12 +22,12 @@ const faqs: FaqItem[] = [
   {
     id: 'tickets',
     question: 'When do tickets go on sale?',
-    answer: 'Super Early Bird tickets are already sold out! Early Bird pricing is available now at €345. Regular tickets (€395) will be available until we reach capacity or the event begins. We recommend booking early to secure the best price.',
+    answer: 'Tickets are limited to 75 participants to maintain an intimate, high-quality experience. Super Early Bird tickets are available until March 31st at €599. Early Bird tickets (€699) and Regular tickets (€799) are available now. We recommend booking early to secure your spot.',
   },
   {
     id: 'refunds',
     question: 'What\'s your refund policy?',
-    answer: 'Full refunds are available until August 1st, 2026. Between August 1st and September 15th, we offer 50% refunds. After September 15th, tickets are non-refundable but transferable to another person. All refund requests must be submitted via email to mediterraneanacroconvention@gmail.com.',
+    answer: 'Tickets cannot be transferred to another person. Cancellations made before June 1st, 2026 will incur a 40 EUR administration fee. After June 1st, your deposit is non-refundable. All refund requests must be submitted via email to mediterraneanacroconvention@gmail.com.',
   },
   {
     id: 'accommodation',
@@ -37,12 +37,12 @@ const faqs: FaqItem[] = [
   {
     id: 'food',
     question: 'Are meals provided?',
-    answer: 'Meals are not included in the ticket price, but the Riviera Spa Hotel has on-site restaurants serving delicious international and Mediterranean cuisine. There are also food options in nearby towns, easily accessible by bus or taxi.',
+    answer: '3 meals per day are included with your ticket! The Riviera Spa Hotel provides an amazing buffet covering all dietary requirements including vegetarian, vegan, gluten-free, and other special needs. You\'ll never go hungry at MAC.',
   },
   {
     id: 'airport',
     question: 'How do I get from the airport to the venue?',
-    answer: 'The Riviera Spa Hotel is about 1 hour by bus or 30-45 minutes by car from Malta International Airport (MLA). You can take a taxi, use Bolt/eCabs rideshare, or take public buses. We\'ll send detailed transport info in your pre-event email, and there may be shared ride options in our attendee WhatsApp group.',
+    answer: 'The Riviera Spa Hotel is about 60-90 minutes by bus or car from Malta International Airport (MLA). You can take a taxi, use Bolt/eCabs rideshare, or take public buses. We\'ll send detailed transport info in your pre-event email, and there may be shared ride options in our attendee WhatsApp group.',
   },
   {
     id: 'schedule',
