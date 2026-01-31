@@ -6,27 +6,32 @@ interface PricingTier {
   id: string;
   name: string;
   price: string;
+  deposit?: string;
   description: string;
   available: boolean;
   availabilityText: string;
   highlighted?: boolean;
+  secondary?: boolean;
+  special?: string;
 }
 
-const pricingTiers: PricingTier[] = [
+const primaryTiers: PricingTier[] = [
   {
     id: 'super-early',
     name: 'Super Early Bird',
-    price: '€295',
-    description: 'Limited spots - Book now!',
+    price: '€599',
+    description: 'Full payment required',
     available: true,
-    availabilityText: 'Only 10 Left!',
+    availabilityText: 'Limited Spots',
     highlighted: true,
+    special: 'Best Value',
   },
   {
     id: 'early-bird',
     name: 'Early Bird',
-    price: '€345',
-    description: 'Great savings',
+    price: '€699',
+    deposit: '€299',
+    description: '€299 deposit, balance due later',
     available: true,
     availabilityText: 'Available Now',
     highlighted: false,
@@ -34,11 +39,34 @@ const pricingTiers: PricingTier[] = [
   {
     id: 'regular',
     name: 'Regular',
-    price: '€395',
-    description: 'Full price',
+    price: '€799',
+    deposit: '€299',
+    description: '€299 deposit, balance due later',
     available: true,
     availabilityText: 'Available',
     highlighted: false,
+  },
+];
+
+const secondaryTiers: PricingTier[] = [
+  {
+    id: 'weekend',
+    name: 'Weekend Pass',
+    price: '€449',
+    description: 'Saturday & Sunday access only',
+    available: true,
+    availabilityText: 'Limited',
+    secondary: true,
+  },
+  {
+    id: 'local',
+    name: 'Local Pass',
+    price: 'On Request',
+    description: 'No food or accommodation included',
+    available: true,
+    availabilityText: 'Contact Us',
+    secondary: true,
+    special: 'Malta Residents',
   },
 ];
 
@@ -71,26 +99,26 @@ const PricingSection: FC = () => {
               Pricing
             </h2>
             <p className="text-lg sm:text-xl text-zinc-600 max-w-2xl mx-auto">
-              Secure your spot at MAC 2026. Early bird pricing available for a limited time.
+              Transparent pricing with flexible payment options. Book early to save.
             </p>
           </div>
         </Reveal>
 
-        {/* Pricing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-16">
-          {pricingTiers.map((tier, index) => (
+        {/* Primary Pricing Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-12">
+          {primaryTiers.map((tier, index) => (
             <Reveal key={tier.id} delay={index * 0.1}>
               <div
                 className={`relative bg-white rounded-2xl p-8 transition-all duration-300 ${
                   tier.highlighted
-                    ? 'border-2 border-brand-sun shadow-xl scale-105'
+                    ? 'border-2 border-brand-sun shadow-xl md:scale-105'
                     : 'border border-neutral-200/20 hover:shadow-lg'
                 }`}
               >
-                {/* Highlighted Badge */}
-                {tier.highlighted && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-brand-sun text-black text-sm font-bold rounded-full shadow-md animate-pulse">
-                    SAVE €100 💰
+                {/* Special Badge */}
+                {tier.special && (
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-brand-sun text-black text-sm font-bold rounded-full shadow-md">
+                    {tier.special}
                   </div>
                 )}
 
@@ -106,13 +134,18 @@ const PricingSection: FC = () => {
 
                 {/* Price */}
                 <div className="text-center mb-6">
-                  <div className="text-5xl font-bold text-zinc-900 mb-2">
+                  <div className="text-5xl font-bold text-zinc-900 mb-1">
                     {tier.price}
                   </div>
+                  {tier.deposit && (
+                    <p className="text-sm text-brand-sea font-medium">
+                      or {tier.deposit} deposit
+                    </p>
+                  )}
                   <div
-                    className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium ${
+                    className={`inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium mt-3 ${
                       tier.available
-                        ? 'bg-brand-sea/10 text-brand-sea dark:bg-brand-sea/20'
+                        ? 'bg-brand-sea/10 text-brand-sea'
                         : 'bg-zinc-100 text-zinc-500'
                     }`}
                   >
@@ -139,7 +172,7 @@ const PricingSection: FC = () => {
                     size="md"
                     className="w-full"
                   >
-                    Get Tickets
+                    Book Now
                   </Button>
                 ) : (
                   <div className="w-full px-8 py-3 text-base text-center font-semibold rounded-full bg-zinc-100 text-zinc-400 cursor-not-allowed">
@@ -150,6 +183,54 @@ const PricingSection: FC = () => {
             </Reveal>
           ))}
         </div>
+
+        {/* Secondary Pricing Cards */}
+        <Reveal delay={0.3}>
+          <div className="mb-16">
+            <h3 className="text-center font-serif text-2xl font-bold text-brand-sea mb-6">
+              Alternative Passes
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+              {secondaryTiers.map((tier) => (
+                <div
+                  key={tier.id}
+                  className="relative bg-white/60 backdrop-blur-sm border border-neutral-200/40 rounded-xl p-6 hover:shadow-md transition-all duration-300"
+                >
+                  {tier.special && (
+                    <div className="absolute -top-3 right-4 px-3 py-1 bg-brand-sand text-brand-sea text-xs font-bold rounded-full shadow-sm">
+                      {tier.special}
+                    </div>
+                  )}
+                  <div className="flex items-center justify-between mb-4">
+                    <div>
+                      <h4 className="font-serif text-xl font-bold text-brand-sea mb-1">
+                        {tier.name}
+                      </h4>
+                      <p className="text-sm text-zinc-600">
+                        {tier.description}
+                      </p>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-3xl font-bold text-zinc-900">
+                        {tier.price}
+                      </div>
+                    </div>
+                  </div>
+                  <Button
+                    href={tier.id === 'local' ? 'mailto:mediterraneanacroconvention@gmail.com?subject=Local Pass Inquiry' : 'https://tickets.example.com'}
+                    target={tier.id === 'local' ? undefined : '_blank'}
+                    rel={tier.id === 'local' ? undefined : 'noopener noreferrer'}
+                    variant="secondary"
+                    size="sm"
+                    className="w-full"
+                  >
+                    {tier.id === 'local' ? 'Contact Us' : 'Book Now'}
+                  </Button>
+                </div>
+              ))}
+            </div>
+          </div>
+        </Reveal>
 
         {/* What's Included */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
