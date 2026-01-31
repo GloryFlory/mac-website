@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import FlowGridEmbed from '../components/FlowGridEmbed';
 import Button from '../components/Button';
 import Reveal from '../components/Reveal';
+import ScheduleIframe from '../components/ScheduleIframe';
 
 export const metadata: Metadata = {
   title: 'Schedule | Mediterranean Acro Convention 2026',
@@ -136,12 +137,17 @@ export default function SchedulePage() {
       <section className="py-12 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <Reveal delay={0.2}>
-            <p className="text-center text-zinc-600 mb-4">
+            <p className="text-center text-zinc-600 mb-6">
               The full 2026 schedule will be published soon. Below is last year's schedule as a preview of what to expect!
             </p>
+
+            <ScheduleIframe 
+              src="https://tryflowgrid.com/mac-2025/schedule"
+              title="MAC 2025 Schedule Preview"
+            />
             
-            {/* Direct Link Button */}
-            <div className="flex justify-center mb-6">
+            {/* Direct Link Button Below Iframe */}
+            <div className="flex justify-center mt-6">
               <Button
                 href="https://tryflowgrid.com/mac-2025/schedule"
                 target="_blank"
@@ -149,18 +155,10 @@ export default function SchedulePage() {
                 variant="primary"
                 size="lg"
               >
-                Open Schedule in New Tab
+                Open Full Schedule in New Tab
               </Button>
             </div>
 
-            <div className="rounded-2xl overflow-hidden border border-brand-sand/30 shadow-lg">
-              <iframe
-                src="https://tryflowgrid.com/mac-2025/schedule"
-                className="w-full"
-                style={{ height: '800px', borderRadius: '8px' }}
-                title="MAC 2025 Schedule Preview"
-              />
-            </div>
             <p className="text-center text-sm text-zinc-500 mt-4">
               Schedule powered by{' '}
               <a

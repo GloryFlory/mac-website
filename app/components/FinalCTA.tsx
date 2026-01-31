@@ -16,12 +16,12 @@ const FinalCTA: FC = () => {
         <Reveal>
           <div className="space-y-8">
             {/* Headline */}
-            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-4">
+            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold mb-4" style={{ color: '#F1B139' }}>
               Ready for MAC 2026?
             </h2>
             
             {/* Supportive Line */}
-            <p className="text-xl sm:text-2xl text-black max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl sm:text-2xl max-w-2xl mx-auto leading-relaxed" style={{ color: '#FFFFFF' }}>
               Join us in Malta for five unforgettable days of connection, growth, and Mediterranean magic.
             </p>
 
@@ -45,11 +45,11 @@ const FinalCTA: FC = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="space-y-4 text-white/80">
-              <p className="text-sm uppercase tracking-wider font-medium text-white/60">
+            <div className="space-y-4">
+              <p className="text-sm uppercase tracking-wider font-medium" style={{ color: '#FFFFFF' }}>
                 Get in Touch
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center items-center text-sm sm:text-base">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center items-center text-sm sm:text-base" style={{ color: '#FFFFFF' }}>
                 {/* Email */}
                 <a
                   href="mailto:mediterraneanacroconvention@gmail.com"
