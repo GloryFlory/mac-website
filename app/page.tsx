@@ -29,7 +29,7 @@ export default function Home() {
     <main>
       {/* 1. Parallax Hero */}
       <ParallaxHero
-        backgroundVideo="/MAC.mp4"
+        backgroundVideo="/MACYoutube4K.mp4"
         overlay={true}
       >
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
