@@ -118,21 +118,30 @@ export default function ParallaxHero({
       {/* Background - either video or image with parallax */}
       {isVideo ? (
         <div className="absolute inset-0 w-full h-full overflow-hidden">
+          {/* Loading gradient while video loads */}
+          <div className="absolute inset-0 bg-gradient-to-br from-brand-sea via-brand-sea/90 to-brand-sand animate-pulse" />
+          
           {/* Local video for development */}
           <video
             autoPlay
             loop
             muted
             playsInline
-            poster="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1920&q=80"
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto object-cover"
             style={{
               width: '100vw',
               height: '100vh',
             }}
+            onLoadedData={(e) => {
+              // Hide loading gradient when video is ready
+              const loadingDiv = e.currentTarget.previousElementSibling;
+              if (loadingDiv) {
+                (loadingDiv as HTMLElement).style.display = 'none';
+              }
+            }}
             onError={(e) => {
-              // If video fails to load, show poster image
-              e.currentTarget.style.display = 'none';
+              // If video fails to load, keep gradient visible
+              console.error('Video failed to load');
             }}
           >
             <source src={backgroundVideo} type="video/mp4" />
