@@ -4,7 +4,7 @@ export default function StructuredData() {
     "@type": "Event",
     "name": "Mediterranean Acro Convention 2026",
     "description": "The world's most luxurious acroyoga convention. 5 days of elite training at Malta's 4-star Riviera Spa Hotel with 40+ workshops and international teachers.",
-    "image": "https://mediterraneanacroconvention.com/og-image.jpg",
+    "image": "https://mediterraneanacroconvention.com/og-image.png",
     "startDate": "2026-10-07",
     "endDate": "2026-10-11",
     "eventStatus": "https://schema.org/EventScheduled",

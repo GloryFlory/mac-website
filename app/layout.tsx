@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     description: "5 days of elite acro training at Malta's luxury Riviera Spa Hotel. Oct 7-11, 2026. 40+ workshops with world-class teachers. All-inclusive experience.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Mediterranean Acro Convention 2026 - Malta",
