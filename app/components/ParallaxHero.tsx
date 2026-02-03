@@ -20,7 +20,6 @@ export default function ParallaxHero({
   const backgroundRef = useRef<HTMLDivElement>(null);
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const [selectedVideo, setSelectedVideo] = useState<string>('');
-  const [videoPlaying, setVideoPlaying] = useState(false);
   
   // Target position for smooth easing
   const targetPosition = useRef({ x: 0, y: 0 });
@@ -143,23 +142,8 @@ export default function ParallaxHero({
             className="absolute inset-0 object-cover"
             style={{ zIndex: 1 }}
           />
-
-          {/* Play button overlay for mobile */}
-          {!videoPlaying && (
-            <button
-              onClick={() => setVideoPlaying(true)}
-              className="md:hidden absolute inset-0 z-10 flex items-center justify-center bg-black/20 backdrop-blur-[2px] transition-all duration-300 active:bg-black/30"
-              aria-label="Play video"
-            >
-              <div className="w-20 h-20 flex items-center justify-center bg-white/90 rounded-full shadow-2xl">
-                <svg className="w-10 h-10 text-brand-sea ml-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
-              </div>
-            </button>
-          )}
           
-          {/* Video loads on desktop automatically, on mobile only after play button click */}
+          {/* Video loads and auto-plays on both desktop and mobile */}
           {selectedVideo && (
             <video
               key={selectedVideo}
@@ -168,9 +152,7 @@ export default function ParallaxHero({
               muted
               playsInline
               preload="auto"
-              className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto object-cover opacity-0 transition-opacity duration-1000 ${
-                videoPlaying ? 'block' : 'hidden md:block'
-              }`}
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto object-cover opacity-0 transition-opacity duration-1000"
               style={{
                 width: '100vw',
                 height: '100vh',

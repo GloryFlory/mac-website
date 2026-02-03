@@ -29,6 +29,7 @@ const TeacherCard: FC<TeacherCardProps> = ({
   website,
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const isVideo = /\.(mp4|webm|ogg|mov)$/i.test(imageUrl || '');
   const hasExpandedVideo = videoUrl && /\.(mp4|webm|ogg|mov)$/i.test(videoUrl);
 
@@ -40,16 +41,35 @@ const TeacherCard: FC<TeacherCardProps> = ({
         {/* Image */}
         <div className="relative aspect-[3/4] overflow-hidden bg-brand-sand/10">
           {isVideo ? (
-            <video
-              src={imageUrl}
-              className="w-full h-full object-cover"
-              muted
-              playsInline
-              loop
-              autoPlay
-              preload="auto"
-              aria-label={`${name} preview video`}
-            />
+            <>
+              <video
+                src={imageUrl}
+                className="w-full h-full object-cover"
+                muted
+                playsInline
+                loop
+                autoPlay={isVideoPlaying}
+                preload="metadata"
+                aria-label={`${name} preview video`}
+              />
+              {/* Play button overlay for mobile */}
+              {!isVideoPlaying && (
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setIsVideoPlaying(true);
+                  }}
+                  className="md:hidden absolute inset-0 z-10 flex items-center justify-center bg-black/30"
+                  aria-label="Play video"
+                >
+                  <div className="w-16 h-16 flex items-center justify-center bg-white/90 rounded-full shadow-lg">
+                    <svg className="w-8 h-8 text-brand-sea ml-1" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z"/>
+                    </svg>
+                  </div>
+                </button>
+              )}
+            </>
           ) : (
             <Image
               src={imageUrl}
