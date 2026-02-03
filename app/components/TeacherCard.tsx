@@ -46,6 +46,8 @@ const TeacherCard: FC<TeacherCardProps> = ({
               muted
               playsInline
               loop
+              autoPlay
+              preload="auto"
               aria-label={`${name} preview video`}
             />
           ) : (
@@ -184,6 +186,9 @@ const TeacherCard: FC<TeacherCardProps> = ({
                   <video
                     src={videoUrl}
                     controls
+                    autoPlay
+                    playsInline
+                    preload="auto"
                     className="w-full h-full object-contain bg-black"
                     aria-label={`${name} video`}
                   />
