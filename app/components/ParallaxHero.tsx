@@ -123,7 +123,11 @@ export default function ParallaxHero({
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-screen overflow-hidden"
+      className="relative w-full overflow-hidden"
+      style={{ 
+        height: '100dvh', // dvh = dynamic viewport height (accounts for mobile browser UI)
+        minHeight: '-webkit-fill-available'
+      }}
     >
       {/* Background - either video or image with parallax */}
       {isVideo ? (

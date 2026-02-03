@@ -42,6 +42,18 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Fix for mobile browser address bar causing viewport height issues */
+html, body {
+  height: 100%;
+  height: -webkit-fill-available;
+}
+
+@supports (height: 100dvh) {
+  html, body {
+    height: 100dvh;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
