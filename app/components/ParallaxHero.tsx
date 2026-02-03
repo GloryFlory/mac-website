@@ -144,27 +144,31 @@ export default function ParallaxHero({
           />
           
           {/* Video loads only on desktop (hidden on mobile for performance) */}
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto object-cover opacity-0 transition-opacity duration-1000"
-            style={{
-              width: '100vw',
-              height: '100vh',
-              zIndex: 2,
-            }}
-            onLoadedData={(e) => {
-              // Fade in video when ready
-              e.currentTarget.style.opacity = '1';
-            }}
-            onError={(e) => {
-              console.error('Video failed to load, keeping poster image');
-            }}
-          >
-            <source src={selectedVideo || backgroundVideo} type="video/mp4" />
-          </video>
+          {selectedVideo && (
+            <video
+              key={selectedVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto object-cover opacity-0 transition-opacity duration-1000"
+              style={{
+                width: '100vw',
+                height: '100vh',
+                zIndex: 2,
+              }}
+              onLoadedData={(e) => {
+                // Fade in video when ready
+                e.currentTarget.style.opacity = '1';
+              }}
+              onError={(e) => {
+                console.error('Video failed to load, keeping poster image');
+              }}
+            >
+              <source src={selectedVideo} type="video/mp4" />
+            </video>
+          )}
         </div>
       ) : (
         <div
