@@ -5,8 +5,24 @@ import Reveal from '../components/Reveal';
 import ScheduleIframe from '../components/ScheduleIframe';
 
 export const metadata: Metadata = {
-  title: 'Schedule | Mediterranean Acro Convention 2026',
-  description: 'Browse the full interactive workshop schedule for MAC 2026. Filter by level, teacher, and style to plan your perfect convention experience.',
+  title: 'Full Workshop Schedule | MAC 2026 Malta',
+  description: '40+ acroyoga workshops over 5 days. Filter by level (beginner to advanced), teacher, and style. Interactive schedule with flows, icarians, whips, therapeutics & more. Oct 7-11, 2026.',
+  keywords: [
+    'acroyoga schedule',
+    'acro workshop schedule',
+    'malta acro convention schedule',
+    'acroyoga workshops',
+    'acro classes malta',
+    'beginner acro workshops',
+    'advanced acroyoga',
+  ],
+  openGraph: {
+    title: 'Full Workshop Schedule | Mediterranean Acro Convention 2026',
+    description: '40+ workshops with world-class teachers. Filter by level and style. Plan your perfect acro experience.',
+  },
+  alternates: {
+    canonical: "https://mediterraneanacroconvention.com/schedule",
+  },
 };
 
 export default function SchedulePage() {

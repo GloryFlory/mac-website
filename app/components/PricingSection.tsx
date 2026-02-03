@@ -32,7 +32,7 @@ const primaryTiers: PricingTier[] = [
     price: '€699',
     description: 'Full payment or deposit options available',
     available: true,
-    availabilityText: 'Available Now',
+    availabilityText: 'Coming Soon',
     highlighted: false,
   },
   {
@@ -41,7 +41,7 @@ const primaryTiers: PricingTier[] = [
     price: '€799',
     description: 'Full payment or deposit options available',
     available: true,
-    availabilityText: 'Available',
+    availabilityText: 'Coming Soon',
     highlighted: false,
   },
 ];

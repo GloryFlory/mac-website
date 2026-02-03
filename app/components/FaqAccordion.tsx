@@ -22,7 +22,7 @@ const faqs: FaqItem[] = [
   {
     id: 'tickets',
     question: 'When do tickets go on sale?',
-    answer: 'Tickets are limited to 75 participants to maintain an intimate, high-quality experience. Super Early Bird tickets are available until March 31st at €599. Early Bird tickets (€699) and Regular tickets (€799) are available now. We recommend booking early to secure your spot.',
+    answer: 'Tickets are limited to 75 participants to maintain an intimate, high-quality experience. Super Early Bird tickets are available now until March 31st at €599. Early Bird tickets (€699) and Regular tickets (€799) will be released later. We recommend booking early to secure your spot at the best price.',
   },
   {
     id: 'refunds',
@@ -158,7 +158,7 @@ const FaqAccordion: FC = () => {
             Still have questions?
           </p>
           <a
-            href="mailto:hello@mac-convention.com"
+            href="mailto:mediterraneanacroconvention@gmail.com"
             className="inline-flex items-center gap-2 text-brand-sea hover:text-brand-sun transition-colors duration-200 font-semibold underline underline-offset-4"
           >
             <svg
@@ -175,7 +175,7 @@ const FaqAccordion: FC = () => {
                 d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
               />
             </svg>
-            Email us at hello@mac-convention.com
+            Email us at mediterraneanacroconvention@gmail.com
           </a>
         </div>
       </div>

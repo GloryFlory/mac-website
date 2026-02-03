@@ -1,6 +1,5 @@
 'use client';
 
-import { Metadata } from 'next';
 import TeacherCard from '../components/TeacherCard';
 import Button from '../components/Button';
 import Reveal from '../components/Reveal';
@@ -8,121 +7,103 @@ import Reveal from '../components/Reveal';
 interface Teacher {
   id: number;
   name: string;
+  duoName?: string;
   roleTags: string[];
   imageUrl: string;
+  videoUrl?: string;
   location?: string;
   bio?: string;
+  instagram?: string;
+  youtube?: string;
+  website?: string;
   levels: ('Beginner' | 'Intermediate' | 'Advanced')[];
 }
 
 const teachers: Teacher[] = [
   {
     id: 1,
-    name: 'Sofia Martinez',
-    roleTags: ['L-Basing', 'Washing Machines', 'Pops'],
-    imageUrl: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop',
-    location: 'Barcelona, Spain',
-    bio: 'International performer and teacher specializing in dynamic acrobatics with 15+ years of experience.',
+    name: 'Coni and Mati',
+    duoName: 'Acro Conciencia',
+    roleTags: ['Whips', 'Whip-Pops', 'Icarians'],
+    imageUrl: '/teachers/Coni and Mati/20230222_202131.jpg',
+    videoUrl: '/teachers/Coni and Mati/20250404_143043.mp4',
+    location: 'Chile',
+    bio: `We are Coni and Mati, two movement lovers who found in Acroyoga a magical way to connect. We love exploring the endless possibilities that arise when two bodies move together — searching for softness, reaching for height, and discovering new ways to flow in connection.
+
+We're especially drawn to Whipops and Icarians, and we enjoy playing with how to blend them creatively, safely, and with joy. Beyond tricks, what truly drives us is connection — with our bodies, with each other, and with the global Acroyoga community.
+
+Traveling and sharing this practice fills our hearts. We're inspired by discovering how Acro is lived and taught in different places, and by meeting people who expand our perspective. Creating spaces to learn, trust, and play together is what we love most.`,
     levels: ['Intermediate', 'Advanced'],
+    instagram: 'https://www.instagram.com/acro.conciencia/',
   },
   {
     id: 2,
-    name: 'Liam Chen',
-    roleTags: ['Standing Acro', 'Icarian Games', 'Partner Flow'],
-    imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop',
-    location: 'Vancouver, Canada',
-    bio: 'Former Cirque performer bringing theatrical artistry to standing acrobatics and dynamic sequences.',
-    levels: ['Intermediate', 'Advanced'],
+    name: 'Caspian and Laura',
+    duoName: 'AcroSpirit',
+    roleTags: ['Flows', 'Icarians', 'Acro Dance', 'Pops'],
+    imageUrl: '/teachers/Caspian and Laura/Vertical Headshots Cuddle.jpg',
+    videoUrl: '/teachers/Caspian and Laura/Vertical Bali 2023 L-base Part2 Highlights Reel.MP4',
+    location: 'Bali, Indonesia',
+    bio: `Caspian and Laura are acro teachers who strive to be skilled in all areas of acro. They enjoy teaching students of all levels, and enjoy the different challenges and disciplines that acroyoga has to offer.
+
+They are skilled in Icarians, Hand to Hands, Whips, Standing Acrobatics, Flows, Washing Machines, Therapeutics and more, with a current focus on more dynamic icarian and standing skills. 
+
+They are increasingly inspired and motivated to improve their technique and understanding in all areas of acro whilst also being creative, and developing new moves and washing machines. 
+
+Caspian is great in analysing and understanding technical details and Laura's embodiment and implementation of refinements, as well as her excited celebrations compliment their partnership. Together they have built a powerful and balanced teaching dynamic that allows each of their unique personalities and skills to shine together.
+
+They had the opportunity to learn from many highly skilled teachers like Wybren Da Silva, Evan Josef, Pri & Jenn, Mediogiromas and many more who've all ignited the desire to be the best practitioners and teachers they can be!
+
+Their classes are technical, focussed on giving detailed cues, smart progressions, personal coaching and always having safety as a high priority. They both have a background in martial arts which contributed to their interest in safe exit strategies, falling and rolling which they use in their own practice as well as in their teaching. 
+
+They aim to empower their students by sharing a foundational understanding of acro skills, and also by embracing and highlighting the non-physical aspects of acroyoga. With the goal that students will safely and successfully grow their own practice independently. 
+
+As a couple with a training and teaching partnership they experience the continuous opportunity that acroyoga offers to develop in communication, interpersonal skills and mindset, and like to share these benefits with students too. 
+
+Bali is their home base where they run the AcroSpirit community, and organise the AcroSpirit festival, retreats and other acro training events. They also teach internationally and have taught at many amazing acro festivals across Europe and Asia.`,
+    levels: ['Beginner', 'Intermediate', 'Advanced'],
+    instagram: 'https://www.instagram.com/acrospirit/',
+    youtube: 'https://youtube.com/c/TheAcroyogaShow',
   },
   {
     id: 3,
-    name: 'Aria Kowalski',
-    roleTags: ['Therapeutic Flying', 'Beginner Friendly', 'Thai Massage'],
-    imageUrl: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=800&auto=format&fit=crop',
-    location: 'Berlin, Germany',
-    bio: 'Certified yoga therapist combining mindful movement with accessible acro for healing and connection.',
-    levels: ['Beginner', 'Intermediate'],
+    name: 'Manas and Mira',
+    roleTags: ['Flows', 'Washing Machines', 'Elegance'],
+    imageUrl: '/teachers/Manas and Mira/IMG_1800.jpeg',
+    videoUrl: '/teachers/Manas and Mira/Back to training some of our fave moves on day one in Morocco 😍.mp4',
+    location: 'Germany / Sweden',
+    bio: `Mira's joy is contagious, and she loves sharing her passion for Acro Yoga. Based in Germany, she discovered Acro as the perfect mix of movement, play, and connection. For her, it's more than just strength and flexibility—it's about trust, growth, and finding balance in every way.
+
+She's trained with amazing teachers and traveled the world to deepen her practice. But more than anything, she believes Acro is about community—creating a playful, safe space where everyone feels welcome to explore, express, and lift each other up (literally!).
+
+Manas, originally from India, finds joy in AcroYoga as it brings him to a state of complete presence. He embraces the fun in the process of attempting and failing repeatedly. Manas's passion lies in exploring new, unconventional acro transitions and delving into the technical aspects to achieve simplicity and elegance. As a certified teacher with The Acro Way, he has shared his knowledge at various international Acro conventions and conducts regular workshops in Stockholm. His expertise lies in Acro flow, Slackro, Icarians, and Whips, focusing on teaching funky and goofy as well as elegant and spinny flows.`,
+    levels: ['Intermediate', 'Advanced'],
+    instagram: 'https://www.instagram.com/manas_acro_addict/',
   },
   {
     id: 4,
-    name: 'Marcus Johnson',
-    roleTags: ['Hand-to-Hand', 'Strength Training', 'Advanced Technique'],
-    imageUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop',
-    location: 'Los Angeles, USA',
-    bio: 'Competition gymnast turned acro specialist, focusing on precision and progressive skill development.',
-    levels: ['Advanced'],
-  },
-  {
-    id: 5,
-    name: 'Mei Zhang',
-    roleTags: ['Trio Acro', 'Choreography', 'Performance'],
-    imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop',
-    location: 'Singapore',
-    bio: 'Award-winning choreographer creating stunning group acrobatic performances for stage and festivals.',
-    levels: ['Intermediate', 'Advanced'],
-  },
-  {
-    id: 6,
-    name: 'Diego Silva',
-    roleTags: ['Inverse', 'Icarian', 'Creative Flow'],
-    imageUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop',
-    location: 'Rio de Janeiro, Brazil',
-    bio: 'Pioneer of innovative inverse techniques blending capoeira movement with contemporary acrobatics.',
-    levels: ['Intermediate', 'Advanced'],
-  },
-  {
-    id: 7,
-    name: 'Emma Larsson',
-    roleTags: ['Beginner Foundations', 'Safety & Spotting', 'Community Building'],
-    imageUrl: 'https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?q=80&w=800&auto=format&fit=crop',
-    location: 'Stockholm, Sweden',
-    bio: 'Passionate about making acro accessible to everyone through clear communication and patient guidance.',
-    levels: ['Beginner'],
-  },
-  {
-    id: 8,
-    name: 'Raj Patel',
-    roleTags: ['Partner Yoga', 'Flexibility', 'Mindful Movement'],
-    imageUrl: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop',
-    location: 'Mumbai, India',
-    bio: 'Blending traditional yoga philosophy with modern partner acrobatics for balanced practice.',
+    name: 'Maria and Flo',
+    roleTags: ['Flows', 'Poses', 'Washing Machines'],
+    imageUrl: '/teachers/Maria and Flo/AcroFlo-47.jpg',
+    videoUrl: '/teachers/Maria and Flo/AcroGarden.mov',
+    location: 'Malta',
+    bio: `Maria discovered AcroYoga four years ago in Malta and it was love at first fly! Coming from a background in dance, yoga and pole dancing, she found AcroYoga to be an incredible way to build trust and connection, both with herself and others.
+
+Her desire to improve her skills and challenge herself, led Maria to travel to Bali and Thailand, where she joined bigger and vibrant AcroYoga communities to deepen her practice.
+
+For Maria, AcroYoga isn't just exercise; it's a super fun journey of self-discovery. It's helping her overcome fears and boost confidence, filling her days with joy and excitement.
+
+Together with Flo, they organize workshops for beginners and improvers, aiming to spread the love for this wonderful practice and expand the AcroYoga community in Malta.
+
+AcroYoga has been Flo's jam since the summer of 2018 and he's loved spinning, popping and turning people ever since. He's also known to step into the role of a flyer himself at times. 
+
+Flo's approach to AcroYoga is simple: Safety is Sexy!
+
+In addition to his Acroyoga experience, Flo is also a Yoga Teacher, Thai Massage Therapist and Breathwork facilitator. 
+
+Together, they are organizing workshops for beginners with the goal to share this wonderful practice and expand the AcroYoga community in Malta! Hosting the MAC since 2024 and inviting more and more people to Malta has been one of the biggest joys and we can't wait for the third edition of the MAC.`,
     levels: ['Beginner', 'Intermediate'],
-  },
-  {
-    id: 9,
-    name: 'Yuki Tanaka',
-    roleTags: ['Pops & Whips', 'Dynamics', 'Precision'],
-    imageUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop',
-    location: 'Tokyo, Japan',
-    bio: 'Master of dynamic transitions and explosive movements with a focus on technical excellence.',
-    levels: ['Advanced'],
-  },
-  {
-    id: 10,
-    name: 'Isabella Costa',
-    roleTags: ['Trio & Group', 'Pyramids', 'Transitions'],
-    imageUrl: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=800&auto=format&fit=crop',
-    location: 'Lisbon, Portugal',
-    bio: 'Specializes in group dynamics and creative formations for festivals and community jams.',
-    levels: ['Intermediate', 'Advanced'],
-  },
-  {
-    id: 11,
-    name: 'Oliver Schmidt',
-    roleTags: ['Basing Fundamentals', 'Body Awareness', 'Alignment'],
-    imageUrl: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop',
-    location: 'Munich, Germany',
-    bio: 'Physical therapist bringing anatomical understanding to safe and sustainable acro practice.',
-    levels: ['Beginner', 'Intermediate'],
-  },
-  {
-    id: 12,
-    name: 'Zara Williams',
-    roleTags: ['Flying Skills', 'Aerial Awareness', 'Creative Expression'],
-    imageUrl: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop',
-    location: 'Melbourne, Australia',
-    bio: 'Aerial artist and acro flyer exploring the intersection of trust, play, and artistic movement.',
-    levels: ['Beginner', 'Intermediate', 'Advanced'],
+    instagram: 'https://www.instagram.com/acroyoga_malta/',
   },
 ];
 
@@ -175,13 +156,58 @@ export default function TeachersPage() {
               <Reveal key={teacher.id} delay={index * 0.05}>
                 <TeacherCard
                   name={teacher.name}
+                  duoName={teacher.duoName}
                   roleTags={teacher.roleTags}
                   imageUrl={teacher.imageUrl}
+                  videoUrl={teacher.videoUrl}
                   location={teacher.location}
                   bio={teacher.bio}
+                  instagram={teacher.instagram}
+                  youtube={teacher.youtube}
+                  website={teacher.website}
                 />
               </Reveal>
             ))}
+            
+            {/* More Teachers Coming Soon Card */}
+            <Reveal delay={teachers.length * 0.05}>
+              <article className="bg-gradient-to-br from-brand-sand/30 to-brand-sun/20 rounded-2xl overflow-hidden border-2 border-dashed border-brand-sea/30 hover:border-brand-sea/50 transition-all duration-300 flex flex-col items-center justify-center min-h-[400px] p-8">
+                <div className="text-center space-y-4">
+                  {/* Icon */}
+                  <div className="w-20 h-20 mx-auto bg-brand-sea/10 rounded-full flex items-center justify-center">
+                    <svg
+                      className="w-10 h-10 text-brand-sea"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                  </div>
+                  
+                  {/* Title */}
+                  <h3 className="text-2xl font-serif font-bold text-brand-sea">
+                    More Teachers
+                  </h3>
+                  
+                  {/* Subtitle */}
+                  <p className="text-lg text-zinc-600 font-medium">
+                    Announced Soon
+                  </p>
+                  
+                  {/* Description */}
+                  <p className="text-sm text-zinc-500 max-w-xs">
+                    Stay tuned for exciting announcements about additional world-class instructors joining MAC 2026
+                  </p>
+                </div>
+              </article>
+            </Reveal>
           </div>
         </div>
       </section>

@@ -9,7 +9,21 @@ import FinalCTA from './components/FinalCTA';
 import VenueSection from './components/VenueSection';
 import MemoryStrip from './components/MemoryStrip';
 import Button from './components/Button';
+import StructuredData from './components/StructuredData';
 import dynamic from 'next/dynamic';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Mediterranean Acro Convention 2026 | Luxury Acroyoga in Malta",
+  description: "The world's most luxurious acroyoga convention. Oct 7-11, 2026 at Malta's 4-star Riviera Spa Hotel. 40+ workshops, world-class teachers, all-inclusive package with accommodation and meals.",
+  openGraph: {
+    title: "Mediterranean Acro Convention 2026 | Malta's Premier Acroyoga Event",
+    description: "5 days of elite acro training in paradise. Luxury resort, international teachers, all-inclusive experience. Oct 7-11, 2026.",
+  },
+  alternates: {
+    canonical: "https://mediterraneanacroconvention.com",
+  },
+};
 
 // Lazy load components below the fold for better initial load
 const DynamicSchedulePreview = dynamic(() => import('./components/SchedulePreview'), {
@@ -27,6 +41,8 @@ const DynamicFaqAccordion = dynamic(() => import('./components/FaqAccordion'), {
 export default function Home() {
   return (
     <main>
+      <StructuredData />
+      
       {/* 1. Parallax Hero */}
       <ParallaxHero
         backgroundVideo="/MACYoutube4K.mp4"

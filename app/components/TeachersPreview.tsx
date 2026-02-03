@@ -6,60 +6,60 @@ import Button from './Button';
 interface Teacher {
   id: number;
   name: string;
+  duoName?: string;
   roleTags: string[];
   imageUrl: string;
+  videoUrl?: string;
   location?: string;
   bio?: string;
+  instagram?: string;
+  youtube?: string;
+  website?: string;
 }
 
 const teachers: Teacher[] = [
   {
     id: 1,
-    name: 'Sofia Martinez',
-    roleTags: ['L-Basing', 'Washing Machines', 'Pops'],
-    imageUrl: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop',
-    location: 'Barcelona, Spain',
-    bio: 'International performer and teacher specializing in dynamic acrobatics with 15+ years of experience.',
+    name: 'Coni and Mati',
+    duoName: 'Acro Conciencia',
+    roleTags: ['Whips', 'Whip-Pops', 'Icarians'],
+    imageUrl: '/teachers/Coni and Mati/20230222_202131.jpg',
+    videoUrl: '/teachers/Coni and Mati/20250404_143043.mp4',
+    location: 'Chile',
+    bio: `We are Coni and Mati, two movement lovers who found in Acroyoga a magical way to connect. We love exploring the endless possibilities that arise when two bodies move together — searching for softness, reaching for height, and discovering new ways to flow in connection.`,
+    instagram: 'https://www.instagram.com/acro.conciencia/',
   },
   {
     id: 2,
-    name: 'Liam Chen',
-    roleTags: ['Standing Acro', 'Icarian Games', 'Partner Flow'],
-    imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop',
-    location: 'Vancouver, Canada',
-    bio: 'Former Cirque performer bringing theatrical artistry to standing acrobatics and dynamic sequences.',
+    name: 'Caspian and Laura',
+    duoName: 'AcroSpirit',
+    roleTags: ['Flows', 'Icarians', 'Acro Dance', 'Pops'],
+    imageUrl: '/teachers/Caspian and Laura/Vertical Headshots Cuddle.jpg',
+    videoUrl: '/teachers/Caspian and Laura/Vertical Bali 2023 L-base Part2 Highlights Reel.MP4',
+    location: 'Bali, Indonesia',
+    bio: `Caspian and Laura are acro teachers who strive to be skilled in all areas of acro. They enjoy teaching students of all levels, and enjoy the different challenges and disciplines that acroyoga has to offer.`,
+    instagram: 'https://www.instagram.com/acrospirit/',
+    youtube: 'https://youtube.com/c/TheAcroyogaShow',
   },
   {
     id: 3,
-    name: 'Aria Kowalski',
-    roleTags: ['Therapeutic Flying', 'Beginner Friendly', 'Thai Massage'],
-    imageUrl: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=800&auto=format&fit=crop',
-    location: 'Berlin, Germany',
-    bio: 'Certified yoga therapist combining mindful movement with accessible acro for healing and connection.',
+    name: 'Manas and Mira',
+    roleTags: ['Flows', 'Washing Machines', 'Elegance'],
+    imageUrl: '/teachers/Manas and Mira/IMG_1800.jpeg',
+    videoUrl: '/teachers/Manas and Mira/Back to training some of our fave moves on day one in Morocco 😍.mp4',
+    location: 'Germany / Sweden',
+    bio: `Mira's joy is contagious, and she loves sharing her passion for Acro Yoga. Based in Germany, she discovered Acro as the perfect mix of movement, play, and connection.`,
+    instagram: 'https://www.instagram.com/manas_acro_addict/',
   },
   {
     id: 4,
-    name: 'Marcus Johnson',
-    roleTags: ['Hand-to-Hand', 'Strength Training', 'Advanced Technique'],
-    imageUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop',
-    location: 'Los Angeles, USA',
-    bio: 'Competition gymnast turned acro specialist, focusing on precision and progressive skill development.',
-  },
-  {
-    id: 5,
-    name: 'Mei Zhang',
-    roleTags: ['Trio Acro', 'Choreography', 'Performance'],
-    imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=800&auto=format&fit=crop',
-    location: 'Singapore',
-    bio: 'Award-winning choreographer creating stunning group acrobatic performances for stage and festivals.',
-  },
-  {
-    id: 6,
-    name: 'Diego Silva',
-    roleTags: ['Inverse', 'Icarian', 'Creative Flow'],
-    imageUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=800&auto=format&fit=crop',
-    location: 'Rio de Janeiro, Brazil',
-    bio: 'Pioneer of innovative inverse techniques blending capoeira movement with contemporary acrobatics.',
+    name: 'Maria and Flo',
+    roleTags: ['Flows', 'Poses', 'Washing Machines'],
+    imageUrl: '/teachers/Maria and Flo/AcroFlo-47.jpg',
+    videoUrl: '/teachers/Maria and Flo/AcroGarden.mov',
+    location: 'Malta',
+    bio: `Maria discovered AcroYoga four years ago in Malta and it was love at first fly! Together with Flo, they organize workshops for beginners and improvers, aiming to spread the love for this wonderful practice.`,
+    instagram: 'https://www.instagram.com/acroyoga_malta/',
   },
 ];
 
@@ -88,20 +88,65 @@ const TeachersPreview: FC = () => {
             <Reveal key={teacher.id} delay={index * 0.1}>
               <TeacherCard
                 name={teacher.name}
+                duoName={teacher.duoName}
                 roleTags={teacher.roleTags}
                 imageUrl={teacher.imageUrl}
+                videoUrl={teacher.videoUrl}
                 location={teacher.location}
                 bio={teacher.bio}
+                instagram={teacher.instagram}
+                youtube={teacher.youtube}
+                website={teacher.website}
               />
             </Reveal>
           ))}
+          
+          {/* More Teachers Coming Soon Card */}
+          <Reveal delay={teachers.length * 0.1}>
+            <article className="bg-gradient-to-br from-brand-sand/30 to-brand-sun/20 rounded-2xl overflow-hidden border-2 border-dashed border-brand-sea/30 hover:border-brand-sea/50 transition-all duration-300 flex flex-col items-center justify-center min-h-[400px] p-8">
+              <div className="text-center space-y-4">
+                {/* Icon */}
+                <div className="w-20 h-20 mx-auto bg-brand-sea/10 rounded-full flex items-center justify-center">
+                  <svg
+                    className="w-10 h-10 text-brand-sea"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 4v16m8-8H4"
+                    />
+                  </svg>
+                </div>
+                
+                {/* Title */}
+                <h3 className="text-2xl font-serif font-bold text-brand-sea">
+                  More Teachers
+                </h3>
+                
+                {/* Subtitle */}
+                <p className="text-lg text-zinc-600 font-medium">
+                  Announced Soon
+                </p>
+                
+                {/* Description */}
+                <p className="text-sm text-zinc-500 max-w-xs">
+                  Stay tuned for exciting announcements about additional world-class instructors
+                </p>
+              </div>
+            </article>
+          </Reveal>
         </div>
 
         {/* CTA Button */}
         <Reveal delay={0.6}>
           <div className="flex justify-center">
             <Button
-              href="#all-teachers"
+              href="/teachers"
               variant="primary"
               size="lg"
             >

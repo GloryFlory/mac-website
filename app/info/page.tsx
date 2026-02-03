@@ -2,8 +2,25 @@ import { Metadata } from 'next';
 import Reveal from '../components/Reveal';
 
 export const metadata: Metadata = {
-  title: 'Event Info | Mediterranean Acro Convention 2026',
-  description: 'Everything you need to know about attending MAC 2026 in Malta: travel, accommodation, what to bring, and more.',
+  title: 'Travel & Event Info | MAC 2026 Malta | Complete Guide',
+  description: 'Complete guide for MAC 2026: flights to Malta, accommodation details, what to pack, dietary info, visa requirements. Everything you need for Oct 7-11, 2026.',
+  keywords: [
+    'malta travel guide',
+    'how to get to malta',
+    'malta acro convention info',
+    'malta accommodation',
+    'malta visa requirements',
+    'what to pack malta',
+    'malta airport transfer',
+    'acroyoga event malta',
+  ],
+  openGraph: {
+    title: 'Travel & Event Info | Mediterranean Acro Convention 2026',
+    description: 'Everything you need to know for MAC 2026 in Malta. Travel, accommodation, packing list, and more.',
+  },
+  alternates: {
+    canonical: "https://mediterraneanacroconvention.com/info",
+  },
 };
 
 export default function InfoPage() {

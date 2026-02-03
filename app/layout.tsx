@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { inter, playfair } from './fonts';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import "./globals.css";
 
 export const viewport: Viewport = {
@@ -10,14 +11,73 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Mediterranean Acro Convention 2026 | Malta",
-  description: "Five days of world-class acro training, connection, and Mediterranean sunsets. Oct 7-11, 2026 in Malta. Join 40+ workshops with international teachers.",
-  keywords: ["acro yoga", "acrobatics", "malta", "convention", "workshop", "mediterranean"],
+  metadataBase: new URL('https://mediterraneanacroconvention.com'),
+  title: {
+    default: "Mediterranean Acro Convention 2026 | Malta | Oct 7-11",
+    template: "%s | Mediterranean Acro Convention 2026"
+  },
+  description: "Join the world's most luxurious acroyoga convention. 5 days of elite training at Malta's 4-star Riviera Spa Hotel. Oct 7-11, 2026. 40+ workshops, international teachers, all-inclusive experience.",
+  keywords: [
+    "acro yoga malta",
+    "acroyoga convention",
+    "acro convention 2026",
+    "mediterranean acro",
+    "acrobatics malta",
+    "acroyoga festival",
+    "acro training malta",
+    "partner acrobatics",
+    "acro workshops",
+    "luxury yoga retreat malta",
+    "riviera spa hotel malta",
+    "malta fitness retreat",
+    "acro teachers",
+    "international acro event"
+  ],
+  authors: [{ name: "Mediterranean Acro Convention" }],
+  creator: "Mediterranean Acro Convention",
+  publisher: "Mediterranean Acro Convention",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
-    title: "Mediterranean Acro Convention 2026",
-    description: "Five days of world-class acro training in Malta. Oct 7-11, 2026.",
     type: "website",
     locale: "en_US",
+    url: "https://mediterraneanacroconvention.com",
+    siteName: "Mediterranean Acro Convention",
+    title: "Mediterranean Acro Convention 2026 | World's Most Luxurious Acroyoga Event",
+    description: "5 days of elite acro training at Malta's luxury Riviera Spa Hotel. Oct 7-11, 2026. 40+ workshops with world-class teachers. All-inclusive experience.",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Mediterranean Acro Convention 2026 - Malta",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mediterranean Acro Convention 2026 | Malta",
+    description: "5 days of world-class acro training in Malta. Oct 7-11, 2026.",
+    images: ["/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    // Add these when available:
+    // google: 'your-google-verification-code',
+    // yandex: 'your-yandex-verification-code',
   },
 };
 
@@ -31,6 +91,7 @@ export default function RootLayout({
       <body className="antialiased">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
