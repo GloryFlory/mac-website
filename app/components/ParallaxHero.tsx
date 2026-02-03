@@ -129,13 +129,13 @@ export default function ParallaxHero({
             style={{ zIndex: 1 }}
           />
           
-          {/* Video loads in background and takes over when ready */}
+          {/* Video loads only on desktop (hidden on mobile for performance) */}
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto object-cover opacity-0 transition-opacity duration-1000"
+            className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto object-cover opacity-0 transition-opacity duration-1000"
             style={{
               width: '100vw',
               height: '100vh',

@@ -48,7 +48,7 @@ export default function Home() {
         backgroundVideo="/MACYoutube4K.mp4"
         overlay={true}
       >
-        <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+        <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 text-center pt-8 sm:pt-0">
           {/* Event Name */}
           <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-6 leading-[1.1]" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.8), 0 0 30px rgba(0,0,0,0.6), 0 0 40px rgba(0,0,0,0.4)' }}>
             Mediterranean Acro
