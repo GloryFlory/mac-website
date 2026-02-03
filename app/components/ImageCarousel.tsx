@@ -1,6 +1,6 @@
 'use client';
 
-import { FC, useState } from 'react';
+import { FC, useState, useRef, TouchEvent } from 'react';
 import Image from 'next/image';
 
 interface ImageCarouselProps {
@@ -11,6 +11,8 @@ interface ImageCarouselProps {
 const ImageCarousel: FC<ImageCarouselProps> = ({ images, alt }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState<'left' | 'right'>('right');
+  const touchStartX = useRef<number>(0);
+  const touchEndX = useRef<number>(0);
 
   const goToPrevious = () => {
     setDirection('left');
@@ -31,8 +33,43 @@ const ImageCarousel: FC<ImageCarouselProps> = ({ images, alt }) => {
     setCurrentIndex(index);
   };
 
+  // Touch handlers for swipe gestures
+  const handleTouchStart = (e: TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e: TouchEvent) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStartX.current || !touchEndX.current) return;
+    
+    const distance = touchStartX.current - touchEndX.current;
+    const minSwipeDistance = 50; // minimum distance for a swipe
+
+    if (Math.abs(distance) > minSwipeDistance) {
+      if (distance > 0) {
+        // Swiped left - go to next
+        goToNext();
+      } else {
+        // Swiped right - go to previous
+        goToPrevious();
+      }
+    }
+
+    // Reset values
+    touchStartX.current = 0;
+    touchEndX.current = 0;
+  };
+
   return (
-    <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl group">
+    <div 
+      className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl group"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+    >
       {/* Main Image Container with stacked effect */}
       <div className="relative w-full h-full">
         {/* Background stacked images effect */}
@@ -61,7 +98,7 @@ const ImageCarousel: FC<ImageCarouselProps> = ({ images, alt }) => {
       {/* Navigation Arrows */}
       <button
         onClick={goToPrevious}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-white/90 hover:bg-white rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-110 backdrop-blur-sm"
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-white/90 hover:bg-white rounded-full shadow-lg md:opacity-0 md:group-hover:opacity-100 transition-all duration-300 hover:scale-110 backdrop-blur-sm"
         aria-label="Previous image"
       >
         <svg
@@ -81,7 +118,7 @@ const ImageCarousel: FC<ImageCarouselProps> = ({ images, alt }) => {
 
       <button
         onClick={goToNext}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-white/90 hover:bg-white rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300 hover:scale-110 backdrop-blur-sm"
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-white/90 hover:bg-white rounded-full shadow-lg md:opacity-0 md:group-hover:opacity-100 transition-all duration-300 hover:scale-110 backdrop-blur-sm"
         aria-label="Next image"
       >
         <svg
