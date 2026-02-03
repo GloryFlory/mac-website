@@ -11,7 +11,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mediterraneanacroconvention.com'),
+  metadataBase: new URL('https://www.acrointhesun.com'),
   title: {
     default: "Mediterranean Acro Convention 2026 | Malta | Oct 7-11",
     template: "%s | Mediterranean Acro Convention 2026"
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://mediterraneanacroconvention.com",
+    url: "https://www.acrointhesun.com",
     siteName: "Mediterranean Acro Convention",
     title: "Mediterranean Acro Convention 2026 | World's Most Luxurious Acroyoga Event",
     description: "5 days of elite acro training at Malta's luxury Riviera Spa Hotel. Oct 7-11, 2026. 40+ workshops with world-class teachers. All-inclusive experience.",

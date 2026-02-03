@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: "4-star luxury resort in Malta. Private beach, spa, pools, buffet dining. Your perfect acro convention home.",
   },
   alternates: {
-    canonical: "https://mediterraneanacroconvention.com/venue",
+    canonical: "https://www.acrointhesun.com/venue",
   },
 };
 

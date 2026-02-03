@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: 'Everything you need to know for MAC 2026 in Malta. Travel, accommodation, packing list, and more.',
   },
   alternates: {
-    canonical: "https://mediterraneanacroconvention.com/info",
+    canonical: "https://www.acrointhesun.com/info",
   },
 };
 

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://mediterraneanacroconvention.com/privacy",
+    canonical: "https://www.acrointhesun.com/privacy",
   },
 };
 

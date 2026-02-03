@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: '40+ workshops with world-class teachers. Filter by level and style. Plan your perfect acro experience.',
   },
   alternates: {
-    canonical: "https://mediterraneanacroconvention.com/schedule",
+    canonical: "https://www.acrointhesun.com/schedule",
   },
 };
 

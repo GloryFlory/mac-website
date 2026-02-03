@@ -4,7 +4,7 @@ export default function StructuredData() {
     "@type": "Event",
     "name": "Mediterranean Acro Convention 2026",
     "description": "The world's most luxurious acroyoga convention. 5 days of elite training at Malta's 4-star Riviera Spa Hotel with 40+ workshops and international teachers.",
-    "image": "https://mediterraneanacroconvention.com/og-image.jpg",
+    "image": "https://www.acrointhesun.com/og-image.jpg",
     "startDate": "2026-10-07",
     "endDate": "2026-10-11",
     "eventStatus": "https://schema.org/EventScheduled",
@@ -21,7 +21,7 @@ export default function StructuredData() {
     "organizer": {
       "@type": "Organization",
       "name": "Mediterranean Acro Convention",
-      "url": "https://mediterraneanacroconvention.com",
+      "url": "https://www.acrointhesun.com",
       "sameAs": [
         "https://www.instagram.com/mediterranean_acro_convention/",
         "https://www.facebook.com/MediterraneanAcroConvention/",
@@ -59,8 +59,8 @@ export default function StructuredData() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Mediterranean Acro Convention",
-    "url": "https://mediterraneanacroconvention.com",
-    "logo": "https://mediterraneanacroconvention.com/icon.png",
+    "url": "https://www.acrointhesun.com",
+    "logo": "https://www.acrointhesun.com/icon.png",
     "description": "The world's most luxurious acroyoga convention, hosted annually in Malta.",
     "email": "mediterraneanacroconvention@gmail.com",
     "sameAs": [

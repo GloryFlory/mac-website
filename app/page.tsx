@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: "5 days of elite acro training in paradise. Luxury 4-star resort, international teachers, all-inclusive experience. Oct 7-11, 2026.",
   },
   alternates: {
-    canonical: "https://mediterraneanacroconvention.com",
+    canonical: "https://www.acrointhesun.com",
   },
 };
 

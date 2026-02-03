@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://mediterraneanacroconvention.com/terms",
+    canonical: "https://www.acrointhesun.com/terms",
   },
 };
 
