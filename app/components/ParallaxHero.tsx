@@ -118,30 +118,35 @@ export default function ParallaxHero({
       {/* Background - either video or image with parallax */}
       {isVideo ? (
         <div className="absolute inset-0 w-full h-full overflow-hidden">
-          {/* Loading gradient while video loads */}
-          <div className="absolute inset-0 bg-gradient-to-br from-brand-sea via-brand-sea/90 to-brand-sand animate-pulse" />
+          {/* Hero poster image - shows immediately */}
+          <Image
+            src="/HeroScreenshot.png"
+            alt="Mediterranean Acro Convention"
+            fill
+            priority
+            quality={90}
+            className="absolute inset-0 object-cover"
+            style={{ zIndex: 1 }}
+          />
           
-          {/* Local video for development */}
+          {/* Video loads in background and takes over when ready */}
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto object-cover"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto object-cover opacity-0 transition-opacity duration-1000"
             style={{
               width: '100vw',
               height: '100vh',
+              zIndex: 2,
             }}
             onLoadedData={(e) => {
-              // Hide loading gradient when video is ready
-              const loadingDiv = e.currentTarget.previousElementSibling;
-              if (loadingDiv) {
-                (loadingDiv as HTMLElement).style.display = 'none';
-              }
+              // Fade in video when ready
+              e.currentTarget.style.opacity = '1';
             }}
             onError={(e) => {
-              // If video fails to load, keep gradient visible
-              console.error('Video failed to load');
+              console.error('Video failed to load, keeping poster image');
             }}
           >
             <source src={backgroundVideo} type="video/mp4" />
