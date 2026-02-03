@@ -32,7 +32,7 @@ export default function ParallaxHero({
   // Randomly select one of the hero videos on mount
   useEffect(() => {
     if (backgroundVideo) {
-      const heroVideos = ['/MACHero1.mp4', '/MACHero2.mp4', '/MACHero3.mp4'];
+      const heroVideos = ['/MACHero1.mp4', '/MACHero2.mp4', '/MACHero3.mp4', '/MACHero4.mp4', '/MACHero5.mp4'];
       const randomVideo = heroVideos[Math.floor(Math.random() * heroVideos.length)];
       setSelectedVideo(randomVideo);
     }
