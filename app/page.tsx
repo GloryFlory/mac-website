@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   title: "Mediterranean Acro Convention 2026 | Luxury Acroyoga in Malta",
   description: "The world's most luxurious acroyoga convention. Oct 7-11, 2026 at Malta's 4-star Riviera Spa Hotel. 40+ workshops, world-class teachers, all-inclusive package with accommodation and meals.",
   openGraph: {
-    title: "Mediterranean Acro Convention 2026 | Malta's Premier Acroyoga Event",
-    description: "5 days of elite acro training in paradise. Luxury resort, international teachers, all-inclusive experience. Oct 7-11, 2026.",
+    title: "Mediterranean Acro Convention 2026 | The Most Luxurious Acroyoga Event",
+    description: "5 days of elite acro training in paradise. Luxury 4-star resort, international teachers, all-inclusive experience. Oct 7-11, 2026.",
   },
   alternates: {
     canonical: "https://mediterraneanacroconvention.com",
