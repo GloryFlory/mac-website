@@ -19,6 +19,7 @@ export default function ParallaxHero({
   const containerRef = useRef<HTMLDivElement>(null);
   const backgroundRef = useRef<HTMLDivElement>(null);
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  const [selectedVideo, setSelectedVideo] = useState<string>('');
   
   // Target position for smooth easing
   const targetPosition = useRef({ x: 0, y: 0 });
@@ -27,6 +28,15 @@ export default function ParallaxHero({
   const [imageLoaded, setImageLoaded] = useState(false);
 
   const isVideo = !!backgroundVideo;
+
+  // Randomly select one of the hero videos on mount
+  useEffect(() => {
+    if (backgroundVideo) {
+      const heroVideos = ['/MACHero1.mp4', '/MACHero2.mp4', '/MACHero3.mp4'];
+      const randomVideo = heroVideos[Math.floor(Math.random() * heroVideos.length)];
+      setSelectedVideo(randomVideo);
+    }
+  }, [backgroundVideo]);
 
   useEffect(() => {
     // Check for reduced motion preference
@@ -149,7 +159,7 @@ export default function ParallaxHero({
               console.error('Video failed to load, keeping poster image');
             }}
           >
-            <source src={backgroundVideo} type="video/mp4" />
+            <source src={selectedVideo || backgroundVideo} type="video/mp4" />
           </video>
         </div>
       ) : (
