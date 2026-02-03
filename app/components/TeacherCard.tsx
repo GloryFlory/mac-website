@@ -181,7 +181,7 @@ const TeacherCard: FC<TeacherCardProps> = ({
             {/* Side by Side: Video and Bio */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
               {/* Left: Video/Image */}
-              <div className="relative aspect-[9/16] w-full overflow-hidden rounded-2xl bg-brand-sand/10">
+              <div className="relative aspect-[9/16] md:aspect-[9/16] w-full overflow-hidden rounded-2xl bg-brand-sand/10">
                 {hasExpandedVideo ? (
                   <video
                     src={videoUrl}
@@ -204,9 +204,9 @@ const TeacherCard: FC<TeacherCardProps> = ({
               </div>
 
               {/* Right: Bio and Social */}
-              <div className="flex flex-col justify-between">
+              <div className="flex flex-col">
                 {bio && (
-                  <div className="text-zinc-700 leading-relaxed mb-6 overflow-y-auto max-h-[60vh]">
+                  <div className="text-zinc-700 leading-relaxed mb-6">
                     {bio.split('\n\n').map((paragraph, idx) => (
                       <p key={idx} className="mb-4 last:mb-0">
                         {paragraph}
