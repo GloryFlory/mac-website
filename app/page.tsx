@@ -201,14 +201,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 7. Schedule Preview - White Background */}
-      <section id="schedule" className="scroll-mt-20">
-        <DynamicSchedulePreview />
-      </section>
-
-      {/* 8. Pricing Section - Sand Background */}
+      {/* 7. Pricing Section - Sand Background */}
       <section id="pricing" className="scroll-mt-20">
         <DynamicPricingSection />
+      </section>
+
+      {/* 8. Schedule Preview - White Background */}
+      <section id="schedule" className="scroll-mt-20">
+        <DynamicSchedulePreview />
       </section>
 
       {/* 9. FAQ Section - White Background */}
