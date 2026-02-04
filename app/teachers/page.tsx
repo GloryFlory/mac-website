@@ -79,7 +79,7 @@ Their expertise lies in Whips, Pops, and Icarians - the dynamic side of acroyoga
 
 With their combined experience and complementary teaching styles, Michal and Sara create an environment where students can push their boundaries and achieve new heights in their acro practice.`,
     levels: ['Intermediate', 'Advanced'],
-    instagram: 'https://www.instagram.com/acro_misaris/',
+    instagram: 'https://www.instagram.com/misaris_acro/',
   },
   {
     id: 4,
