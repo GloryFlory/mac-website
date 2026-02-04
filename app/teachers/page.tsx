@@ -67,6 +67,22 @@ Bali is their home base where they run the AcroSpirit community, and organise th
   },
   {
     id: 3,
+    name: 'Michal and Sara',
+    duoName: 'Acro Misaris',
+    roleTags: ['Whips', 'Pops', 'Icarians'],
+    imageUrl: '/teachers/Michal and Sara/472529068_18033178583442028_7109940112774191055_n.jpg',
+    videoUrl: '/teachers/Michal and Sara/AQMuydaPPC31VQIJj7EbpXt-HNolmjsNis836XvE7CLyu32uRiyXlPRvuXO9dCWAOxyKIRAY0snUzHRMWzlsnBmLGQIxhlPU4kIPe0k.mp4',
+    location: 'Slovakia',
+    bio: `Michal and Sara are dynamic acroyoga teachers from Slovakia, specializing in the explosive and technical elements of acrobatics. Known as Acro Misaris, they bring high energy and precision to their teaching.
+
+Their expertise lies in Whips, Pops, and Icarians - the dynamic side of acroyoga that requires power, timing, and trust. They're passionate about helping students master these challenging skills while maintaining safety and proper technique.
+
+With their combined experience and complementary teaching styles, Michal and Sara create an environment where students can push their boundaries and achieve new heights in their acro practice.`,
+    levels: ['Intermediate', 'Advanced'],
+    instagram: 'https://www.instagram.com/acro_misaris/',
+  },
+  {
+    id: 4,
     name: 'Manas and Mira',
     roleTags: ['Flows', 'Washing Machines', 'Elegance'],
     imageUrl: '/teachers/Manas and Mira/IMG_1800.jpeg',
@@ -81,7 +97,7 @@ Manas, originally from India, finds joy in AcroYoga as it brings him to a state 
     instagram: 'https://www.instagram.com/manas_acro_addict/',
   },
   {
-    id: 4,
+    id: 5,
     name: 'Maria and Flo',
     roleTags: ['Flows', 'Poses', 'Washing Machines'],
     imageUrl: '/teachers/Maria and Flo/AcroFlo-47.jpg',

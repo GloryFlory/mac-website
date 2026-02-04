@@ -16,10 +16,12 @@ export const metadata: Metadata = {
     default: "Mediterranean Acro Convention 2026 | Malta | Oct 7-11",
     template: "%s | Mediterranean Acro Convention 2026"
   },
-  description: "Join the world's most luxurious acroyoga convention. 5 days of elite training at Malta's 4-star Riviera Spa Hotel. Oct 7-11, 2026. 40+ workshops, international teachers, all-inclusive experience.",
+  description: "Join the world's most luxurious L-Base and Flow acroyoga convention. 5 days of elite training at Malta's 4-star Riviera Spa Hotel. Oct 7-11, 2026. 40+ workshops, international teachers, all-inclusive experience.",
   keywords: [
     "acro yoga malta",
     "acroyoga convention",
+    "l-base acroyoga",
+    "flow acroyoga",
     "acro convention 2026",
     "mediterranean acro",
     "acrobatics malta",

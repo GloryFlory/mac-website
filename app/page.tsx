@@ -14,11 +14,11 @@ import dynamic from 'next/dynamic';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Mediterranean Acro Convention 2026 | Luxury Acroyoga in Malta",
-  description: "The world's most luxurious acroyoga convention. Oct 7-11, 2026 at Malta's 4-star Riviera Spa Hotel. 40+ workshops, world-class teachers, all-inclusive package with accommodation and meals.",
+  title: "Mediterranean Acro Convention 2026 | L-Base & Flow Acroyoga in Malta",
+  description: "The world's most luxurious L-Base and Flow acroyoga convention. Oct 7-11, 2026 at Malta's 4-star Riviera Spa Hotel. 40+ workshops focused on L-Base dynamics and flow, world-class teachers, all-inclusive package.",
   openGraph: {
     title: "Mediterranean Acro Convention 2026 | The Most Luxurious Acroyoga Event",
-    description: "5 days of elite acro training in paradise. Luxury 4-star resort, international teachers, all-inclusive experience. Oct 7-11, 2026.",
+    description: "5 days of elite L-Base and Flow acro training in paradise. Luxury 4-star resort, international teachers, all-inclusive experience. Oct 7-11, 2026.",
   },
   alternates: {
     canonical: "https://www.acrointhesun.com",
@@ -61,9 +61,14 @@ export default function Home() {
             Oct 7–11, 2026 <span style={{ color: '#FFFFFF', opacity: 0.9 }}>•</span> Malta
           </p>
 
+          {/* Specialization Badge */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-sun/90 backdrop-blur-sm rounded-full mb-6">
+            <span className="text-zinc-900 font-semibold text-sm sm:text-base">L-Base & Flow Focused</span>
+          </div>
+
           {/* Tagline */}
           <p className="text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto mb-12 leading-relaxed font-light" style={{ color: '#FFFFFF', textShadow: 'none' }}>
-            Five days of world-class training, connection, and Mediterranean sunsets with the global acro community.
+            Five days of world-class L-Base and Flow training with the global acro community.
           </p>
 
           {/* CTA Buttons */}
