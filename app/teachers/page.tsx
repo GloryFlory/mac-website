@@ -73,11 +73,17 @@ Bali is their home base where they run the AcroSpirit community, and organise th
     imageUrl: '/teachers/Michal and Sara/472529068_18033178583442028_7109940112774191055_n.jpg',
     videoUrl: '/teachers/Michal and Sara/AQMuydaPPC31VQIJj7EbpXt-HNolmjsNis836XvE7CLyu32uRiyXlPRvuXO9dCWAOxyKIRAY0snUzHRMWzlsnBmLGQIxhlPU4kIPe0k.mp4',
     location: 'Slovakia',
-    bio: `Michal and Sara are dynamic acroyoga teachers from Slovakia, specializing in the explosive and technical elements of acrobatics. Known as Acro Misaris, they bring high energy and precision to their teaching.
+    bio: `We are Misaris! (Michal + Sara "Saris")
 
-Their expertise lies in Whips, Pops, and Icarians - the dynamic side of acroyoga that requires power, timing, and trust. They're passionate about helping students master these challenging skills while maintaining safety and proper technique.
+We are a partner and acrobatic duo based in Bratislava, where we conduct regular acroyoga lessons.
 
-With their combined experience and complementary teaching styles, Michal and Sara create an environment where students can push their boundaries and achieve new heights in their acro practice.`,
+Sara is a professional physiotherapist and Michal is a fitness trainer, both of which we are passionate about professionally.
+
+Saris discovered the world of acroyoga more than a decade ago while in high school. When we met five years ago, Michal was quickly smitten by Akroyoga. Thanks to Sara's experience and Michal's rich sporting past, we easily progressed together.
+
+During our cooperation we have participated in a number of domestic and international workshops and festivals, where we not only trained but also coached. We enthusiastically combined our favourite disciplines such as whips, pops and icarians (bouncers) into smooth, harmonious sequences.
+
+Recently we have also ventured into the artistic realm with performances that we have come to love as much as our audiences.`,
     levels: ['Intermediate', 'Advanced'],
     instagram: 'https://www.instagram.com/misaris_acro/',
   },
@@ -113,11 +119,11 @@ Together with Flo, they organize workshops for beginners and improvers, aiming t
 
 AcroYoga has been Flo's jam since the summer of 2018 and he's loved spinning, popping and turning people ever since. He's also known to step into the role of a flyer himself at times. 
 
-Flo's approach to AcroYoga is simple: Safety is Sexy!
+Flo's approach to AcroYoga is simple: The sky's the limit & Safety is Sexy!
 
 In addition to his Acroyoga experience, Flo is also a Yoga Teacher, Thai Massage Therapist and Breathwork facilitator. 
 
-Together, they are organizing workshops for beginners with the goal to share this wonderful practice and expand the AcroYoga community in Malta! Hosting the MAC since 2024 and inviting more and more people to Malta has been one of the biggest joys and we can't wait for the third edition of the MAC.`,
+Together, they are organizing workshops for beginners with the goal to share this wonderful practice and expand the AcroYoga community in Malta! Hosting the very first MAC in 2024 has already brought some of the best teachers around the globe to Malta and the second edition will be even bigger!`,
     levels: ['Beginner', 'Intermediate'],
     instagram: 'https://www.instagram.com/acroyoga_malta/',
   },
