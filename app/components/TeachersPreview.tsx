@@ -36,18 +36,28 @@ Traveling and sharing this practice fills our hearts. We're inspired by discover
   {
     id: 2,
     name: 'Caspian and Laura',
-    duoName: 'Caspian and Laura',
-    roleTags: ['L-Base', 'Flow', 'Whips'],
-    imageUrl: '/teachers/Caspian and Laura/laura_caspian.jpg',
-    videoUrl: '/teachers/Caspian and Laura/AQMm8VPMj4wJaxIlUiDk4RfC-Qbz0c5N3ATyA_KGHWdD0LMQTJsvEMzCvE3Gl2JxNRZe5e5MghGSC0n5P2eJCdZ-4-9NcGnRr5e2C-k.mp4',
-    location: 'Bali',
-    bio: `Caspian and Laura are a UK-based duo who have made a name for themselves with their refined, creative approach to Partner Acrobatics. With a shared background in Gymnastics and over a decade of training together, their work is defined by technical precision, innovative choreography, and seamless flow. They are known for infusing a contemporary, movement-based aesthetic into their practice, often bridging Acro and Dance in unique ways.
+    duoName: 'AcroSpirit',
+    roleTags: ['Flows', 'Icarians', 'Acro Dance', 'Pops'],
+    imageUrl: '/teachers/Caspian and Laura/Vertical Headshots Cuddle.jpg',
+    videoUrl: '/teachers/Caspian and Laura/Vertical Bali 2023 L-base Part2 Highlights Reel.mp4',
+    location: 'Bali, Indonesia',
+    bio: `Caspian and Laura are acro teachers who strive to be skilled in all areas of acro. They enjoy teaching students of all levels, and enjoy the different challenges and disciplines that acroyoga has to offer.
 
-What sets them apart is their deeply collaborative and methodical approach to progression—they break down skills with clarity, offer strategic insights into positioning and mechanics, and help students move from foundational L-Basing all the way into dynamic, high-level training. They are especially recognized for their work in Whips and Flow-based transitions, and their teaching is as polished as their performance.
+They are skilled in Icarians, Hand to Hands, Whips, Standing Acrobatics, Flows, Washing Machines, Therapeutics and more, with a current focus on more dynamic icarian and standing skills. 
 
-Beyond technique, Caspian and Laura bring a calm, supportive teaching presence. They foster confidence, encourage exploration, and create an environment where students feel seen and empowered in their practice.`,
-    instagram: 'https://www.instagram.com/caspiananddlaura/',
-    youtube: 'https://www.youtube.com/@CaspianandLaura',
+They are increasingly inspired and motivated to improve their technique and understanding in all areas of acro whilst also being creative, and developing new moves and washing machines. 
+
+Caspian is great in analysing and understanding technical details and Laura's embodiment and implementation of refinements, as well as her excited celebrations compliment their partnership. Together they have built a powerful and balanced teaching dynamic that allows each of their unique personalities and skills to shine together.
+
+They had the opportunity to learn from many highly skilled teachers like Wybren Da Silva, Evan Josef, Pri & Jenn, Mediogiromas and many more who've all ignited the desire to be the best practitioners and teachers they can be!
+
+Their classes are technical, focussed on giving detailed cues, smart progressions, personal coaching and always having safety as a high priority. They both have a background in martial arts which contributed to their interest in safe exit strategies, falling and rolling which they use in their own practice as well as in their teaching. 
+
+They aim to empower their students by sharing a foundational understanding of acro skills, and also by embracing and highlighting the non-physical aspects of acroyoga. With the goal that students will safely and successfully grow their own practice independently. 
+
+As a couple with a training and teaching partnership they experience the continuous opportunity that acroyoga offers to develop in communication, interpersonal skills and mindset, and like to share these benefits with students too.`,
+    instagram: 'https://www.instagram.com/acrospirit/',
+    youtube: 'https://youtube.com/c/TheAcroyogaShow',
   },
   {
     id: 3,

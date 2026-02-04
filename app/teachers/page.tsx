@@ -42,7 +42,7 @@ Traveling and sharing this practice fills our hearts. We're inspired by discover
     duoName: 'AcroSpirit',
     roleTags: ['Flows', 'Icarians', 'Acro Dance', 'Pops'],
     imageUrl: '/teachers/Caspian and Laura/Vertical Headshots Cuddle.jpg',
-    videoUrl: '/teachers/Caspian and Laura/Vertical Bali 2023 L-base Part2 Highlights Reel.MP4',
+  videoUrl: '/teachers/Caspian and Laura/Vertical Bali 2023 L-base Part2 Highlights Reel.mp4',
     location: 'Bali, Indonesia',
     bio: `Caspian and Laura are acro teachers who strive to be skilled in all areas of acro. They enjoy teaching students of all levels, and enjoy the different challenges and disciplines that acroyoga has to offer.
 
@@ -156,7 +156,7 @@ export default function TeachersPage() {
                 Multiple Teaching Styles
               </div>
               <div className="px-6 py-2.5 rounded-full bg-brand-sand/20 text-brand-sea font-medium text-sm border border-brand-sand/40">
-                International Faculty
+                Experienced Instructors
               </div>
             </div>
           </Reveal>
