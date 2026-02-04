@@ -43,6 +43,17 @@ const teachers: Teacher[] = [
   },
   {
     id: 3,
+    name: 'Michal and Sara',
+    duoName: 'Acro Misaris',
+    roleTags: ['Whips', 'Pops', 'Icarians'],
+    imageUrl: '/teachers/Michal and Sara/472529068_18033178583442028_7109940112774191055_n.jpg',
+    videoUrl: '/teachers/Michal and Sara/AQMuydaPPC31VQIJj7EbpXt-HNolmjsNis836XvE7CLyu32uRiyXlPRvuXO9dCWAOxyKIRAY0snUzHRMWzlsnBmLGQIxhlPU4kIPe0k.mp4',
+    location: 'Slovakia',
+    bio: `We are Misaris! (Michal + Sara "Saris"). We are a partner and acrobatic duo based in Bratislava, where we conduct regular acroyoga lessons. We enthusiastically combine our favourite disciplines such as whips, pops and icarians into smooth, harmonious sequences.`,
+    instagram: 'https://www.instagram.com/misaris_acro/',
+  },
+  {
+    id: 4,
     name: 'Manas and Mira',
     roleTags: ['Flows', 'Washing Machines', 'Elegance'],
     imageUrl: '/teachers/Manas and Mira/IMG_1800.jpeg',
@@ -52,7 +63,7 @@ const teachers: Teacher[] = [
     instagram: 'https://www.instagram.com/manas_acro_addict/',
   },
   {
-    id: 4,
+    id: 5,
     name: 'Maria and Flo',
     roleTags: ['Flows', 'Poses', 'Washing Machines'],
     imageUrl: '/teachers/Maria and Flo/AcroFlo-47.jpg',
