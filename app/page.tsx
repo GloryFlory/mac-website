@@ -15,10 +15,10 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Mediterranean Acro Convention 2026 | L-Base & Flow Acroyoga in Malta",
-  description: "The world's most luxurious L-Base and Flow acroyoga convention. Oct 7-11, 2026 at Malta's 4-star Riviera Spa Hotel. 40+ workshops focused on L-Base dynamics and flow, world-class teachers, all-inclusive package.",
+  description: "The world's most luxurious acroyoga vacation. Oct 7-11, 2026 at Malta's 4-star Riviera Spa Hotel. 5-day L-Base and Flow retreat with world-class teachers, all-inclusive resort package, and Mediterranean paradise.",
   openGraph: {
-    title: "Mediterranean Acro Convention 2026 | The Most Luxurious Acroyoga Event",
-    description: "5 days of elite L-Base and Flow acro training in paradise. Luxury 4-star resort, international teachers, all-inclusive experience. Oct 7-11, 2026.",
+    title: "Mediterranean Acro Convention 2026 | The Most Luxurious Acroyoga Vacation",
+    description: "5-day luxury acro retreat in Malta. Elite L-Base and Flow training, 4-star spa resort, international teachers, all-inclusive experience. Oct 7-11, 2026.",
   },
   alternates: {
     canonical: "https://www.acrointhesun.com",
@@ -68,7 +68,7 @@ export default function Home() {
 
           {/* Tagline */}
           <p className="text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto mb-12 leading-relaxed font-light" style={{ color: '#FFFFFF', textShadow: 'none' }}>
-            Five days of world-class L-Base and Flow training with the global acro community.
+            The world's most luxurious acroyoga vacation. Five days of elite L-Base and Flow training in Mediterranean paradise.
           </p>
 
           {/* CTA Buttons */}
@@ -104,7 +104,7 @@ export default function Home() {
             </div>
             <div className="px-6 py-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
               <span className="text-white font-medium text-sm sm:text-base">
-                Community Vibe
+                4-Star Resort
               </span>
             </div>
           </div>

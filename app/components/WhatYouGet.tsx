@@ -41,8 +41,8 @@ const benefits: Benefit[] = [
   },
   {
     id: 4,
-    title: 'Stunning Venue',
-    description: 'Train in Malta\'s Mediterranean paradise with indoor studios and outdoor spaces by the sea.',
+    title: '4-Star Spa Resort',
+    description: 'Luxury accommodation at Malta\'s Riviera Hotel & Spa with pools, spa facilities, and stunning Mediterranean views.',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -61,8 +61,8 @@ const benefits: Benefit[] = [
   },
   {
     id: 6,
-    title: 'Extras & Add-ons',
-    description: 'Optional beach jams, sunset sessions, social events, and excursions to explore the island.',
+    title: 'All-Inclusive Experience',
+    description: 'Beach jams, sunset sessions, social events, excursions, and everything you need for the perfect acro vacation.',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
@@ -79,10 +79,10 @@ const WhatYouGet: FC = () => {
         <Reveal>
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-brand-sea mb-4">
-              What You Get
+              Your Luxury Acro Vacation
             </h2>
             <p className="text-lg sm:text-xl text-zinc-600 max-w-2xl mx-auto">
-              Five unforgettable days packed with training, growth, and connection.
+              Five unforgettable days of elite training in Mediterranean paradise.
             </p>
           </div>
         </Reveal>
