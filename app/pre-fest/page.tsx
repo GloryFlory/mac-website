@@ -69,83 +69,7 @@ export default function PreFestPage() {
         </div>
       </ParallaxHero>
 
-      {/* Teachers Section - RIGHT AFTER HERO */}
-      <section className="py-20 sm:py-24 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <Reveal>
-            <div className="text-center mb-16">
-              <h2 className="font-serif text-4xl sm:text-5xl font-bold text-brand-sea mb-4">
-                Your Expert Instructors
-              </h2>
-              <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
-                Learn from two world-class couples specializing in Icarians and Whips
-              </p>
-            </div>
-          </Reveal>
-
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-            {/* Mads & Julian - Icarians */}
-            <Reveal delay={0.1}>
-              <div className="bg-gradient-to-br from-brand-sea/5 to-brand-sea/10 rounded-2xl overflow-hidden border border-brand-sea/20">
-                <div className="relative h-80 bg-zinc-200">
-                  {/* Placeholder for teacher photo */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-brand-sea/20 to-brand-sea/5">
-                    <div className="text-center">
-                      <div className="text-6xl mb-2">🤸</div>
-                      <p className="text-brand-sea font-semibold">Photo Coming Soon</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="p-8">
-                  <div className="mb-4">
-                    <h3 className="text-2xl font-bold text-brand-sea mb-1">Mads & Julian</h3>
-                    <p className="text-brand-sea/70 font-medium">Icarians Specialists</p>
-                  </div>
-                  <p className="text-zinc-700 mb-4">
-                    Master the art of icarians with Mads and Julian. Their expertise in pop mechanics, height progression, and aerial control will take your practice to new heights.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-brand-sea/10 text-brand-sea text-sm rounded-full font-medium">Icarians</span>
-                    <span className="px-3 py-1 bg-brand-sea/10 text-brand-sea text-sm rounded-full font-medium">Pops</span>
-                    <span className="px-3 py-1 bg-brand-sea/10 text-brand-sea text-sm rounded-full font-medium">Advanced Dynamics</span>
-                  </div>
-                </div>
-              </div>
-            </Reveal>
-
-            {/* Duo Liquen - Whips */}
-            <Reveal delay={0.2}>
-              <div className="bg-gradient-to-br from-brand-sun/5 to-brand-sun/10 rounded-2xl overflow-hidden border border-brand-sun/30">
-                <div className="relative h-80 bg-zinc-200">
-                  {/* Placeholder for teacher photo */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-brand-sun/20 to-brand-sun/5">
-                    <div className="text-center">
-                      <div className="text-6xl mb-2">💫</div>
-                      <p className="text-brand-sea font-semibold">Photo Coming Soon</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="p-8">
-                  <div className="mb-4">
-                    <h3 className="text-2xl font-bold text-brand-sea mb-1">Pauli & Nacho</h3>
-                    <p className="text-brand-sea/70 font-medium">Duo Liquen • Whips & Whip-Pops</p>
-                  </div>
-                  <p className="text-zinc-700 mb-4">
-                    Dive deep into whips and whip-pops with Duo Liquen. Their refined technique and creative approach will elevate your dynamic skills and flow.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-brand-sun/20 text-brand-sea text-sm rounded-full font-medium">Whips</span>
-                    <span className="px-3 py-1 bg-brand-sun/20 text-brand-sea text-sm rounded-full font-medium">Whip-Pops</span>
-                    <span className="px-3 py-1 bg-brand-sun/20 text-brand-sea text-sm rounded-full font-medium">Flow</span>
-                  </div>
-                </div>
-              </div>
-            </Reveal>
-          </div>
-        </div>
-      </section>
-
-      {/* Two Training Tracks */}
+      {/* Expert-Led Training Tracks - Combined Section */}
       <section className="py-20 sm:py-24 px-6 bg-gradient-to-b from-white to-brand-sand/10">
         <div className="max-w-6xl mx-auto">
           <Reveal>
@@ -154,7 +78,7 @@ export default function PreFestPage() {
                 Two Specialized Training Tracks
               </h2>
               <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
-                Choose your focus or switch between tracks to master both disciplines over 3 intensive days
+                Learn from world-class expert couples in two intensive disciplines. Choose your focus each day or explore both tracks over 3 days.
               </p>
             </div>
           </Reveal>
