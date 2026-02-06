@@ -89,6 +89,17 @@ Recently we have also ventured into the artistic realm with performances that we
   },
   {
     id: 4,
+    name: 'Lloydie and Flo',
+    duoName: 'Double Up Acro',
+    roleTags: ['L-Basing', 'Technique', 'Progressions'],
+    imageUrl: '/teachers/Lloydie and Flo/placeholder.jpg',
+    location: 'Bali, Indonesia',
+    bio: `We are Double Up, also known as Flo and Lloydie. We fell in love with acro in London 5 years ago, and just a couple of months into our acro journey we already knew we wanted to teach it together one day. Two years later, to pursue our dream we left everything behind to move to Bali, where we now teach multiple weekly acro classes, jams, workshops, and host our own acroyoga retreats regularly. In our classes we like to pay attention to technique down to the smallest details, all the while never forgetting to have fun in the process. We believe in meeting everyone at their skill level and helping them grow in their practice in a slow-paced, organic, progressive way.`,
+    levels: ['Beginner', 'Intermediate'],
+    instagram: 'https://www.instagram.com/doubleupacro/',
+  },
+  {
+    id: 5,
     name: 'Manas and Mira',
     roleTags: ['Flows', 'Washing Machines', 'Elegance'],
     imageUrl: '/teachers/Manas and Mira/IMG_1800.jpeg',
@@ -103,7 +114,7 @@ Manas, originally from India, finds joy in AcroYoga as it brings him to a state 
     instagram: 'https://www.instagram.com/manas_acro_addict/',
   },
   {
-    id: 5,
+    id: 6,
     name: 'Maria and Flo',
     roleTags: ['Flows', 'Poses', 'Washing Machines'],
     imageUrl: '/teachers/Maria and Flo/AcroFlo-47.jpg',

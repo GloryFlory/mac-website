@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Button from '../components/Button';
 import Reveal from '../components/Reveal';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: "Pre-Festival Intensive 2026 | MAC",
-  description: "An exclusive 2-day intensive focusing on Icarians and Whips before MAC 2026. Limited to 30 advanced practitioners. Oct 5-6, 2026.",
+  description: "An exclusive 3-day intensive focusing on Icarians and Whips before MAC 2026. Limited to 30 intermediate/advanced practitioners. Oct 3-5, 2026.",
   robots: {
     index: false,
     follow: false,
@@ -27,11 +28,11 @@ export default function PreFestPage() {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <Reveal>
             {/* Exclusive Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-sun/20 backdrop-blur-sm rounded-full mb-6 border border-brand-sun/30">
-              <svg className="w-5 h-5 text-brand-sun" fill="currentColor" viewBox="0 0 20 20">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-sun/90 backdrop-blur-sm rounded-full mb-6">
+              <svg className="w-5 h-5 text-zinc-900" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
               </svg>
-              <span className="text-white font-semibold text-sm">Limited to 30 Participants</span>
+              <span className="text-zinc-900 font-semibold text-sm">Limited to 30 Participants</span>
             </div>
           </Reveal>
 
@@ -42,11 +43,11 @@ export default function PreFestPage() {
           </Reveal>
 
           <Reveal delay={0.2}>
-            <p className="text-xl sm:text-2xl text-white/90 mb-4">
-              October 5–6, 2026
+            <p className="text-xl sm:text-2xl text-brand-sun font-semibold mb-4">
+              October 3–5, 2026
             </p>
-            <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto mb-8">
-              An exclusive 2-day deep dive into advanced Icarians and Whips for elite practitioners
+            <p className="text-lg sm:text-xl text-white/90 max-w-2xl mx-auto mb-8">
+              An exclusive 3-day deep dive into Icarians and Whips with two expert couples
             </p>
           </Reveal>
 
@@ -63,7 +64,7 @@ export default function PreFestPage() {
                 href="#prerequisites"
                 variant="secondary"
                 size="lg"
-                className="text-white border-white/40 hover:bg-white/10"
+                className="bg-white/10 text-white border-white/40 hover:bg-white/20"
               >
                 Check Prerequisites
               </Button>
@@ -72,109 +73,76 @@ export default function PreFestPage() {
         </div>
       </section>
 
-      {/* What Makes This Special */}
+      {/* Teachers Section - RIGHT AFTER HERO */}
       <section className="py-20 sm:py-24 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <Reveal>
             <div className="text-center mb-16">
               <h2 className="font-serif text-4xl sm:text-5xl font-bold text-brand-sea mb-4">
-                Why This Is Exclusive
+                Your Expert Instructors
               </h2>
               <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
-                This isn't just another workshop. It's a curated intensive for advanced practitioners ready to push their limits.
+                Learn from two world-class couples specializing in Icarians and Whips
               </p>
             </div>
           </Reveal>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+            {/* Mads & Julian - Icarians */}
             <Reveal delay={0.1}>
-              <div className="text-center p-8 bg-gradient-to-br from-brand-sand/30 to-brand-sand/10 rounded-2xl">
-                <div className="w-16 h-16 mx-auto mb-4 bg-brand-sea/10 rounded-full flex items-center justify-center">
-                  <span className="text-3xl font-bold text-brand-sea">30</span>
+              <div className="bg-gradient-to-br from-brand-sea/5 to-brand-sea/10 rounded-2xl overflow-hidden border border-brand-sea/20">
+                <div className="relative h-80 bg-zinc-200">
+                  {/* Placeholder for teacher photo */}
+                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-brand-sea/20 to-brand-sea/5">
+                    <div className="text-center">
+                      <div className="text-6xl mb-2">🤸</div>
+                      <p className="text-brand-sea font-semibold">Photo Coming Soon</p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-brand-sea mb-2">Limited Capacity</h3>
-                <p className="text-zinc-600">Maximum 30 participants for personalized attention and quality training</p>
+                <div className="p-8">
+                  <div className="mb-4">
+                    <h3 className="text-2xl font-bold text-brand-sea mb-1">Mads & Julian</h3>
+                    <p className="text-brand-sea/70 font-medium">Icarians Specialists</p>
+                  </div>
+                  <p className="text-zinc-700 mb-4">
+                    Master the art of icarians with Mads and Julian. Their expertise in pop mechanics, height progression, and aerial control will take your practice to new heights.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-brand-sea/10 text-brand-sea text-sm rounded-full font-medium">Icarians</span>
+                    <span className="px-3 py-1 bg-brand-sea/10 text-brand-sea text-sm rounded-full font-medium">Pops</span>
+                    <span className="px-3 py-1 bg-brand-sea/10 text-brand-sea text-sm rounded-full font-medium">Advanced Dynamics</span>
+                  </div>
+                </div>
               </div>
             </Reveal>
 
+            {/* Duo Liquen - Whips */}
             <Reveal delay={0.2}>
-              <div className="text-center p-8 bg-gradient-to-br from-brand-sand/30 to-brand-sand/10 rounded-2xl">
-                <div className="w-16 h-16 mx-auto mb-4 bg-brand-sea/10 rounded-full flex items-center justify-center">
-                  <span className="text-3xl font-bold text-brand-sea">2</span>
+              <div className="bg-gradient-to-br from-brand-sun/5 to-brand-sun/10 rounded-2xl overflow-hidden border border-brand-sun/30">
+                <div className="relative h-80 bg-zinc-200">
+                  {/* Placeholder for teacher photo */}
+                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-brand-sun/20 to-brand-sun/5">
+                    <div className="text-center">
+                      <div className="text-6xl mb-2">💫</div>
+                      <p className="text-brand-sea font-semibold">Photo Coming Soon</p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-brand-sea mb-2">Expert Teachers</h3>
-                <p className="text-zinc-600">Specialized instruction in Icarians and Whips from world-class teachers</p>
-              </div>
-            </Reveal>
-
-            <Reveal delay={0.3}>
-              <div className="text-center p-8 bg-gradient-to-br from-brand-sand/30 to-brand-sand/10 rounded-2xl">
-                <div className="w-16 h-16 mx-auto mb-4 bg-brand-sea/10 rounded-full flex items-center justify-center">
-                  <span className="text-3xl font-bold text-brand-sea">2</span>
+                <div className="p-8">
+                  <div className="mb-4">
+                    <h3 className="text-2xl font-bold text-brand-sea mb-1">Pauli & Nacho</h3>
+                    <p className="text-brand-sea/70 font-medium">Duo Liquen • Whips & Whip-Pops</p>
+                  </div>
+                  <p className="text-zinc-700 mb-4">
+                    Dive deep into whips and whip-pops with Duo Liquen. Their refined technique and creative approach will elevate your dynamic skills and flow.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-brand-sun/20 text-brand-sea text-sm rounded-full font-medium">Whips</span>
+                    <span className="px-3 py-1 bg-brand-sun/20 text-brand-sea text-sm rounded-full font-medium">Whip-Pops</span>
+                    <span className="px-3 py-1 bg-brand-sun/20 text-brand-sea text-sm rounded-full font-medium">Flow</span>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-brand-sea mb-2">Full Days</h3>
-                <p className="text-zinc-600">16+ hours of intensive training across two focused days</p>
-              </div>
-            </Reveal>
-          </div>
-
-          {/* Focus Areas */}
-          <div className="grid md:grid-cols-2 gap-8">
-            <Reveal delay={0.1}>
-              <div className="bg-gradient-to-br from-brand-sea/5 to-brand-sea/10 p-8 rounded-2xl border border-brand-sea/20">
-                <h3 className="text-2xl font-bold text-brand-sea mb-4">Icarians Track</h3>
-                <p className="text-zinc-700 mb-4">
-                  Master advanced icarian techniques, refine your pop mechanics, and explore creative sequences with precision coaching.
-                </p>
-                <ul className="space-y-2 text-zinc-600">
-                  <li className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-brand-sea mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span>Advanced pop mechanics and catch techniques</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-brand-sea mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span>Complex transitions and sequence building</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-brand-sea mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span>Height progression and aerial control</span>
-                  </li>
-                </ul>
-              </div>
-            </Reveal>
-
-            <Reveal delay={0.2}>
-              <div className="bg-gradient-to-br from-brand-sun/5 to-brand-sun/10 p-8 rounded-2xl border border-brand-sun/30">
-                <h3 className="text-2xl font-bold text-brand-sea mb-4">Whips & Whip-Pops Track</h3>
-                <p className="text-zinc-700 mb-4">
-                  Perfect your whip technique, explore creative whip-pop combinations, and build dynamic sequences with fluidity.
-                </p>
-                <ul className="space-y-2 text-zinc-600">
-                  <li className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-brand-sea mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span>Biomechanics of effective whipping</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-brand-sea mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span>Creative whip-pop combinations and flows</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-brand-sea mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                    <span>Advanced variations and stylistic elements</span>
-                  </li>
-                </ul>
               </div>
             </Reveal>
           </div>
@@ -190,7 +158,7 @@ export default function PreFestPage() {
                 Prerequisites
               </h2>
               <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
-                This intensive is designed for advanced practitioners. Please ensure you meet these requirements before registering.
+                This intensive is designed for intermediate/advanced practitioners. Please ensure you meet these requirements before registering.
               </p>
             </div>
           </Reveal>
@@ -281,12 +249,86 @@ export default function PreFestPage() {
 
       {/* Accommodation & Logistics */}
       <section className="py-20 sm:py-24 px-6 bg-white">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <Reveal>
             <div className="text-center mb-12">
               <h2 className="font-serif text-4xl sm:text-5xl font-bold text-brand-sea mb-4">
-                Accommodation & Logistics
+                Accommodation & Venue
               </h2>
+              <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
+                Stay at Malta's premier 4-star resort with everything included
+              </p>
+            </div>
+          </Reveal>
+
+          {/* Hotel Highlight */}
+          <Reveal delay={0.1}>
+            <div className="bg-gradient-to-br from-brand-sand/20 to-brand-sand/10 rounded-2xl p-8 mb-8 border-2 border-brand-sand/30">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-sun/10 rounded-full mb-4">
+                    <svg className="w-5 h-5 text-brand-sea" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <span className="text-brand-sea font-semibold">4-Star Luxury Resort</span>
+                  </div>
+                  
+                  <h3 className="font-serif text-3xl font-bold text-brand-sea mb-4">
+                    Riviera Spa Hotel
+                  </h3>
+                  
+                  <p className="text-zinc-600 mb-6 leading-relaxed">
+                    Your accommodation and meals are <strong>fully included</strong> at Malta's premier 4-star resort. Immerse yourself in luxury with spa facilities, pools, stunning Mediterranean views, and world-class amenities.
+                  </p>
+
+                  <ul className="space-y-3">
+                    <li className="flex items-start gap-2">
+                      <svg className="w-5 h-5 text-brand-sea mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-zinc-700">Modern rooms with sea views</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <svg className="w-5 h-5 text-brand-sea mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-zinc-700">Full-service spa & wellness center</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <svg className="w-5 h-5 text-brand-sea mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-zinc-700">Indoor & outdoor pools</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <svg className="w-5 h-5 text-brand-sea mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-zinc-700">All meals included with buffet dining</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="relative h-[400px] rounded-xl overflow-hidden">
+                  <Image
+                    src="/hotel/hotel.png"
+                    alt="Riviera Spa Hotel - Luxury 4-Star Resort"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+              
+              <div className="mt-8 pt-8 border-t border-brand-sand/30 text-center">
+                <Button
+                  href="/venue"
+                  variant="secondary"
+                  size="lg"
+                >
+                  Explore the Hotel
+                </Button>
+              </div>
             </div>
           </Reveal>
 
@@ -300,7 +342,7 @@ export default function PreFestPage() {
                 </div>
                 <h3 className="text-xl font-bold text-brand-sea mb-3">Bridging Accommodation</h3>
                 <p className="text-zinc-600 mb-4">
-                  Attending both Pre-Fest and MAC? You can bridge your stay at the Riviera Hotel & Spa from Oct 5-11 (subject to availability).
+                  Attending both Pre-Fest and MAC? You can bridge your stay at the Riviera Hotel & Spa from Oct 3-11 (subject to availability).
                 </p>
                 <p className="text-sm text-zinc-500">
                   Book early to secure your extended dates at the same venue.
@@ -346,15 +388,15 @@ export default function PreFestPage() {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Pre-Fest Only */}
             <Reveal delay={0.1}>
-              <div className="bg-white rounded-2xl shadow-xl border-2 border-brand-sea/20 p-8 relative">
+              <div className="bg-white rounded-2xl shadow-xl border-2 border-brand-sea/20 p-8 relative flex flex-col">
                 <div className="text-center mb-6">
                   <h3 className="text-2xl font-bold text-brand-sea mb-2">Pre-Festival Only</h3>
-                  <p className="text-zinc-600 text-sm">Intensive training Oct 5-6</p>
+                  <p className="text-zinc-600 text-sm">Intensive training Oct 3-5</p>
                 </div>
                 
                 <div className="text-center mb-6">
                   <div className="text-5xl font-bold text-brand-sea mb-2">€429</div>
-                  <p className="text-sm text-zinc-500">2-day intensive</p>
+                  <p className="text-sm text-zinc-500">3-day intensive</p>
                 </div>
 
                 <ul className="space-y-3 mb-8">
@@ -362,7 +404,7 @@ export default function PreFestPage() {
                     <svg className="w-5 h-5 text-brand-sea mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-zinc-700">16+ hours of training</span>
+                    <span className="text-zinc-700">3 days of intensive training</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-brand-sea mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -409,7 +451,7 @@ export default function PreFestPage() {
 
             {/* Pre-Fest + MAC Bundle */}
             <Reveal delay={0.2}>
-              <div className="bg-gradient-to-br from-brand-sea to-brand-sea/90 rounded-2xl shadow-xl border-2 border-brand-sun p-8 relative overflow-hidden">
+              <div className="bg-gradient-to-br from-brand-sea to-brand-sea/90 rounded-2xl shadow-xl border-2 border-brand-sun p-8 relative overflow-hidden flex flex-col">
                 {/* Best Value Badge */}
                 <div className="absolute top-4 right-4 bg-brand-sun text-zinc-900 text-xs font-bold px-3 py-1 rounded-full">
                   SAVE €50
@@ -417,7 +459,7 @@ export default function PreFestPage() {
 
                 <div className="text-center mb-6">
                   <h3 className="text-2xl font-bold text-white mb-2">Pre-Fest + MAC Bundle</h3>
-                  <p className="text-white/80 text-sm">Complete experience Oct 5-11</p>
+                  <p className="text-brand-sun font-semibold text-sm">Complete experience Oct 3-11</p>
                 </div>
                 
                 <div className="text-center mb-6">
@@ -526,7 +568,7 @@ export default function PreFestPage() {
                   </svg>
                 </summary>
                 <p className="mt-4 text-zinc-600">
-                  Yes! Accommodation and food are included in the Pre-Fest price at the Riviera Hotel & Spa. If you're attending both Pre-Fest and MAC 2026, you can bridge your stay from Oct 5-11 (subject to availability).
+                  Yes! Accommodation and food are included in the Pre-Fest price at the Riviera Hotel & Spa. If you're attending both Pre-Fest and MAC 2026, you can bridge your stay from Oct 3-11 (subject to availability).
                 </p>
               </details>
             </Reveal>
