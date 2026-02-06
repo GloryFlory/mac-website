@@ -149,6 +149,193 @@ export default function PreFestPage() {
         </div>
       </section>
 
+      {/* Two Training Tracks */}
+      <section className="py-20 sm:py-24 px-6 bg-gradient-to-b from-white to-brand-sand/10">
+        <div className="max-w-6xl mx-auto">
+          <Reveal>
+            <div className="text-center mb-16">
+              <h2 className="font-serif text-4xl sm:text-5xl font-bold text-brand-sea mb-4">
+                Two Specialized Training Tracks
+              </h2>
+              <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
+                Choose your focus or switch between tracks to master both disciplines over 3 intensive days
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+            {/* Icarians Track */}
+            <Reveal delay={0.1}>
+              <div className="group relative bg-gradient-to-br from-brand-sea/5 to-brand-sea/10 rounded-3xl overflow-hidden border-2 border-brand-sea/20 hover:border-brand-sea/40 transition-all duration-300 hover:shadow-2xl">
+                {/* Track Badge */}
+                <div className="absolute top-6 right-6 z-10 bg-brand-sea text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                  Track 1
+                </div>
+
+                {/* Photo/Video Placeholder */}
+                <div className="relative h-80 bg-gradient-to-br from-brand-sea/20 to-brand-sea/5 overflow-hidden">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="text-7xl mb-3">🚀</div>
+                      <p className="text-brand-sea font-bold text-lg">Icarians</p>
+                      <p className="text-brand-sea/60 text-sm">Photo/Video Coming Soon</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="p-8">
+                  <div className="mb-6">
+                    <h3 className="font-serif text-3xl font-bold text-brand-sea mb-2">
+                      Icarians Mastery
+                    </h3>
+                    <p className="text-brand-sea/70 font-semibold text-lg">with Mads & Julian</p>
+                  </div>
+
+                  <p className="text-zinc-700 mb-6 leading-relaxed">
+                    Elevate your icarians game to the next level. Master pop mechanics, aerial control, and height progression with expert guidance on technique, safety, and creative combinations.
+                  </p>
+
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-brand-sea/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <svg className="w-4 h-4 text-brand-sea" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <p className="text-zinc-700"><strong>Pop Mechanics</strong> - Perfect your timing and power generation</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-brand-sea/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <svg className="w-4 h-4 text-brand-sea" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <p className="text-zinc-700"><strong>Height Progression</strong> - Build confidence with progressive drills</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-brand-sea/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <svg className="w-4 h-4 text-brand-sea" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <p className="text-zinc-700"><strong>Advanced Transitions</strong> - Smooth combinations and sequences</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-brand-sea/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <svg className="w-4 h-4 text-brand-sea" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <p className="text-zinc-700"><strong>Aerial Control</strong> - Precision landing and spotting techniques</p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1.5 bg-brand-sea text-white text-sm rounded-full font-medium">Pops</span>
+                    <span className="px-3 py-1.5 bg-brand-sea text-white text-sm rounded-full font-medium">Throne-to-Throne</span>
+                    <span className="px-3 py-1.5 bg-brand-sea text-white text-sm rounded-full font-medium">Bird-to-Bird</span>
+                    <span className="px-3 py-1.5 bg-brand-sea text-white text-sm rounded-full font-medium">Side-Star</span>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+
+            {/* Whips Track */}
+            <Reveal delay={0.2}>
+              <div className="group relative bg-gradient-to-br from-brand-sun/5 to-brand-sun/10 rounded-3xl overflow-hidden border-2 border-brand-sun/30 hover:border-brand-sun/50 transition-all duration-300 hover:shadow-2xl">
+                {/* Track Badge */}
+                <div className="absolute top-6 right-6 z-10 bg-brand-sun text-zinc-900 px-4 py-2 rounded-full text-sm font-bold shadow-lg">
+                  Track 2
+                </div>
+
+                {/* Photo/Video Placeholder */}
+                <div className="relative h-80 bg-gradient-to-br from-brand-sun/20 to-brand-sun/5 overflow-hidden">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="text-7xl mb-3">💫</div>
+                      <p className="text-brand-sea font-bold text-lg">Whips & Whip-Pops</p>
+                      <p className="text-brand-sea/60 text-sm">Photo/Video Coming Soon</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="p-8">
+                  <div className="mb-6">
+                    <h3 className="font-serif text-3xl font-bold text-brand-sea mb-2">
+                      Whips & Whip-Pops
+                    </h3>
+                    <p className="text-brand-sea/70 font-semibold text-lg">with Duo Liquen (Pauli & Nacho)</p>
+                  </div>
+
+                  <p className="text-zinc-700 mb-6 leading-relaxed">
+                    Refine your whips and master whip-pops with Duo Liquen's signature style. Learn refined technique, dynamic flow, and creative combinations that blend power with elegance.
+                  </p>
+
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-brand-sun/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <svg className="w-4 h-4 text-brand-sea" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <p className="text-zinc-700"><strong>Whip Technique</strong> - Master the fundamentals and refinements</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-brand-sun/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <svg className="w-4 h-4 text-brand-sea" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <p className="text-zinc-700"><strong>Whip-Pop Progressions</strong> - Unlock advanced pop variations</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-brand-sun/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <svg className="w-4 h-4 text-brand-sea" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <p className="text-zinc-700"><strong>Dynamic Flow</strong> - Creative combinations and sequences</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-brand-sun/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <svg className="w-4 h-4 text-brand-sea" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <p className="text-zinc-700"><strong>Power & Precision</strong> - Balance strength with control</p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1.5 bg-brand-sun text-zinc-900 text-sm rounded-full font-medium">Whips</span>
+                    <span className="px-3 py-1.5 bg-brand-sun text-zinc-900 text-sm rounded-full font-medium">Whip-Pops</span>
+                    <span className="px-3 py-1.5 bg-brand-sun text-zinc-900 text-sm rounded-full font-medium">Flow Sequences</span>
+                    <span className="px-3 py-1.5 bg-brand-sun text-zinc-900 text-sm rounded-full font-medium">Creativity</span>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+
+          {/* Flexibility Note */}
+          <Reveal delay={0.3}>
+            <div className="bg-gradient-to-r from-brand-sea/5 via-brand-sand/20 to-brand-sun/5 rounded-2xl p-8 border border-brand-sand/30 text-center">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <svg className="w-6 h-6 text-brand-sea" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                </svg>
+                <h3 className="text-xl font-bold text-brand-sea">Flexible Training Schedule</h3>
+              </div>
+              <p className="text-zinc-700 max-w-3xl mx-auto">
+                You're free to choose your focus each day or split your time between both tracks. Want to deep-dive into one discipline? Perfect. Curious to sample both? That works too. The choice is yours!
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* Prerequisites Section */}
       <section id="prerequisites" className="py-20 sm:py-24 px-6 bg-gradient-to-b from-brand-sand/20 to-white">
         <div className="max-w-4xl mx-auto">
