@@ -17,6 +17,7 @@ export default function PreFestPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section with Parallax */}
+      {/* TODO: Replace /hotel/hotel.png with a stock acroyoga image */}
       <ParallaxHero
         backgroundUrl="/hotel/hotel.png"
         overlay={true}
@@ -94,13 +95,13 @@ export default function PreFestPage() {
 
                 {/* Photo/Video Placeholder */}
                 <div className="relative h-80 bg-gradient-to-br from-brand-sea/20 to-brand-sea/5 overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="text-7xl mb-3">🚀</div>
-                      <p className="text-brand-sea font-bold text-lg">Icarians</p>
-                      <p className="text-brand-sea/60 text-sm">Photo/Video Coming Soon</p>
-                    </div>
-                  </div>
+                  {/* TODO: Replace with stock acroyoga image for Icarians */}
+                  <Image 
+                    src="/hotel/Gymhotelspace.jpg" 
+                    alt="Icarians Training" 
+                    fill 
+                    className="object-cover"
+                  />
                 </div>
 
                 {/* Content */}
@@ -150,13 +151,6 @@ export default function PreFestPage() {
                       <p className="text-zinc-700"><strong>Aerial Control</strong> - Precision landing and spotting techniques</p>
                     </div>
                   </div>
-
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1.5 bg-brand-sea text-white text-sm rounded-full font-medium">Pops</span>
-                    <span className="px-3 py-1.5 bg-brand-sea text-white text-sm rounded-full font-medium">Throne-to-Throne</span>
-                    <span className="px-3 py-1.5 bg-brand-sea text-white text-sm rounded-full font-medium">Bird-to-Bird</span>
-                    <span className="px-3 py-1.5 bg-brand-sea text-white text-sm rounded-full font-medium">Side-Star</span>
-                  </div>
                 </div>
               </div>
             </Reveal>
@@ -171,13 +165,13 @@ export default function PreFestPage() {
 
                 {/* Photo/Video Placeholder */}
                 <div className="relative h-80 bg-gradient-to-br from-brand-sun/20 to-brand-sun/5 overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="text-7xl mb-3">💫</div>
-                      <p className="text-brand-sea font-bold text-lg">Whips & Whip-Pops</p>
-                      <p className="text-brand-sea/60 text-sm">Photo/Video Coming Soon</p>
-                    </div>
-                  </div>
+                  {/* TODO: Replace with stock acroyoga image for Whips */}
+                  <Image 
+                    src="/hotel/Indoorhotelpool.jpg" 
+                    alt="Whips Training" 
+                    fill 
+                    className="object-cover"
+                  />
                 </div>
 
                 {/* Content */}
@@ -227,13 +221,6 @@ export default function PreFestPage() {
                       <p className="text-zinc-700"><strong>Power & Precision</strong> - Balance strength with control</p>
                     </div>
                   </div>
-
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1.5 bg-brand-sun text-zinc-900 text-sm rounded-full font-medium">Whips</span>
-                    <span className="px-3 py-1.5 bg-brand-sun text-zinc-900 text-sm rounded-full font-medium">Whip-Pops</span>
-                    <span className="px-3 py-1.5 bg-brand-sun text-zinc-900 text-sm rounded-full font-medium">Flow Sequences</span>
-                    <span className="px-3 py-1.5 bg-brand-sun text-zinc-900 text-sm rounded-full font-medium">Creativity</span>
-                  </div>
                 </div>
               </div>
             </Reveal>
@@ -265,7 +252,7 @@ export default function PreFestPage() {
                 Prerequisites
               </h2>
               <p className="text-lg text-zinc-600 max-w-2xl mx-auto">
-                This intensive is designed for intermediate/advanced practitioners. Please ensure you meet these requirements before registering.
+                This intensive is designed for intermediate/advanced practitioners. Please ensure that all of these prerequisites are <strong>out of spot</strong> before registering.
               </p>
             </div>
           </Reveal>
@@ -283,7 +270,7 @@ export default function PreFestPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-zinc-900 mb-1">Solid Tarzan</h4>
-                    <p className="text-sm text-zinc-600">Consistent, controlled execution with proper form and spotting awareness</p>
+                    <p className="text-sm text-zinc-600">Consistent, controlled execution with proper form and close-to-parallel height</p>
                   </div>
                 </div>
 
@@ -295,7 +282,7 @@ export default function PreFestPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-zinc-900 mb-1">Throne to Throne Icarian</h4>
-                    <p className="text-sm text-zinc-600">Clean transitions between throne positions with good height and control</p>
+                    <p className="text-sm text-zinc-600">Clean Icarian with releasing the hands, good height and control in the landing</p>
                   </div>
                 </div>
 
@@ -307,7 +294,7 @@ export default function PreFestPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-zinc-900 mb-1">Bird to Bird Icarian</h4>
-                    <p className="text-sm text-zinc-600">Smooth bird transitions demonstrating aerial awareness and timing</p>
+                    <p className="text-sm text-zinc-600">Smooth Icarian demonstrating aerial awareness, timing and control in the landing</p>
                   </div>
                 </div>
 
@@ -319,7 +306,7 @@ export default function PreFestPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-zinc-900 mb-1">Solid Side-Star</h4>
-                    <p className="text-sm text-zinc-600">Clean side-star execution with good form and control</p>
+                    <p className="text-sm text-zinc-600">Clean side-star with good form and control</p>
                   </div>
                 </div>
 
@@ -342,9 +329,9 @@ export default function PreFestPage() {
                     <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
                   </svg>
                   <div>
-                    <h4 className="font-semibold text-amber-900 mb-1">Important Note</h4>
+                    <h4 className="font-semibold text-zinc-900 mb-1">Important Note</h4>
                     <p className="text-sm text-amber-800">
-                      This is an advanced intensive. If you're unsure about meeting these prerequisites, please reach out to us before registering to discuss your skill level.
+                      This is an intermediate/advanced intensive. If you're unsure about meeting these prerequisites, please reach out to us before registering to discuss your skill level.
                     </p>
                   </div>
                 </div>
@@ -449,7 +436,7 @@ export default function PreFestPage() {
                 </div>
                 <h3 className="text-xl font-bold text-brand-sea mb-3">Bridging Accommodation</h3>
                 <p className="text-zinc-600 mb-4">
-                  Attending both Pre-Fest and MAC? You can bridge your stay at the Riviera Hotel & Spa from Oct 3-11 (subject to availability).
+                  Attending both Pre-Fest and MAC? You can bridge your stay at the Riviera Hotel & Spa from Oct 3-11 (subject to availability and at an extra cost).
                 </p>
                 <p className="text-sm text-zinc-500">
                   Book early to secure your extended dates at the same venue.
@@ -495,18 +482,18 @@ export default function PreFestPage() {
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {/* Pre-Fest Only */}
             <Reveal delay={0.1}>
-              <div className="bg-white rounded-2xl shadow-xl border-2 border-brand-sea/20 p-8 relative flex flex-col">
+              <div className="bg-white rounded-2xl shadow-xl border-2 border-brand-sea/20 p-8 relative flex flex-col h-full">
                 <div className="text-center mb-6">
                   <h3 className="text-2xl font-bold text-brand-sea mb-2">Pre-Festival Only</h3>
                   <p className="text-zinc-600 text-sm">Intensive training Oct 3-5</p>
                 </div>
                 
-                <div className="text-center mb-6">
+                <div className="text-center mb-8">
                   <div className="text-5xl font-bold text-brand-sea mb-2">€429</div>
                   <p className="text-sm text-zinc-500">3-day intensive</p>
                 </div>
 
-                <ul className="space-y-3 mb-8">
+                <ul className="space-y-3 mb-8 flex-grow">
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-brand-sea mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -546,7 +533,7 @@ export default function PreFestPage() {
                 </ul>
 
                 <Button
-                  href="mailto:hello@acrointhesun.com?subject=Pre-Fest Registration"
+                  href="mailto:mediterraneanacroconvention@gmail.com?subject=Pre-Fest Registration"
                   variant="secondary"
                   size="lg"
                   className="w-full justify-center"
@@ -556,9 +543,9 @@ export default function PreFestPage() {
               </div>
             </Reveal>
 
-            {/* Pre-Fest + MAC Bundle */}
+            {/* Pre-Fest Discount for MAC Attendees */}
             <Reveal delay={0.2}>
-              <div className="bg-white rounded-2xl shadow-xl border-2 border-brand-sun p-8 relative overflow-hidden flex flex-col">
+              <div className="bg-white rounded-2xl shadow-xl border-2 border-brand-sun p-8 relative overflow-hidden flex flex-col h-full">
                 {/* Best Value Badge - Repositioned */}
                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-sun text-zinc-900 rounded-full text-xs font-bold mb-4 self-start">
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -568,17 +555,17 @@ export default function PreFestPage() {
                 </div>
 
                 <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-brand-sea mb-2">Pre-Fest + MAC Bundle</h3>
-                  <p className="text-zinc-600 text-sm">Complete experience Oct 3-11</p>
+                  <h3 className="text-2xl font-bold text-brand-sea mb-2">MAC Attendee Discount</h3>
+                  <p className="text-zinc-600 text-sm">Pre-Fest discount for MAC ticket holders</p>
                 </div>
                 
-                <div className="text-center mb-6">
+                <div className="text-center mb-8">
                   <div className="text-zinc-400 text-lg line-through mb-1">€429</div>
                   <div className="text-5xl font-bold text-brand-sea mb-2">€379</div>
                   <p className="text-sm text-zinc-500">With MAC 2026 ticket</p>
                 </div>
 
-                <ul className="space-y-3 mb-8">
+                <ul className="space-y-3 mb-8 flex-grow">
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-brand-sea mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -595,29 +582,29 @@ export default function PreFestPage() {
                     <svg className="w-5 h-5 text-brand-sea mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-zinc-700"><strong>€50 discount</strong> for MAC attendees</span>
+                    <span className="text-zinc-700"><strong>€50 discount</strong> for MAC ticket holders</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-brand-sea mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-zinc-700">Bridge accommodation (subject to availability)</span>
+                    <span className="text-zinc-700">Bridge accommodation available (extra cost)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-brand-sea mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-zinc-700">9 days of world-class training</span>
+                    <span className="text-zinc-700">9 days total of world-class training</span>
                   </li>
                 </ul>
 
                 <Button
-                  href="mailto:hello@acrointhesun.com?subject=Pre-Fest + MAC Bundle Registration"
+                  href="mailto:mediterraneanacroconvention@gmail.com?subject=Pre-Fest MAC Discount Registration"
                   variant="primary"
                   size="lg"
-                  className="w-full justify-center mt-auto"
+                  className="w-full justify-center"
                 >
-                  Get Bundle Deal
+                  Get Discount
                 </Button>
               </div>
             </Reveal>
@@ -650,7 +637,7 @@ export default function PreFestPage() {
                   </svg>
                 </summary>
                 <p className="mt-4 text-zinc-600">
-                  Please reach out to us at hello@acrointhesun.com to discuss your skill level. We want to ensure everyone can benefit from and contribute to the intensive's advanced focus.
+                  Please reach out to us at mediterraneanacroconvention@gmail.com to discuss your skill level. We want to ensure everyone can benefit from and contribute to the intensive's advanced focus.
                 </p>
               </details>
             </Reveal>
@@ -692,7 +679,7 @@ export default function PreFestPage() {
                   </svg>
                 </summary>
                 <p className="mt-4 text-zinc-600">
-                  Expect full days of training (8+ hours per day) split between Icarians and Whips/Whip-Pops tracks. Detailed schedule will be shared closer to the event.
+                  We'll have three training sessions per day on Saturday (Oct 3) and Sunday (Oct 4), and one session on Monday (Oct 5). You'll have flexibility to choose between Icarians and Whips tracks throughout. Detailed schedule will be shared closer to the event.
                 </p>
               </details>
             </Reveal>
@@ -726,7 +713,7 @@ export default function PreFestPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
-                href="mailto:hello@acrointhesun.com?subject=Pre-Fest Registration Inquiry"
+                href="mailto:mediterraneanacroconvention@gmail.com?subject=Pre-Fest Registration Inquiry"
                 variant="primary"
                 size="lg"
               >

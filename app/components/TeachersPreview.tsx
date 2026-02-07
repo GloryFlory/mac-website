@@ -80,7 +80,7 @@ Together we have been practicing acroyoga since 2020. We have attended numerous 
     id: 4,
     name: 'Lloydie and Flo',
     duoName: 'Double Up Acro',
-    roleTags: ['L-Basing', 'Technique', 'Progressions'],
+    roleTags: ['L-Base', 'Flows', 'Aesthetics'],
     imageUrl: '/teachers/Lloydie and Flo/3.png',
     videoUrl: '/teachers/Lloydie and Flo/video-output-C48C08F9-96F9-4613-848B-33F280A9B3EB.mov',
     location: 'Bali, Indonesia',
