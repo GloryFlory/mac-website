@@ -546,8 +546,8 @@ export default function PreFestPage() {
             {/* Pre-Fest Discount for MAC Attendees */}
             <Reveal delay={0.2}>
               <div className="bg-white rounded-2xl shadow-xl border-2 border-brand-sun p-8 relative overflow-hidden flex flex-col h-full">
-                {/* Best Value Badge - Repositioned */}
-                <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-sun text-zinc-900 rounded-full text-xs font-bold mb-4 self-start">
+                {/* Best Value Badge - Absolute positioned */}
+                <div className="absolute top-6 left-6 inline-flex items-center gap-2 px-4 py-2 bg-brand-sun text-zinc-900 rounded-full text-xs font-bold">
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
@@ -594,7 +594,7 @@ export default function PreFestPage() {
                     <svg className="w-5 h-5 text-brand-sea mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
-                    <span className="text-zinc-700">9 days total of world-class training</span>
+                    <span className="text-zinc-700">9 days in the Mediterranean with tons of Acro</span>
                   </li>
                 </ul>
 
@@ -702,13 +702,13 @@ export default function PreFestPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 sm:py-24 px-6 bg-gradient-to-br from-brand-sea via-brand-sea/95 to-brand-sea">
+      <section className="py-20 sm:py-24 px-6 bg-gradient-to-br from-brand-sea via-brand-sea/95 to-brand-sea/90">
         <div className="max-w-4xl mx-auto text-center">
           <Reveal>
-            <h2 className="font-serif text-4xl sm:text-5xl font-bold mb-6 text-white drop-shadow-lg">
+            <h2 className="font-serif text-4xl sm:text-5xl font-bold mb-6 text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
               Ready to Take Your Practice Further?
             </h2>
-            <p className="text-xl text-white mb-8 max-w-2xl mx-auto drop-shadow-md">
+            <p className="text-xl text-white mb-8 max-w-2xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
               Join 29 other intermediate/advanced practitioners for this exclusive intensive. Limited spots available.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
