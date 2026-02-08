@@ -34,16 +34,16 @@ export default function PreFestPage() {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
-              Pre-Festival<br />Intensive
+            <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold mb-6 leading-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]" style={{ color: '#FFFFFF' }}>
+              MAC Pre-Festival<br />Intensive
             </h1>
           </Reveal>
 
           <Reveal delay={0.2}>
-            <p className="text-xl sm:text-2xl text-white font-semibold mb-4 drop-shadow-lg">
+            <p className="text-xl sm:text-2xl font-semibold mb-4 drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]" style={{ color: '#FFFFFF' }}>
               October 3–5, 2026
             </p>
-            <p className="text-lg sm:text-xl text-white max-w-2xl mx-auto mb-8 drop-shadow-lg">
+            <p className="text-lg sm:text-xl max-w-2xl mx-auto mb-8 drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]" style={{ color: '#FFFFFF' }}>
               An exclusive 3-day deep dive into Icarians and Whips with two expert couples
             </p>
           </Reveal>
@@ -705,10 +705,10 @@ export default function PreFestPage() {
       <section className="py-20 sm:py-24 px-6 bg-gradient-to-br from-brand-sea via-brand-sea/95 to-brand-sea/90">
         <div className="max-w-4xl mx-auto text-center">
           <Reveal>
-            <h2 className="font-serif text-4xl sm:text-5xl font-bold mb-6 text-[#F1B139] drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
+            <h2 className="font-serif text-4xl sm:text-5xl font-bold mb-6 drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]" style={{ color: '#F1B139' }}>
               Ready to Take Your Practice Further?
             </h2>
-            <p className="text-xl text-white mb-8 max-w-2xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
+            <p className="text-xl mb-8 max-w-2xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]" style={{ color: '#FFFFFF' }}>
               Join 29 other intermediate/advanced practitioners for this exclusive intensive. Limited spots available.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
