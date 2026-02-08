@@ -34,7 +34,7 @@ export default function PreFestPage() {
           </Reveal>
 
           <Reveal delay={0.1}>
-            <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold mb-6 leading-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]" style={{ color: '#FFFFFF' }}>
+            <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl font-bold mb-6 leading-tight" style={{ color: '#106EA9', textShadow: '0 4px 12px rgba(0,0,0,0.8)' }}>
               MAC Pre-Festival<br />Intensive
             </h1>
           </Reveal>

@@ -65,7 +65,7 @@ const Header = () => {
               </Link>
             ))}
             <Link
-              href="/#pricing"
+              href={pathname === '/pre-fest' ? '#pricing' : '/#pricing'}
               className="ml-4 px-6 py-2.5 bg-brand-sun text-zinc-900 font-semibold rounded-full hover:bg-brand-sun/90 hover:scale-105 transition-all duration-200 shadow-lg"
             >
               Get Tickets
@@ -114,7 +114,7 @@ const Header = () => {
                 </Link>
               ))}
               <Link
-                href="/#pricing"
+                href={pathname === '/pre-fest' ? '#pricing' : '/#pricing'}
                 onClick={() => setMobileMenuOpen(false)}
                 className="mt-2 px-4 py-3 bg-brand-sun text-zinc-900 font-semibold rounded-lg text-center hover:bg-brand-sun/90 transition-colors"
               >
