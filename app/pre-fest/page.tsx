@@ -705,7 +705,7 @@ export default function PreFestPage() {
       <section className="py-20 sm:py-24 px-6 bg-gradient-to-br from-brand-sea via-brand-sea/95 to-brand-sea/90">
         <div className="max-w-4xl mx-auto text-center">
           <Reveal>
-            <h2 className="font-serif text-4xl sm:text-5xl font-bold mb-6 text-brand-sun drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
+            <h2 className="font-serif text-4xl sm:text-5xl font-bold mb-6 text-[#F1B139] drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
               Ready to Take Your Practice Further?
             </h2>
             <p className="text-xl text-white mb-8 max-w-2xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
