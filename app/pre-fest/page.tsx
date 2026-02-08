@@ -40,7 +40,7 @@ export default function PreFestPage() {
           </Reveal>
 
           <Reveal delay={0.2}>
-            <p className="text-xl sm:text-2xl text-brand-sun font-semibold mb-4 drop-shadow-lg">
+            <p className="text-xl sm:text-2xl text-white font-semibold mb-4 drop-shadow-lg">
               October 3–5, 2026
             </p>
             <p className="text-lg sm:text-xl text-white max-w-2xl mx-auto mb-8 drop-shadow-lg">
