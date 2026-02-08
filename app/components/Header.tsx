@@ -18,12 +18,21 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navigation = [
-    { name: 'Teachers', href: '/teachers' },
-    { name: 'Venue', href: '/venue' },
-    { name: 'Schedule', href: '/schedule' },
-    { name: 'Info', href: '/info' },
-  ];
+  // Dynamic navigation based on current page
+  const isPreFest = pathname === '/pre-fest';
+  
+  const navigation = isPreFest
+    ? [
+        { name: 'Teachers', href: '#tracks' },
+        { name: 'Venue', href: '/venue' },
+        { name: 'Info', href: '/info' },
+      ]
+    : [
+        { name: 'Teachers', href: '/teachers' },
+        { name: 'Venue', href: '/venue' },
+        { name: 'Schedule', href: '/schedule' },
+        { name: 'Info', href: '/info' },
+      ];
 
   return (
     <header 

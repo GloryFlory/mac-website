@@ -71,7 +71,7 @@ export default function PreFestPage() {
       </ParallaxHero>
 
       {/* Expert-Led Training Tracks - Combined Section */}
-      <section className="py-20 sm:py-24 px-6 bg-gradient-to-b from-white to-brand-sand/10">
+      <section id="tracks" className="py-20 sm:py-24 px-6 bg-gradient-to-b from-white to-brand-sand/10">
         <div className="max-w-6xl mx-auto">
           <Reveal>
             <div className="text-center mb-16">
