@@ -103,22 +103,8 @@ Together, Manas and Mira bring the perfect balance: technical mastery meets play
   },
   {
     id: 6,
-    name: 'Maria and Flo',
-    roleTags: ['Flows', 'Poses', 'Washing Machines'],
-    imageUrl: '/teachers/Maria and Flo/AcroFlo-47.jpg',
-    videoUrl: '/teachers/Maria and Flo/AcroGarden.mov',
-    location: 'Malta',
-    bio: `Maria discovered AcroYoga four years ago in Malta and it was love at first fly! Together with Flo, they organize workshops for beginners and improvers, aiming to spread the love for this wonderful practice. They hosted the first Mediterranean Acro Convention in 2024.
-
-Flo has a background in breakdancing and acrobatics, which naturally led him to Acroyoga as a way to explore movement through connection. With over 5 years of practice, he's developed a strong passion for coaching beginners and helping them discover the joy of L-Basing. 
-
-Maria and Flo are dedicated to making AcroYoga accessible, joyful, and empowering for practitioners at every stage of their journey. They are committed to making sure every person feels seen, supported, and valued in their journey. The sky's the limit & Safety is Sexy!`,
-    instagram: 'https://www.instagram.com/acroflo_malta/',
-  },
-  {
-    id: 7,
     name: 'Nick and Chrysa',
-    roleTags: ['Flows', 'Handstands', 'Dance'],
+    roleTags: ['Flow', 'Balance', 'Inversions'],
     imageUrl: '/teachers/Nick and Chrysa/profile.jpg',
     videoUrl: '/teachers/Nick and Chrysa/video.mp4',
     location: 'Greece',
@@ -130,6 +116,20 @@ Nick is a Certified Yoga & AcroYoga teacher and a Thai Massage Therapist. Throug
 
 Chrysa is a Certified Yoga Teacher and an impressive handbalancer. Her passions are acroyoga, handstands and dancing. In her classes she manages to merge all her passions together creating unique flows and movements allowing their students to express freely.`,
     instagram: 'https://www.instagram.com/nick_chrysa_acro/',
+  },
+  {
+    id: 7,
+    name: 'Maria and Flo',
+    roleTags: ['Flows', 'Poses', 'Washing Machines'],
+    imageUrl: '/teachers/Maria and Flo/AcroFlo-47.jpg',
+    videoUrl: '/teachers/Maria and Flo/AcroGarden.mov',
+    location: 'Malta',
+    bio: `Maria discovered AcroYoga four years ago in Malta and it was love at first fly! Together with Flo, they are the organizers of the Mediterranean Acro Convention, having hosted the first edition in 2024. Their passion lies in bringing people together and creating unforgettable experiences in Malta.
+
+Flo has a background in breakdancing and acrobatics, which naturally led him to Acroyoga as a way to explore movement through connection. With over 5 years of practice, he's developed a strong passion for coaching beginners and helping them discover the joy of L-Basing.
+
+Maria and Flo are dedicated to making AcroYoga accessible, joyful, and empowering for practitioners at every stage of their journey. They love fostering community, bringing acro enthusiasts from around the world to Malta, and making sure every person feels seen, supported, and valued in their journey. The sky's the limit & Safety is Sexy!`,
+    instagram: 'https://www.instagram.com/acroflo_malta/',
   },
 ];
 

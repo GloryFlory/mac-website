@@ -116,33 +116,8 @@ Manas, originally from India, finds joy in AcroYoga as it brings him to a state 
   },
   {
     id: 6,
-    name: 'Maria and Flo',
-    roleTags: ['Flows', 'Poses', 'Washing Machines'],
-    imageUrl: '/teachers/Maria and Flo/AcroFlo-47.jpg',
-    videoUrl: '/teachers/Maria and Flo/AcroGarden.mov',
-    location: 'Malta',
-    bio: `Maria discovered AcroYoga four years ago in Malta and it was love at first fly! Coming from a background in dance, yoga and pole dancing, she found AcroYoga to be an incredible way to build trust and connection, both with herself and others.
-
-Her desire to improve her skills and challenge herself, led Maria to travel to Bali and Thailand, where she joined bigger and vibrant AcroYoga communities to deepen her practice.
-
-For Maria, AcroYoga isn't just exercise; it's a super fun journey of self-discovery. It's helping her overcome fears and boost confidence, filling her days with joy and excitement.
-
-Together with Flo, they organize workshops for beginners and improvers, aiming to spread the love for this wonderful practice and expand the AcroYoga community in Malta.
-
-AcroYoga has been Flo's jam since the summer of 2018 and he's loved spinning, popping and turning people ever since. He's also known to step into the role of a flyer himself at times. 
-
-Flo's approach to AcroYoga is simple: The sky's the limit & Safety is Sexy!
-
-In addition to his Acroyoga experience, Flo is also a Yoga Teacher, Thai Massage Therapist and Breathwork facilitator. 
-
-Together, they are organizing workshops for beginners with the goal to share this wonderful practice and expand the AcroYoga community in Malta! Hosting the very first MAC in 2024 has already brought some of the best teachers around the globe to Malta and the second edition will be even bigger!`,
-    levels: ['Beginner', 'Intermediate'],
-    instagram: 'https://www.instagram.com/acroyoga_malta/',
-  },
-  {
-    id: 7,
     name: 'Nick and Chrysa',
-    roleTags: ['Flows', 'Handstands', 'Dance'],
+    roleTags: ['Flow', 'Balance', 'Inversions'],
     imageUrl: '/teachers/Nick and Chrysa/profile.jpg',
     videoUrl: '/teachers/Nick and Chrysa/video.mp4',
     location: 'Greece',
@@ -155,6 +130,31 @@ Nick is a Certified Yoga & AcroYoga teacher and a Thai Massage Therapist. Throug
 Chrysa is a Certified Yoga Teacher and an impressive handbalancer. Her passions are acroyoga, handstands and dancing. In her classes she manages to merge all her passions together creating unique flows and movements allowing their students to express freely.`,
     levels: ['Beginner', 'Intermediate'],
     instagram: 'https://www.instagram.com/nick_chrysa_acro/',
+  },
+  {
+    id: 7,
+    name: 'Maria and Flo',
+    roleTags: ['Flows', 'Poses', 'Washing Machines'],
+    imageUrl: '/teachers/Maria and Flo/AcroFlo-47.jpg',
+    videoUrl: '/teachers/Maria and Flo/AcroGarden.mov',
+    location: 'Malta',
+    bio: `Maria discovered AcroYoga four years ago in Malta and it was love at first fly! Coming from a background in dance, yoga and pole dancing, she found AcroYoga to be an incredible way to build trust and connection, both with herself and others.
+
+Her desire to improve her skills and challenge herself, led Maria to travel to Bali and Thailand, where she joined bigger and vibrant AcroYoga communities to deepen her practice.
+
+For Maria, AcroYoga isn't just exercise; it's a super fun journey of self-discovery. It's helping her overcome fears and boost confidence, filling her days with joy and excitement.
+
+Together with Flo, Maria is the co-organizer of the Mediterranean Acro Convention. Their passion lies in bringing people together and creating unforgettable experiences in Malta. Hosting the very first MAC in 2024 brought some of the best teachers from around the globe to Malta, and the second edition will be even bigger!
+
+AcroYoga has been Flo's jam since the summer of 2018 and he's loved spinning, popping and turning people ever since. He's also known to step into the role of a flyer himself at times. 
+
+Flo's approach to AcroYoga is simple: The sky's the limit & Safety is Sexy!
+
+In addition to his Acroyoga experience, Flo is also a Yoga Teacher, Thai Massage Therapist and Breathwork facilitator. 
+
+Together, they love fostering community, organizing workshops for beginners and improvers, and making sure every person feels seen, supported, and valued in their journey. They are dedicated to expanding the AcroYoga community in Malta and creating a welcoming space where practitioners from around the world can connect and grow together.`,
+    levels: ['Beginner', 'Intermediate'],
+    instagram: 'https://www.instagram.com/acroyoga_malta/',
   },
 ];
 
