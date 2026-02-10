@@ -22,7 +22,7 @@ const faqs: FaqItem[] = [
   {
     id: 'tickets',
     question: 'When do tickets go on sale?',
-    answer: 'Tickets are limited to 75 participants to maintain an intimate, high-quality experience. Super Early Bird tickets are available now until March 31st at €599. Early Bird tickets (€699) and Regular tickets (€799) will be released later. We recommend booking early to secure your spot at the best price.',
+    answer: 'Tickets are limited to 75 participants to maintain an intimate, high-quality experience. Super Early Bird tickets are now SOLD OUT. Early Bird tickets are available now at €699 (flying away fast!). Regular tickets (€799) will be released later. We recommend booking early to secure your spot at the best price.',
   },
   {
     id: 'refunds',
