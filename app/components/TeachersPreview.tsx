@@ -115,6 +115,22 @@ Flo has a background in breakdancing and acrobatics, which naturally led him to 
 Maria and Flo are dedicated to making AcroYoga accessible, joyful, and empowering for practitioners at every stage of their journey. They are committed to making sure every person feels seen, supported, and valued in their journey. The sky's the limit & Safety is Sexy!`,
     instagram: 'https://www.instagram.com/acroflo_malta/',
   },
+  {
+    id: 7,
+    name: 'Nick and Chrysa',
+    roleTags: ['Flows', 'Handstands', 'Dance'],
+    imageUrl: '/teachers/Nick and Chrysa/profile.jpg',
+    videoUrl: '/teachers/Nick and Chrysa/video.mp4',
+    location: 'Greece',
+    bio: `Nick and Chrysa are an acrobatic couple from Greece. They stumbled upon AcroYoga training about 6 years ago and that's when their life changed radically. Since then, they play, train and keep evolving together.
+
+The last couple of years they have been continuously teaching weekly acroyoga beginner and intermediate classes as well as organizing thematic workshops and jams across Athens. Their aspiration is to spread their passion and share the acroyoga art along Greece!
+
+Nick is a Certified Yoga & AcroYoga teacher and a Thai Massage Therapist. Through his valuable communication skills he achieves to build a safe environment for his students to flourish and make them feel as a family.
+
+Chrysa is a Certified Yoga Teacher and an impressive handbalancer. Her passions are acroyoga, handstands and dancing. In her classes she manages to merge all her passions together creating unique flows and movements allowing their students to express freely.`,
+    instagram: 'https://www.instagram.com/nick_chrysa_acro/',
+  },
 ];
 
 const TeachersPreview: FC = () => {

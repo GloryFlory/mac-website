@@ -139,6 +139,23 @@ Together, they are organizing workshops for beginners with the goal to share thi
     levels: ['Beginner', 'Intermediate'],
     instagram: 'https://www.instagram.com/acroyoga_malta/',
   },
+  {
+    id: 7,
+    name: 'Nick and Chrysa',
+    roleTags: ['Flows', 'Handstands', 'Dance'],
+    imageUrl: '/teachers/Nick and Chrysa/profile.jpg',
+    videoUrl: '/teachers/Nick and Chrysa/video.mp4',
+    location: 'Greece',
+    bio: `Nick and Chrysa are an acrobatic couple from Greece. They stumbled upon AcroYoga training about 6 years ago and that's when their life changed radically. Since then, they play, train and keep evolving together.
+
+The last couple of years they have been continuously teaching weekly acroyoga beginner and intermediate classes as well as organizing thematic workshops and jams across Athens. Their aspiration is to spread their passion and share the acroyoga art along Greece!
+
+Nick is a Certified Yoga & AcroYoga teacher and a Thai Massage Therapist. Through his valuable communication skills he achieves to build a safe environment for his students to flourish and make them feel as a family.
+
+Chrysa is a Certified Yoga Teacher and an impressive handbalancer. Her passions are acroyoga, handstands and dancing. In her classes she manages to merge all her passions together creating unique flows and movements allowing their students to express freely.`,
+    levels: ['Beginner', 'Intermediate'],
+    instagram: 'https://www.instagram.com/nick_chrysa_acro/',
+  },
 ];
 
 export default function TeachersPage() {
