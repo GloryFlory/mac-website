@@ -24,7 +24,6 @@ const primaryTiers: PricingTier[] = [
     available: false,
     availabilityText: 'SOLD OUT',
     highlighted: false,
-    special: 'Save €200',
   },
   {
     id: 'early-bird',
