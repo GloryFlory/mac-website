@@ -91,19 +91,19 @@ export default function Home() {
           </div>
 
           {/* Quick Stats Chips */}
-          <div className="flex flex-wrap gap-4 justify-center items-center">
-            <div className="px-6 py-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
-              <span className="text-white font-medium text-sm sm:text-base">
+          <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-4 justify-center items-center max-w-full px-4">
+            <div className="px-3 sm:px-4 md:px-6 py-2 sm:py-2.5 md:py-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20 flex-shrink-0">
+              <span className="text-white font-medium text-xs sm:text-sm md:text-base whitespace-nowrap">
                 40+ Workshops
               </span>
             </div>
-            <div className="px-6 py-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
-              <span className="text-white font-medium text-sm sm:text-base">
+            <div className="px-3 sm:px-4 md:px-6 py-2 sm:py-2.5 md:py-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20 flex-shrink-0">
+              <span className="text-white font-medium text-xs sm:text-sm md:text-base whitespace-nowrap">
                 All Levels Welcome
               </span>
             </div>
-            <div className="px-6 py-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20">
-              <span className="text-white font-medium text-sm sm:text-base">
+            <div className="px-3 sm:px-4 md:px-6 py-2 sm:py-2.5 md:py-3 bg-white/10 backdrop-blur-md rounded-full border border-white/20 flex-shrink-0">
+              <span className="text-white font-medium text-xs sm:text-sm md:text-base whitespace-nowrap">
                 4-Star Resort
               </span>
             </div>
