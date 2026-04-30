@@ -51,7 +51,7 @@ const secondaryTiers: PricingTier[] = [
     id: 'weekend',
     name: 'Weekend Pass',
     price: '€449',
-    description: 'Saturday & Sunday access only',
+    description: 'Friday, Saturday & Sunday access only',
     available: true,
     availabilityText: 'Limited',
     secondary: true,
