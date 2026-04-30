@@ -42,7 +42,11 @@ export default function StructuredData() {
       },
       {
         "@type": "PerformingGroup",
-        "name": "Caspian and Laura - AcroSpirit"
+        "name": "Michal and Klara - Acro Klaris / Acro Misaris"
+      },
+      {
+        "@type": "PerformingGroup",
+        "name": "Eli and Bagaz - Acrobagaz"
       },
       {
         "@type": "PerformingGroup",

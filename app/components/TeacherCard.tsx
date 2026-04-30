@@ -14,6 +14,7 @@ interface TeacherCardProps {
   instagram?: string;
   youtube?: string;
   website?: string;
+  imageObjectPosition?: string;
 }
 
 const TeacherCard: FC<TeacherCardProps> = ({
@@ -27,6 +28,7 @@ const TeacherCard: FC<TeacherCardProps> = ({
   instagram,
   youtube,
   website,
+  imageObjectPosition = 'object-center',
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -76,7 +78,7 @@ const TeacherCard: FC<TeacherCardProps> = ({
               alt={`${name}, ${roleTags.join(', ')}`}
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              className={`object-cover ${imageObjectPosition} group-hover:scale-105 transition-transform duration-500`}
             />
           )}
           {/* Hover overlay hint */}

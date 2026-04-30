@@ -15,6 +15,7 @@ interface Teacher {
   instagram?: string;
   youtube?: string;
   website?: string;
+  imageObjectPosition?: string;
 }
 
 const teachers: Teacher[] = [
@@ -34,47 +35,22 @@ Traveling and sharing this practice fills our hearts. We're inspired by discover
     instagram: 'https://www.instagram.com/acro.conciencia/',
   },
   {
-    id: 2,
-    name: 'Caspian and Laura',
-    duoName: 'AcroSpirit',
-    roleTags: ['Flows', 'Icarians', 'Acro Dance', 'Pops'],
-    imageUrl: '/teachers/Caspian and Laura/Vertical Headshots Cuddle.jpg',
-    videoUrl: '/teachers/Caspian and Laura/Vertical Bali 2023 L-base Part2 Highlights Reel.mp4',
-    location: 'Bali, Indonesia',
-    bio: `Caspian and Laura are acro teachers who strive to be skilled in all areas of acro. They enjoy teaching students of all levels, and enjoy the different challenges and disciplines that acroyoga has to offer.
-
-They are skilled in Icarians, Hand to Hands, Whips, Standing Acrobatics, Flows, Washing Machines, Therapeutics and more, with a current focus on more dynamic icarian and standing skills. 
-
-They are increasingly inspired and motivated to improve their technique and understanding in all areas of acro whilst also being creative, and developing new moves and washing machines. 
-
-Caspian is great in analysing and understanding technical details and Laura's embodiment and implementation of refinements, as well as her excited celebrations compliment their partnership. Together they have built a powerful and balanced teaching dynamic that allows each of their unique personalities and skills to shine together.
-
-They had the opportunity to learn from many highly skilled teachers like Wybren Da Silva, Evan Josef, Pri & Jenn, Mediogiromas and many more who've all ignited the desire to be the best practitioners and teachers they can be!
-
-Their classes are technical, focussed on giving detailed cues, smart progressions, personal coaching and always having safety as a high priority. They both have a background in martial arts which contributed to their interest in safe exit strategies, falling and rolling which they use in their own practice as well as in their teaching. 
-
-They aim to empower their students by sharing a foundational understanding of acro skills, and also by embracing and highlighting the non-physical aspects of acroyoga. With the goal that students will safely and successfully grow their own practice independently. 
-
-As a couple with a training and teaching partnership they experience the continuous opportunity that acroyoga offers to develop in communication, interpersonal skills and mindset, and like to share these benefits with students too.`,
-    instagram: 'https://www.instagram.com/acrospirit/',
-    youtube: 'https://youtube.com/c/TheAcroyogaShow',
-  },
-  {
     id: 3,
-    name: 'Michal and Sara',
-    duoName: 'Acro Misaris',
-    roleTags: ['Whips', 'Pops', 'Icarians'],
-    imageUrl: '/teachers/Michal and Sara/472529068_18033178583442028_7109940112774191055_n.jpg',
-    videoUrl: '/teachers/Michal and Sara/AQMuydaPPC31VQIJj7EbpXt-HNolmjsNis836XvE7CLyu32uRiyXlPRvuXO9dCWAOxyKIRAY0snUzHRMWzlsnBmLGQIxhlPU4kIPe0k.mp4',
+    name: 'Michal and Klara',
+    duoName: 'Acro Klaris / Acro Misaris',
+    roleTags: ['Flows', 'Icarians', 'Whip-Pops', 'F2F'],
+    imageUrl: '/teachers/Michal and Klara/Eli and Bagaz.jpg',
+    videoUrl: '/teachers/Michal and Klara/IMG_4319.mov',
     location: 'Slovakia',
-    bio: `We are Misaris! (Michal + Sara "Saris"). We are a partner and acrobatic duo based in Bratislava, where we conduct regular acroyoga lessons. We enthusiastically combine our favourite disciplines such as whips, pops and icarians into smooth, harmonious sequences.
+    bio: `Klára has dedicated her whole life to sports, and is most defined by aesthetic disciplines—dance, gymnastics, and acrobatics. In her everyday work, she teaches movement preparation for children and parents from as early as 10 months old, gymnastics from age 3, and also works as a physiotherapist.
 
-Sara is a physiotherapist and fitness trainer and her vast body knowledge, solid handstands and flexible whips are the basis of our mutual partnership. Michal dedicates himself mainly to physical and mental preparation, often brings a new perspective, and his knowledge of technique, physics and catching makes our practice significantly safer.
+Miško has been involved in sports from athletics and soccer to calisthenics, and developed a passion for coaching while completing his Master's degree in Sports Sciences. Seven years ago, he witnessed his first acroyoga performance and fell in love with the physical and aesthetic dimensions of the practice—later discovering its community aspect too. Training alongside Sara (his Acro Misaris partner), he progressed rapidly while immersing himself in classes and festivals and helping grow the Bratislava acro community.
 
-Our specialization is whips, pops and icarians. As a physiotherapist and base, we are particularly strong in biomechanics, position and active movement.
+Together, Michal and Klara regularly train and teach workshops covering flows, icarians, whip-pops, and F2F—both at home and at festivals.
 
-Together we have been practicing acroyoga since 2020. We have attended numerous international jams, workshops, retreats, and festivals. It's a lifestyle that fills us with energy and joy. We love sharing what we know and creating a space where everyone can find their own flow, test their limits, and move forward with confidence.`,
+In their workshops, expect engaging, fun movement exploration with a strong focus on biomechanics and high-quality technique.`,
     instagram: 'https://www.instagram.com/misaris_acro/',
+    imageObjectPosition: 'object-[center_30%]',
   },
   {
     id: 4,
@@ -100,6 +76,23 @@ Manas is one of the kindest, most humble teachers you'll meet—and also one of 
 
 Together, Manas and Mira bring the perfect balance: technical mastery meets playful creativity. Their classes are equal parts skill-building, connection, and joy—and their energy together is nothing short of inspiring!`,
     instagram: 'https://www.instagram.com/manas_acro_addict/',
+  },
+  {
+    id: 8,
+    name: 'Eli and Bagaz',
+    duoName: 'Acrobagaz',
+    roleTags: ['Icarians', 'Flows', 'Whip-Pops', 'Standing Acro'],
+    imageUrl: '/teachers/Eli and Bagaz/mini-BarefootyogaSLO-96.jpg',
+    videoUrl: '/teachers/Eli and Bagaz/Eli and Bagaz.mp4',
+    location: 'North-East Italy',
+    instagram: 'https://www.instagram.com/acrobagaz/',
+    bio: `Matteo, aka Acrobagaz, found his Acroyoga passion while balancing on a slackline between two trees. He dove into workshops, seminars, and retreats across Italy and Spain, creating inclusive Acroyoga communities along the way. After training at Acroyoga Montréal, he has been spreading joy through workshops across Europe for the past 12 years—his smile and enthusiasm making every experience truly magical.
+
+Elisa danced her way through hip hop for over a decade before discovering Acroyoga. Exploring workshops and retreats throughout Italy and Europe, she found balance and trust while sharing her passion with others. Don't underestimate her petite frame—Elisa embraces both flying and basing with versatility and contagious enthusiasm!
+
+They met in February 2022, and since then they have been playing, training, creating, and teaching together across Italy and Europe. They love creating highly "tangled" flows and are always on the hunt for new icarians, whip-pops, and standing sequences. At the core of their practice are communication, progressions, and safety—adapting to every body type and using each person's uniqueness as a resource.
+
+You'll recognise them easily: he looks more or less like a drunken rainbow, and she makes herself heard like a howler monkey—but with chocolate instead of bananas!`,
   },
   {
     id: 6,
@@ -167,49 +160,10 @@ const TeachersPreview: FC = () => {
                 instagram={teacher.instagram}
                 youtube={teacher.youtube}
                 website={teacher.website}
+                imageObjectPosition={teacher.imageObjectPosition}
               />
             </Reveal>
           ))}
-          
-          {/* More Teachers Coming Soon Card */}
-          <Reveal delay={teachers.length * 0.1}>
-            <article className="bg-gradient-to-br from-brand-sand/30 to-brand-sun/20 rounded-2xl overflow-hidden border-2 border-dashed border-brand-sea/30 hover:border-brand-sea/50 transition-all duration-300 flex flex-col items-center justify-center min-h-[400px] p-8">
-              <div className="text-center space-y-4">
-                {/* Icon */}
-                <div className="w-20 h-20 mx-auto bg-brand-sea/10 rounded-full flex items-center justify-center">
-                  <svg
-                    className="w-10 h-10 text-brand-sea"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 4v16m8-8H4"
-                    />
-                  </svg>
-                </div>
-                
-                {/* Title */}
-                <h3 className="text-2xl font-serif font-bold text-brand-sea">
-                  More Teachers
-                </h3>
-                
-                {/* Subtitle */}
-                <p className="text-lg text-zinc-600 font-medium">
-                  Announced Soon
-                </p>
-                
-                {/* Description */}
-                <p className="text-sm text-zinc-500 max-w-xs">
-                  Stay tuned for exciting announcements about additional world-class instructors
-                </p>
-              </div>
-            </article>
-          </Reveal>
         </div>
 
         {/* CTA Button */}

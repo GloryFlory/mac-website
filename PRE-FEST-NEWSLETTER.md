@@ -27,8 +27,8 @@ As a valued member of our MAC community, you have **exclusive first access** to 
 
 Before MAC 2026 officially begins, we're hosting an exclusive 3-day deep-dive intensive focusing on two of the most dynamic disciplines in acroyoga:
 
-✨ **Icarians** with Mads & Julian  
-✨ **Whips & Whip-Pops** with Duo Liquen (Pauli & Nacho)
+✨ **Icarians & Standing Acro** with Mads & Gavin  
+✨ **Whips, Whip-Pops & Icarians** with Pri & Anna
 
 ---
 
@@ -152,8 +152,8 @@ As a valued member of our MAC community, you have exclusive first access to some
 WHAT IS IT?
 -----------
 A 3-day deep-dive intensive focusing on Icarians and Whips with two expert couples:
-- Mads & Julian (Icarians)
-- Duo Liquen / Pauli & Nacho (Whips & Whip-Pops)
+- Mads & Gavin (Icarians & Standing Acro)
+- Pri & Anna (Whips, Whip-Pops & Icarians)
 
 October 3-5, 2026 | Malta | Limited to 30 Participants
 
@@ -230,8 +230,8 @@ Oct 3-5, 2026 | Malta
 Limited to 30 people
 
 3 days of deep-dive training:
-🔥 ICARIANS with Mads & Julian
-💫 WHIPS with Duo Liquen
+🔥 ICARIANS & STANDING ACRO with Mads & Gavin
+💫 WHIPS, WHIP-POPS & ICARIANS with Pri & Anna
 
 €429 standalone
 €379 for MAC ticket holders
@@ -276,7 +276,7 @@ We announced the Pre-Festival Intensive to our community a few days ago, and spo
 
 30 spots total. Several gone. This is your last day of exclusive access before we open it publicly.
 
-If you're interested in 3 days of intensive Icarians & Whips training (Oct 3-5) with Mads & Julian and Duo Liquen...
+If you're interested in 3 days of intensive Icarians, Standing Acro & Whips training (Oct 3-5) with Mads & Gavin and Pri & Anna...
 
 Now's the time: mediterraneanacroconvention.com/pre-fest
 

@@ -3,6 +3,7 @@ import Button from '../components/Button';
 import Reveal from '../components/Reveal';
 import Image from 'next/image';
 import ParallaxHero from '../components/ParallaxHero';
+import PreFestTrackCard from '../components/PreFestTrackCard';
 
 export const metadata: Metadata = {
   title: "Pre-Festival Intensive 2026 | MAC",
@@ -85,144 +86,54 @@ export default function PreFestPage() {
           </Reveal>
 
           <div className="grid lg:grid-cols-2 gap-8 mb-12">
-            {/* Icarians Track */}
             <Reveal delay={0.1}>
-              <div className="group relative bg-gradient-to-br from-brand-sea/5 to-brand-sea/10 rounded-3xl overflow-hidden border-2 border-brand-sea/20 hover:border-brand-sea/40 transition-all duration-300 hover:shadow-2xl">
-                {/* Track Badge */}
-                <div className="absolute top-6 right-6 z-10 bg-brand-sea text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-                  Track 1
-                </div>
-
-                {/* Photo/Video Placeholder */}
-                <div className="relative h-80 bg-gradient-to-br from-brand-sea/20 to-brand-sea/5 overflow-hidden">
-                  {/* TODO: Replace with stock acroyoga image for Icarians */}
-                  <Image 
-                    src="/hotel/Gymhotelspace.jpg" 
-                    alt="Icarians Training" 
-                    fill 
-                    className="object-cover"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className="p-8">
-                  <div className="mb-6">
-                    <h3 className="font-serif text-3xl font-bold text-brand-sea mb-2">
-                      Icarians Mastery
-                    </h3>
-                    <p className="text-brand-sea/70 font-semibold text-lg">with Mads & Julian</p>
-                  </div>
-
-                  <p className="text-zinc-700 mb-6 leading-relaxed">
-                    Elevate your icarians game to the next level. Master pop mechanics, aerial control, and height progression with expert guidance on technique, safety, and creative combinations.
-                  </p>
-
-                  <div className="space-y-3 mb-6">
-                    <div className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-brand-sea/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <svg className="w-4 h-4 text-brand-sea" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <p className="text-zinc-700"><strong>Pop Mechanics</strong> - Perfect your timing and power generation</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-brand-sea/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <svg className="w-4 h-4 text-brand-sea" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <p className="text-zinc-700"><strong>Height Progression</strong> - Build confidence with progressive drills</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-brand-sea/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <svg className="w-4 h-4 text-brand-sea" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <p className="text-zinc-700"><strong>Advanced Transitions</strong> - Smooth combinations and sequences</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-brand-sea/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <svg className="w-4 h-4 text-brand-sea" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <p className="text-zinc-700"><strong>Aerial Control</strong> - Precision landing and spotting techniques</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <PreFestTrackCard
+                trackNumber={1}
+                title="Icarians & Standing Acro"
+                teachers="Mads & Gavin"
+                imageUrl="/pre-fest/Mads and Gavin/Mads and Gav.jpg"
+                imageAlt="Mads & Gavin"
+                imagePosition="object-top"
+                videoUrl="/pre-fest/Mads and Gavin/Mads and Gavin.mp4"
+                accentColor="sea"
+                instagrams={[
+                  { name: 'Mads', url: 'https://www.instagram.com/mads.rayner/' },
+                  { name: 'Gavin', url: 'https://www.instagram.com/acrohawk/' },
+                ]}
+                description="Madeleine (Mads) returns to MAC for her second year—and with Maltese roots, this is something of a homecoming! A former competitive artistic gymnast turned acroyoga teacher, Mads brings a love for airtime, flipping, and Icarians. Gavin is a natural mover and experienced coach in love with Standing Acro, Dance Lifts, and Icarians. Together they create a space where you can explore your potential and experience the joy of real collaboration."
+                bio="Madeleine (Mads) returns to MAC for her second year—and with Maltese roots, this is something of a homecoming! A former competitive artistic gymnast turned acroyoga teacher, Mads brings a love for airtime, flipping, and Icarians. Gavin is a natural mover and experienced coach in love with Standing Acro, Dance Lifts, and Icarians. Together they create a space where you can explore your potential and experience the joy of real collaboration."
+                highlights={[
+                  { label: 'Pop Mechanics', detail: 'Perfect your timing and power generation' },
+                  { label: 'Height Progression', detail: 'Build confidence with progressive drills' },
+                  { label: 'Advanced Transitions', detail: 'Smooth combinations and sequences' },
+                  { label: 'Aerial Control', detail: 'Precision landing and spotting techniques' },
+                ]}
+              />
             </Reveal>
 
-            {/* Whips Track */}
             <Reveal delay={0.2}>
-              <div className="group relative bg-gradient-to-br from-brand-sun/5 to-brand-sun/10 rounded-3xl overflow-hidden border-2 border-brand-sun/30 hover:border-brand-sun/50 transition-all duration-300 hover:shadow-2xl">
-                {/* Track Badge */}
-                <div className="absolute top-6 right-6 z-10 bg-brand-sun text-zinc-900 px-4 py-2 rounded-full text-sm font-bold shadow-lg">
-                  Track 2
-                </div>
-
-                {/* Photo/Video Placeholder */}
-                <div className="relative h-80 bg-gradient-to-br from-brand-sun/20 to-brand-sun/5 overflow-hidden">
-                  {/* TODO: Replace with stock acroyoga image for Whips */}
-                  <Image 
-                    src="/hotel/Indoorhotelpool.jpg" 
-                    alt="Whips Training" 
-                    fill 
-                    className="object-cover"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className="p-8">
-                  <div className="mb-6">
-                    <h3 className="font-serif text-3xl font-bold text-brand-sea mb-2">
-                      Whips & Whip-Pops
-                    </h3>
-                    <p className="text-brand-sea/70 font-semibold text-lg">with Duo Liquen (Pauli & Nacho)</p>
-                  </div>
-
-                  <p className="text-zinc-700 mb-6 leading-relaxed">
-                    Refine your whips and master whip-pops with Duo Liquen's signature style. Learn refined technique, dynamic flow, and creative combinations that blend power with elegance.
-                  </p>
-
-                  <div className="space-y-3 mb-6">
-                    <div className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-brand-sun/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <svg className="w-4 h-4 text-brand-sea" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <p className="text-zinc-700"><strong>Whip Technique</strong> - Master the fundamentals and refinements</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-brand-sun/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <svg className="w-4 h-4 text-brand-sea" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <p className="text-zinc-700"><strong>Whip-Pop Progressions</strong> - Unlock advanced pop variations</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-brand-sun/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <svg className="w-4 h-4 text-brand-sea" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <p className="text-zinc-700"><strong>Dynamic Flow</strong> - Creative combinations and sequences</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-brand-sun/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <svg className="w-4 h-4 text-brand-sea" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                      </div>
-                      <p className="text-zinc-700"><strong>Power & Precision</strong> - Balance strength with control</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <PreFestTrackCard
+                trackNumber={2}
+                title="Whips, Whip-Pops & Icarians"
+                teachers="Pri & Anna"
+                imageUrl="/pre-fest/Pri and Anna/Priand Anna.jpg"
+                imageAlt="Pri & Anna"
+                imagePosition="object-cover"
+                videoUrl="/pre-fest/Pri and Anna/Turkish Flow (WHIPS).MOV"
+                accentColor="sun"
+                instagrams={[
+                  { name: 'Pri', url: 'https://www.instagram.com/pri_prix/' },
+                  { name: 'Anna', url: 'https://www.instagram.com/palouanna/' },
+                ]}
+                description="Pri is one of the first Acro Love certified teachers in Europe, co-founder of the DAP (Dynamic Acro Program) and creator of moves including Rising Whips, Tarzan 360, and Fish Whip-Pops. Anna brings a gymnastics background and a laser focus on dynamic acrobatics—whips, pops, and especially Icarians. Together they are committed to progressive, inclusive teaching that meets every body where it is."
+                bio="Pri is one of the first Acro Love certified teachers in Europe, co-founder of the DAP (Dynamic Acro Program) and creator of moves including Rising Whips, Tarzan 360, and Fish Whip-Pops. Anna brings a gymnastics background and a laser focus on dynamic acrobatics—whips, pops, and especially Icarians. Together they are committed to progressive, inclusive teaching that meets every body where it is."
+                highlights={[
+                  { label: 'Whip Technique', detail: 'Master the fundamentals and refinements' },
+                  { label: 'Whip-Pop Progressions', detail: 'Unlock advanced pop variations' },
+                  { label: 'Dynamic Flow', detail: 'Creative combinations and sequences' },
+                  { label: 'Power & Precision', detail: 'Balance strength with control' },
+                ]}
+              />
             </Reveal>
           </div>
 
@@ -533,10 +444,11 @@ export default function PreFestPage() {
                 </ul>
 
                 <Button
-                  href="mailto:mediterraneanacroconvention@gmail.com?subject=Pre-Fest Registration"
+                  href="https://www.wetravel.com/trips/mac-pre-festival-intensive-2026-mediterranean-acro-convention-8132462113"
                   variant="secondary"
                   size="lg"
                   className="w-full justify-center"
+                  target="_blank"
                 >
                   Register Now
                 </Button>
@@ -599,12 +511,13 @@ export default function PreFestPage() {
                 </ul>
 
                 <Button
-                  href="mailto:mediterraneanacroconvention@gmail.com?subject=Pre-Fest MAC Discount Registration"
+                  href="https://www.wetravel.com/trips/mac-pre-festival-intensive-2026-mediterranean-acro-convention-8132462113"
                   variant="primary"
                   size="lg"
                   className="w-full justify-center"
+                  target="_blank"
                 >
-                  Get Discount
+                  Register Now
                 </Button>
               </div>
             </Reveal>
