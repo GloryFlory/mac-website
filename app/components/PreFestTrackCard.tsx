@@ -154,15 +154,25 @@ const PreFestTrackCard: FC<PreFestTrackCardProps> = ({
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
               {/* Left: portrait video */}
               <div className="relative aspect-[9/16] w-full overflow-hidden rounded-2xl bg-black">
-                <video
-                  src={videoUrl}
-                  controls
-                  autoPlay
-                  playsInline
-                  preload="auto"
-                  className="w-full h-full object-contain bg-black"
-                  aria-label={`${teachers} video`}
-                />
+                {videoUrl.includes('drive.google.com') ? (
+                  <iframe
+                    src={videoUrl}
+                    className="w-full h-full"
+                    allow="autoplay"
+                    allowFullScreen
+                    aria-label={`${teachers} video`}
+                  />
+                ) : (
+                  <video
+                    src={videoUrl}
+                    controls
+                    autoPlay
+                    playsInline
+                    preload="auto"
+                    className="w-full h-full object-contain bg-black"
+                    aria-label={`${teachers} video`}
+                  />
+                )}
               </div>
 
               {/* Right: bio + highlights */}

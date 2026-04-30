@@ -94,7 +94,7 @@ export default function PreFestPage() {
                 imageUrl="/pre-fest/Mads and Gavin/Mads and Gav.jpg"
                 imageAlt="Mads & Gavin"
                 imagePosition="object-top"
-                videoUrl="/pre-fest/Mads and Gavin/Mads and Gavin.mp4"
+                videoUrl="https://drive.google.com/file/d/1CYFCTe0ZSzKOEhoQj7_veYVePRygn6eU/preview"
                 accentColor="sea"
                 instagrams={[
                   { name: 'Mads', url: 'https://www.instagram.com/mads.rayner/' },
@@ -119,7 +119,7 @@ export default function PreFestPage() {
                 imageUrl="/pre-fest/Pri and Anna/Priand Anna.jpg"
                 imageAlt="Pri & Anna"
                 imagePosition="object-cover"
-                videoUrl="/pre-fest/Pri and Anna/Turkish Flow (WHIPS).MOV"
+                videoUrl="https://drive.google.com/file/d/1pR40YFRJPQL5eteDWTXgTXZ9KctOCGfd/preview"
                 accentColor="sun"
                 instagrams={[
                   { name: 'Pri', url: 'https://www.instagram.com/pri_prix/' },

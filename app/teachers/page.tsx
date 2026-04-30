@@ -43,7 +43,7 @@ Traveling and sharing this practice fills our hearts. We're inspired by discover
     duoName: 'Acro Klaris / Acro Misaris',
     roleTags: ['Flows', 'Icarians', 'Whip-Pops', 'F2F'],
     imageUrl: '/teachers/Michal and Klara/Eli and Bagaz.jpg',
-    videoUrl: '/teachers/Michal and Klara/IMG_4319.mov',
+    videoUrl: 'https://drive.google.com/file/d/1HU2F4eSZYzYFguuWxzS8nPZiWWnAynoG/preview',
     location: 'Slovakia',
     bio: `Klára has dedicated her whole life to sports, and is most defined by aesthetic disciplines—dance, gymnastics, and acrobatics. In her everyday work, she teaches movement preparation for children and parents from as early as 10 months old, gymnastics from age 3, and also works as a physiotherapist.
 
@@ -87,9 +87,9 @@ Manas, originally from India, finds joy in AcroYoga as it brings him to a state 
     id: 8,
     name: 'Eli and Bagaz',
     duoName: 'Acrobagaz',
-    roleTags: ['Icarians', 'Flows', 'Whip-Pops', 'Standing Acro'],
+    roleTags: ['Icarians', 'Flows', 'Whip-Pops'],
     imageUrl: '/teachers/Eli and Bagaz/mini-BarefootyogaSLO-96.jpg',
-    videoUrl: '/teachers/Eli and Bagaz/Eli and Bagaz.mp4',
+    videoUrl: 'https://drive.google.com/file/d/1JyJT4wPnvKLyeocMB72C3wf4-LDfoHlB/preview',
     location: 'North-East Italy',
     instagram: 'https://www.instagram.com/acrobagaz/',
     bio: `Matteo, aka Acrobagaz, found his Acroyoga passion while balancing on a slackline between two trees. He dove into workshops, seminars, and retreats across Italy and Spain, creating inclusive Acroyoga communities along the way. After training at Acroyoga Montréal, he has been spreading joy through workshops across Europe for the past 12 years—his smile and enthusiasm making every experience truly magical.

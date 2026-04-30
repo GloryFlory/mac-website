@@ -33,7 +33,8 @@ const TeacherCard: FC<TeacherCardProps> = ({
   const [isExpanded, setIsExpanded] = useState(false);
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const isVideo = /\.(mp4|webm|ogg|mov)$/i.test(imageUrl || '');
-  const hasExpandedVideo = videoUrl && /\.(mp4|webm|ogg|mov)$/i.test(videoUrl);
+  const isDriveUrl = (url: string) => url.includes('drive.google.com');
+  const hasExpandedVideo = videoUrl && (/\.(mp4|webm|ogg|mov)$/i.test(videoUrl) || isDriveUrl(videoUrl));
 
   return (
     <>
@@ -205,15 +206,25 @@ const TeacherCard: FC<TeacherCardProps> = ({
               {/* Left: Video/Image */}
               <div className="relative aspect-[9/16] md:aspect-[9/16] w-full overflow-hidden rounded-2xl bg-brand-sand/10">
                 {hasExpandedVideo ? (
-                  <video
-                    src={videoUrl}
-                    controls
-                    autoPlay
-                    playsInline
-                    preload="auto"
-                    className="w-full h-full object-contain bg-black"
-                    aria-label={`${name} video`}
-                  />
+                  isDriveUrl(videoUrl!) ? (
+                    <iframe
+                      src={videoUrl}
+                      className="w-full h-full"
+                      allow="autoplay"
+                      allowFullScreen
+                      aria-label={`${name} video`}
+                    />
+                  ) : (
+                    <video
+                      src={videoUrl}
+                      controls
+                      autoPlay
+                      playsInline
+                      preload="auto"
+                      className="w-full h-full object-contain bg-black"
+                      aria-label={`${name} video`}
+                    />
+                  )
                 ) : (
                   <Image
                     src={imageUrl}
