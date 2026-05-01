@@ -149,8 +149,7 @@ export default function CaspianLauraView() {
       </div>
 
       {/* Hero */}
-      <div className="px-6 py-12 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #0a4d75 0%, #106EA9 100%)' }}>
-        <div className="absolute top-0 right-0 w-72 h-72 rounded-full opacity-10 pointer-events-none" style={{ background: '#F1B139', transform: 'translate(35%, -35%)' }} />
+      <div className="px-6 py-12" style={{ background: 'linear-gradient(135deg, #0a4d75 0%, #106EA9 100%)' }}>
         <div className="max-w-4xl mx-auto">
           <span className="inline-block px-3 py-1 rounded-full text-xs font-bold mb-4 bg-brand-sun text-zinc-900">
             Special Edition Portal 🍼
@@ -176,25 +175,52 @@ export default function CaspianLauraView() {
           </div>
         </section>
 
-        {/* What you're missing (lovingly) */}
+        {/* Missing vs Gaining */}
         <section>
-          <h2 className="font-serif text-2xl font-bold text-brand-sea mb-1">What You&apos;re Missing</h2>
-          <p className="text-xs text-zinc-400 mb-5">A completely objective, not-at-all guilt-trippy summary.</p>
-          <div className="grid sm:grid-cols-3 gap-4">
-            {[
-              { emoji: '☀️', label: 'Malta in October', value: '28°C & sun' },
-              { emoji: '🤸', label: 'Workshops', value: '40+ sessions' },
-              { emoji: '🫂', label: 'Jams', value: 'Many late ones' },
-              { emoji: '🍷', label: 'Poolside evenings', value: 'Every night' },
-              { emoji: '💙', label: 'Community love', value: 'Off the charts' },
-              { emoji: '🍼', label: 'Baby sleep', value: 'Also off the charts' },
-            ].map(({ emoji, label, value }) => (
-              <div key={label} className="bg-white rounded-2xl p-5 border border-zinc-200 shadow-sm text-center">
-                <div className="text-3xl mb-2">{emoji}</div>
-                <p className="text-xs font-semibold text-zinc-400 uppercase tracking-wide mb-1">{label}</p>
-                <p className="font-semibold text-zinc-800 text-sm">{value}</p>
+          <div className="grid sm:grid-cols-2 gap-6">
+            {/* Missing */}
+            <div>
+              <h2 className="font-serif text-2xl font-bold text-brand-sea mb-1">What You&apos;re Missing</h2>
+              <p className="text-xs text-zinc-400 mb-4">A completely objective, not-at-all guilt-trippy summary.</p>
+              <div className="space-y-3">
+                {[
+                  { emoji: '☀️', label: 'Malta in October', value: '28°C & sun' },
+                  { emoji: '🤸', label: 'Workshops', value: '40+ sessions' },
+                  { emoji: '🫂', label: 'Late-night jams', value: 'Many' },
+                  { emoji: '💙', label: 'Community love', value: 'Off the charts' },
+                ].map(({ emoji, label, value }) => (
+                  <div key={label} className="bg-white rounded-xl px-4 py-3 border border-zinc-200 shadow-sm flex items-center gap-3">
+                    <span className="text-2xl">{emoji}</span>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-xs font-semibold text-zinc-400 uppercase tracking-wide">{label}</p>
+                      <p className="font-semibold text-zinc-800 text-sm">{value}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+
+            {/* Gaining */}
+            <div>
+              <h2 className="font-serif text-2xl font-bold mb-1" style={{ color: '#16a34a' }}>What You&apos;re Gaining</h2>
+              <p className="text-xs text-zinc-400 mb-4">The full picture, because we&apos;re nothing if not balanced.</p>
+              <div className="space-y-3">
+                {[
+                  { emoji: '🥹', label: 'A tiny human who loves you', value: 'Unconditionally' },
+                  { emoji: '🤱', label: 'Skills no workshop covers', value: 'Nappy, swaddle, soothe' },
+                  { emoji: '🌙', label: 'A new relationship with sleep', value: 'Profound' },
+                  { emoji: '🏅', label: 'Best excuse ever', value: 'Certified & notarised' },
+                ].map(({ emoji, label, value }) => (
+                  <div key={label} className="rounded-xl px-4 py-3 border shadow-sm flex items-center gap-3" style={{ background: 'rgba(22,163,74,0.05)', borderColor: 'rgba(22,163,74,0.2)' }}>
+                    <span className="text-2xl">{emoji}</span>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-xs font-semibold uppercase tracking-wide" style={{ color: '#16a34a', opacity: 0.7 }}>{label}</p>
+                      <p className="font-semibold text-zinc-800 text-sm">{value}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 
@@ -270,10 +296,10 @@ export default function CaspianLauraView() {
               Already in the calendar
             </p>
             <h2 className="font-serif text-3xl font-bold mb-3" style={{ color: 'white' }}>
-              MAC 2027 — We&apos;re saving you a spot 🏖️
-            </h2>
-            <p className="max-w-md mx-auto text-base leading-relaxed" style={{ color: 'rgba(255,255,255,0.75)' }}>
-              Malta will still be here. The community will still be here. And by then, your little one will probably be doing better tucks than half the room.
+            MAC will still be there 🏖️
+          </h2>
+          <p className="max-w-md mx-auto text-base leading-relaxed" style={{ color: 'rgba(255,255,255,0.75)' }}>
+            The community will still be here. And by then, your little one will probably be doing better tucks than half the room.
             </p>
             <p className="mt-5 text-sm font-semibold" style={{ color: '#F1B139' }}>With so much love — Maria &amp; Flo ❤</p>
           </div>
