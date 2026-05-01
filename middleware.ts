@@ -9,6 +9,7 @@ const VALID_SLUGS = new Set([
   'eli-bagaz',
   'manas-mira',
   'nick-chrysa',
+  'caspian-laura',
   'organisers',
 ]);
 

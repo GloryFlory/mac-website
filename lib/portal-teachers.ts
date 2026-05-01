@@ -34,6 +34,7 @@ export interface PortalTeacher {
   code: string;           // public discount code for students
   portalCode: string;     // private portal access code (not the same as public code)
   isOrganiser?: boolean;
+  isBabyLeave?: boolean;
   videoSubmitted?: boolean;
   ticketsSold?: number;
   workshops: WorkshopSlot[];
@@ -162,6 +163,20 @@ export const PORTAL_TEACHERS: PortalTeacher[] = [
     },
     affiliateDiscount: 5,
     affiliateKickback: 5,
+    referenceTicketPrice: 715,
+  },
+  {
+    slug: 'caspian-laura',
+    name: 'Caspian & Laura',
+    tier: 'Featured',
+    code: 'BABYACRO',
+    portalCode: 'PICCOLINO26',
+    isBabyLeave: true,
+    workshops: [],
+    travelComp: { amount: 0, unlocked: true },
+    accommodation: { duringMAC: false },
+    affiliateDiscount: 0,
+    affiliateKickback: 0,
     referenceTicketPrice: 715,
   },
   {
