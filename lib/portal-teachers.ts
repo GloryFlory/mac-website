@@ -118,6 +118,7 @@ export const PORTAL_TEACHERS: PortalTeacher[] = [
     tier: 'Featured',
     code: 'MACROBAGAZ',
     portalCode: 'BARCHETTA26',
+    videoSubmitted: true,
     ticketsSold: 0,
     workshops: [
       { label: 'Acroyoga Workshop (90 min)', count: 4, rateEach: 90 },
