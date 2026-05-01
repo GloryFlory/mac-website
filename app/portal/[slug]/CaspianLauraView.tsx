@@ -296,7 +296,7 @@ export default function CaspianLauraView() {
               Already in the calendar
             </p>
             <h2 className="font-serif text-3xl font-bold mb-3" style={{ color: 'white' }}>
-            MAC will still be there 🏖️
+            MAC 2027 — We&apos;re saving you a spot 🏖️
           </h2>
           <p className="max-w-md mx-auto text-base leading-relaxed" style={{ color: 'rgba(255,255,255,0.75)' }}>
             The community will still be here. And by then, your little one will probably be doing better tucks than half the room.
