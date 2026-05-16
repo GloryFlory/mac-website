@@ -31,9 +31,11 @@ export default function StructuredData() {
     "offers": {
       "@type": "Offer",
       "url": "https://www.wetravel.com/trips/mediterranean-acro-convention-2026-mediterranean-acro-convention-4587517817",
+      "price": "599",
       "priceCurrency": "EUR",
       "availability": "https://schema.org/InStock",
-      "validFrom": "2026-01-01"
+      "validFrom": "2026-01-01",
+      "validThrough": "2026-10-07"
     },
     "performer": [
       {
@@ -51,6 +53,14 @@ export default function StructuredData() {
       {
         "@type": "PerformingGroup",
         "name": "Manas and Mira"
+      },
+      {
+        "@type": "PerformingGroup",
+        "name": "Lloydie and Flo"
+      },
+      {
+        "@type": "PerformingGroup",
+        "name": "Nick and Chrysa"
       },
       {
         "@type": "PerformingGroup",
