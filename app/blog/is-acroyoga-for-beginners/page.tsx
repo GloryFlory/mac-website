@@ -4,7 +4,7 @@ import Reveal from '../../components/Reveal';
 
 export const metadata: Metadata = {
   title: 'Is Acroyoga for Beginners? (An Honest Answer) | MAC Blog',
-  description: 'You don't need to be flexible, strong, light, or young to start acroyoga. The real barriers are different — and they dissolve faster than you think.',
+  description: "You don't need to be flexible, strong, light, or young to start acroyoga. The real barriers are different — and they dissolve faster than you think.",
   openGraph: {
     title: 'Is Acroyoga for Beginners? (An Honest Answer)',
     description: 'You don\'t need to be flexible, strong, light, or young to start acroyoga. The real barriers are different — and they dissolve faster than you think.',
