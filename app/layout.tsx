@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from 'next/script';
 import { inter, playfair } from './fonts';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -92,6 +93,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-VKL0YSW5FB"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VKL0YSW5FB');
+          `}
+        </Script>
+      </head>
       <body className="antialiased">
         <SiteChrome>
           {children}
