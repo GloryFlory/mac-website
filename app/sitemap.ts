@@ -58,5 +58,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.7,
     },
+    {
+      url: `${baseUrl}/blog/is-acroyoga-for-beginners`,
+      lastModified: new Date('2026-05-17'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import Button from '../../components/Button';
 import Reveal from '../../components/Reveal';
@@ -79,6 +80,20 @@ export default function FirstConventionPost() {
                 <p className="text-zinc-600 leading-relaxed">
                   Eating three meals a day together in the same place with the same people — that's where the community forms. By day three, you're not strangers anymore. By day five, people are asking to make it longer. MAC listened: that's why the Pre-Fest Intensive now exists, adding three extra days for those who want more.
                 </p>
+                <figure className="mt-8">
+                  <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden">
+                    <Image
+                      src="/teachers/Coni and Mati/7I1A3558.jpg"
+                      alt="Coni and Mati performing acroyoga — headlining teachers at MAC 2026"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 768px"
+                    />
+                  </div>
+                  <figcaption className="text-sm text-zinc-400 text-center mt-3">
+                    Coni &amp; Mati — headlining teachers at MAC 2026
+                  </figcaption>
+                </figure>
               </div>
             </Reveal>
 
@@ -96,6 +111,20 @@ export default function FirstConventionPost() {
                 <p className="text-zinc-600 leading-relaxed">
                   Attendees from 2025 described it as feeling more like a luxury vacation than a training camp — and that's deliberate. As Maria, the co-organiser who's been building the Malta acro community for years, puts it: the goal is for every person to feel seen, supported, and comfortable enough to take risks on the mat.
                 </p>
+                <figure className="mt-8">
+                  <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden">
+                    <Image
+                      src="/hotel/Gymhotelspace.jpg"
+                      alt="The dedicated training space at Labranda Riviera Resort, venue for MAC 2026 in Malta"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 768px"
+                    />
+                  </div>
+                  <figcaption className="text-sm text-zinc-400 text-center mt-3">
+                    The dedicated training space at Labranda Riviera Resort — MAC&apos;s venue in Malta
+                  </figcaption>
+                </figure>
               </div>
             </Reveal>
 
@@ -155,14 +184,14 @@ export default function FirstConventionPost() {
 
             {/* CTA */}
             <Reveal>
-              <div className="bg-gradient-to-br from-brand-sea to-brand-sea/80 rounded-2xl p-8 sm:p-10 text-white text-center">
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold mb-3">
+              <div className="bg-gradient-to-br from-brand-sea to-brand-sea/80 rounded-2xl p-8 sm:p-10 text-center">
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold mb-3" style={{ color: 'white' }}>
                   MAC 2026 — October 7–11, Malta
                 </h3>
-                <p className="text-white/80 mb-2">
+                <p className="mb-2" style={{ color: 'rgba(255,255,255,0.85)' }}>
                   Early Bird tickets at €699 (all-inclusive). Capped at 75 participants.
                 </p>
-                <p className="text-white/70 text-sm mb-8">
+                <p className="text-sm mb-8" style={{ color: 'rgba(255,255,255,0.7)' }}>
                   Pre-Fest Intensive (Oct 3–5) available for those who want three extra days of deep-dive Icarians & Whips training.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -173,14 +202,12 @@ export default function FirstConventionPost() {
                   >
                     Get Your Ticket
                   </Button>
-                  <Button
+                  <a
                     href="/schedule"
-                    variant="secondary"
-                    size="lg"
-                    className="!border-white !text-white hover:!bg-white/10"
+                    className="inline-flex items-center justify-center font-semibold rounded-full px-10 py-4 text-lg border-2 border-white text-white hover:bg-white/10 transition-all duration-300"
                   >
                     View Schedule
-                  </Button>
+                  </a>
                 </div>
               </div>
             </Reveal>

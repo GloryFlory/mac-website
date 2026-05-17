@@ -14,6 +14,13 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-05-17',
     readingTime: '6 min read',
   },
+  {
+    slug: 'is-acroyoga-for-beginners',
+    title: 'Is Acroyoga for Beginners? (An Honest Answer)',
+    excerpt: 'The short answer is yes. The longer answer dismantles a few assumptions you probably have about your own body — flexibility, strength, weight, age, and the idea that there are fixed roles.',
+    date: '2026-05-17',
+    readingTime: '5 min read',
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
