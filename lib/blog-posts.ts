@@ -27,8 +27,13 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt: 'Packing for an acroyoga convention isn\'t like packing for a yoga retreat or a regular holiday. You\'re training 4–6 hours a day at a 4-star resort in Malta in October. The list looks different than you\'d expect.',
     date: '2026-05-17',
     readingTime: '5 min read',
-  },
-];
+  },  {
+    slug: 'finding-practice-partner-acroyoga-festival',
+    title: 'How to Find a Practice Partner at an Acroyoga Festival (When You\'re Coming Solo)',
+    excerpt: 'The number one thing that stops people from booking a multi-day acro convention is coming alone. Here\'s why that fear is mostly unfounded — and what actually happens when you show up solo.',
+    date: '2026-05-17',
+    readingTime: '5 min read',
+  },];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);
