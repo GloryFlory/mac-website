@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import Reveal from '../../components/Reveal';
 
@@ -81,6 +82,20 @@ export default function IsAcroyogaForBeginnersPost() {
                 <p className="text-zinc-600 leading-relaxed">
                   No yoga background needed. No gymnastics. No partner work experience. The entry point is lower than almost anyone expects, and the proof tends to show up within the first 30 seconds of trying. Maria has watched complete beginners — people who were certain a pose was physically impossible for them — achieve it on the first attempt, simply with the right cue and the right attitude.
                 </p>
+                <figure className="mt-8">
+                  <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden">
+                    <Image
+                      src="/teachers/Maria and Flo/AcroFlo-47.jpg"
+                      alt="Maria and Flo demonstrating acroyoga — co-organisers of MAC 2026"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 768px"
+                    />
+                  </div>
+                  <figcaption className="text-sm text-zinc-400 text-center mt-3">
+                    Maria &amp; Flo — co-organisers of MAC 2026, in practice
+                  </figcaption>
+                </figure>
               </div>
             </Reveal>
 

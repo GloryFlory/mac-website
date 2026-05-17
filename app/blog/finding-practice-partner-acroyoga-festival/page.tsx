@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import Reveal from '../../components/Reveal';
 
@@ -92,6 +93,20 @@ export default function FindingPartnerPost() {
                 <p className="text-zinc-600 leading-relaxed">
                   You'll likely find two or three people you gravitate toward across the week — not because you planned it, but because you kept ending up in the same workshops and your styles clicked.
                 </p>
+                <figure className="mt-8">
+                  <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden">
+                    <Image
+                      src="/teachers/Caspian and Laura/7I1A3648.jpg"
+                      alt="Caspian and Laura performing acroyoga — MAC 2026 teachers"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 768px"
+                    />
+                  </div>
+                  <figcaption className="text-sm text-zinc-400 text-center mt-3">
+                    Caspian &amp; Laura — finding your people is part of the practice
+                  </figcaption>
+                </figure>
               </div>
             </Reveal>
 

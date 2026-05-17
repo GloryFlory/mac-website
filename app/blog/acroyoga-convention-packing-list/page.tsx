@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import Reveal from '../../components/Reveal';
 
@@ -124,6 +125,20 @@ export default function PackingListPost() {
                 <p className="text-zinc-600 leading-relaxed">
                   You don't need to pack for rain, but one light layer for cooler evenings is worth including. Don't leave the swimwear at home — the Riviera Spa Hotel has pool access and the beach is right there.
                 </p>
+                <figure className="mt-8">
+                  <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden">
+                    <Image
+                      src="/hotel/PrivatehotelBeach.jpg"
+                      alt="The private beach at Labranda Riviera Resort — MAC 2026 venue in Malta"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 768px"
+                    />
+                  </div>
+                  <figcaption className="text-sm text-zinc-400 text-center mt-3">
+                    The private beach at Labranda Riviera Resort — October sun in Malta
+                  </figcaption>
+                </figure>
               </div>
             </Reveal>
 
