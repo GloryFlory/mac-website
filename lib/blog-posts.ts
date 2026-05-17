@@ -21,6 +21,13 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2026-05-17',
     readingTime: '5 min read',
   },
+  {
+    slug: 'acroyoga-convention-packing-list',
+    title: 'Acroyoga Convention Packing List: What to Actually Bring (And What to Leave Home)',
+    excerpt: 'Packing for an acroyoga convention isn\'t like packing for a yoga retreat or a regular holiday. You\'re training 4–6 hours a day at a 4-star resort in Malta in October. The list looks different than you\'d expect.',
+    date: '2026-05-17',
+    readingTime: '5 min read',
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
