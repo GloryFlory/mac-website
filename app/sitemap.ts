@@ -46,5 +46,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.3,
     },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/blog/what-to-expect-first-acroyoga-convention`,
+      lastModified: new Date('2026-05-17'),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
   ];
 }

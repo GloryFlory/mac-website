@@ -43,6 +43,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/blog" className="text-zinc-300 hover:text-white transition-colors text-sm">
+                  Blog
+                </Link>
+              </li>
+              <li>
                 <a 
                   href="https://www.wetravel.com/trips/mediterranean-acro-convention-2026-mediterranean-acro-convention-4587517817"
                   target="_blank"
