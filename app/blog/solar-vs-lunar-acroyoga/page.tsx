@@ -4,18 +4,18 @@ import Link from 'next/link';
 import Reveal from '../../components/Reveal';
 
 export const metadata: Metadata = {
-  title: 'L-Base vs Therapeutic Acroyoga: What\'s the Difference? | MAC Blog',
-  description: 'Not all acroyoga conventions teach the same thing. Here\'s the honest breakdown of L-Base and therapeutic — and where MAC sits on the spectrum.',
+  title: 'Solar vs Lunar Acroyoga: What\'s the Difference? | MAC Blog',
+  description: 'Not all acroyoga conventions teach the same thing. Here\'s the honest breakdown of solar and lunar practice — and where MAC sits on the spectrum.',
   openGraph: {
-    title: 'L-Base vs Therapeutic Acroyoga: What\'s the Difference?',
-    description: 'Not all acroyoga conventions teach the same thing. Here\'s the honest breakdown of L-Base and therapeutic — and where MAC sits on the spectrum.',
+    title: 'Solar vs Lunar Acroyoga: What\'s the Difference?',
+    description: 'Not all acroyoga conventions teach the same thing. Here\'s the honest breakdown of solar and lunar practice — and where MAC sits on the spectrum.',
   },
   alternates: {
-    canonical: 'https://www.acrointhesun.com/blog/l-base-vs-therapeutic-acroyoga',
+    canonical: 'https://www.acrointhesun.com/blog/solar-vs-lunar-acroyoga',
   },
 };
 
-export default function LBaseVsTherapeuticPost() {
+export default function SolarVsLunarPost() {
   return (
     <main className="min-h-screen">
       {/* Hero */}
@@ -37,10 +37,10 @@ export default function LBaseVsTherapeuticPost() {
               <span>6 min read</span>
             </div>
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-brand-sea leading-tight mb-6">
-              L-Base vs Therapeutic Acroyoga: What&apos;s the Difference?
+              Solar vs Lunar Acroyoga: What&apos;s the Difference?
             </h1>
             <p className="text-lg sm:text-xl text-zinc-600 leading-relaxed">
-              If you&apos;ve started exploring acroyoga events across Europe, you&apos;ve probably noticed that not all conventions are teaching the same thing. The two main branches are different enough that it&apos;s worth knowing which one you&apos;re signing up for before you book.
+              If you&apos;ve started exploring acroyoga events across Europe, you&apos;ve probably noticed that not all conventions are teaching the same thing. Solar and lunar are different enough in intention that it&apos;s worth knowing which one you&apos;re signing up for before you book.
             </p>
           </Reveal>
         </div>
@@ -54,13 +54,13 @@ export default function LBaseVsTherapeuticPost() {
             <Reveal>
               <div>
                 <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-sea mb-4">
-                  What is L-Base acroyoga?
+                  What is solar acroyoga?
                 </h2>
                 <p className="text-zinc-600 leading-relaxed mb-4">
-                  L-Base is what most people picture when they imagine acroyoga at its most dynamic. The base lies on their back and uses their feet — rather than their hands — to balance, support, and propel their partner. That shift unlocks an entirely different world of movement: continuous flows, whips, Icarians, and transitions that would be impossible standing up.
+                  Solar acroyoga is the dynamic, athletic side of the practice — continuous flows, whips, Icarians, and transitions that build energy rather than release it. The base lies on their back with feet in the air (the L-Base position), which forms the foundation for almost all of it. But L-Base is just the platform: solar is the intention — playful, powerful, and always moving forward.
                 </p>
                 <p className="text-zinc-600 leading-relaxed">
-                  The name comes from the shape: base on their back, legs vertical, partner balanced on feet — an L from the side.
+                  This is what most people picture when they imagine acroyoga. It&apos;s also the harder one to explain to someone who hasn&apos;t tried it.
                 </p>
               </div>
             </Reveal>
@@ -68,13 +68,13 @@ export default function LBaseVsTherapeuticPost() {
             <Reveal>
               <div>
                 <h2 className="font-serif text-2xl sm:text-3xl font-bold text-brand-sea mb-4">
-                  What is therapeutic acroyoga?
+                  What is lunar acroyoga?
                 </h2>
                 <p className="text-zinc-600 leading-relaxed mb-4">
-                  Therapeutic acroyoga — sometimes called the lunar practice — is a different intention entirely. Where L-Base is dynamic and athletic, therapeutic is slow, receptive, and deeply physical in a different way. Partners take turns giving and receiving: deep stretches, supported positions that decompress the spine, massage, and thai-inspired bodywork. The goal isn&apos;t a trick or a flow — it&apos;s restoration.
+                  Lunar acroyoga — sometimes called the therapeutic practice — is a different intention entirely. Where solar is dynamic and outward, lunar is slow, receptive, and deeply restorative. Partners take turns giving and receiving: deep stretches, supported positions that decompress the spine, massage, and thai-inspired bodywork. The goal isn&apos;t a trick or a flow — it&apos;s restoration.
                 </p>
                 <p className="text-zinc-600 leading-relaxed">
-                  Think of it as partner yoga meets massage, with trust at the centre.
+                  It also uses L-Base positioning. The distinction isn&apos;t about where the base lies — it&apos;s about what happens next. Think of it as partner yoga meets massage, with trust at the centre.
                 </p>
               </div>
             </Reveal>

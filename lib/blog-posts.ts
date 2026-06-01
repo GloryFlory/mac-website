@@ -35,9 +35,9 @@ export const BLOG_POSTS: BlogPost[] = [
     readingTime: '5 min read',
   },
   {
-    slug: 'l-base-vs-therapeutic-acroyoga',
-    title: 'L-Base vs Therapeutic Acroyoga: What\'s the Difference?',
-    excerpt: 'Not all acroyoga conventions teach the same thing. The two main branches are different enough that it\'s worth knowing which one you\'re signing up for before you book.',
+    slug: 'solar-vs-lunar-acroyoga',
+    title: 'Solar vs Lunar Acroyoga: What\'s the Difference?',
+    excerpt: 'Not all acroyoga conventions teach the same thing. Solar and lunar are different enough in intention that it\'s worth knowing which one you\'re signing up for before you book.',
     date: '2026-05-17',
     readingTime: '6 min read',
   },

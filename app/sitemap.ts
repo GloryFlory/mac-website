@@ -77,7 +77,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/blog/l-base-vs-therapeutic-acroyoga`,
+      url: `${baseUrl}/blog/solar-vs-lunar-acroyoga`,
       lastModified: new Date('2026-05-17'),
       changeFrequency: 'monthly',
       priority: 0.7,
