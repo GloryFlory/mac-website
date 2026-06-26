@@ -6,6 +6,7 @@ import SchedulePreview from './components/SchedulePreview';
 import PricingSection from './components/PricingSection';
 import FaqAccordion from './components/FaqAccordion';
 import FinalCTA from './components/FinalCTA';
+import NewsletterSignup from './components/NewsletterSignup';
 import VenueSection from './components/VenueSection';
 import MemoryStrip from './components/MemoryStrip';
 import Button from './components/Button';
@@ -257,7 +258,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 10. Final CTA Section - Sea Background */}
+      {/* 10. Newsletter Signup */}
+      <NewsletterSignup />
+
+      {/* 11. Final CTA Section - Sea Background */}
       <FinalCTA />
     </main>
   );

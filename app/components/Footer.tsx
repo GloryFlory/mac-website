@@ -1,11 +1,61 @@
 'use client';
 
 import Link from 'next/link';
+import { FormEvent, useState } from 'react';
 
 const Footer = () => {
+  const [email, setEmail] = useState('');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  async function handleSubmit(e: FormEvent) {
+    e.preventDefault();
+    setStatus('loading');
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      setStatus(res.ok ? 'success' : 'error');
+      if (res.ok) setEmail('');
+    } catch {
+      setStatus('error');
+    }
+  }
+
   return (
     <footer className="bg-zinc-900 text-white">
       <div className="max-w-7xl mx-auto px-6 py-12 lg:py-16">
+        {/* Newsletter Strip */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-10 mb-10 border-b border-zinc-700">
+          <div>
+            <p className="font-semibold text-white">Stay in the loop</p>
+            <p className="text-sm text-zinc-400">Early-bird tickets, lineup announcements, and travel tips.</p>
+          </div>
+          {status === 'success' ? (
+            <p className="text-sm text-brand-sun font-medium">You&apos;re on the list — see you in Malta!</p>
+          ) : (
+            <form onSubmit={handleSubmit} className="flex gap-2 w-full sm:w-auto">
+              <input
+                type="email"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+                placeholder="your@email.com"
+                required
+                disabled={status === 'loading'}
+                className="flex-1 sm:w-56 px-4 py-2 rounded-full bg-zinc-800 border border-zinc-600 text-white placeholder-zinc-500 text-sm focus:outline-none focus:border-brand-sun disabled:opacity-60"
+              />
+              <button
+                type="submit"
+                disabled={status === 'loading'}
+                className="px-5 py-2 bg-brand-sun text-zinc-900 font-semibold rounded-full text-sm hover:bg-[#E0A030] transition-colors disabled:opacity-60 whitespace-nowrap"
+              >
+                {status === 'loading' ? '…' : 'Subscribe'}
+              </button>
+            </form>
+          )}
+        </div>
+
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-8">
           {/* Brand Section */}

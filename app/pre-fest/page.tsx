@@ -3,6 +3,7 @@ import Button from '../components/Button';
 import Reveal from '../components/Reveal';
 import Image from 'next/image';
 import ParallaxHero from '../components/ParallaxHero';
+import NewsletterSignup from '../components/NewsletterSignup';
 import PreFestTrackCard from '../components/PreFestTrackCard';
 
 export const metadata: Metadata = {
@@ -613,6 +614,8 @@ export default function PreFestPage() {
           </div>
         </div>
       </section>
+
+      <NewsletterSignup />
 
       {/* CTA Section */}
       <section className="py-20 sm:py-24 px-6 bg-gradient-to-br from-brand-sea via-brand-sea/95 to-brand-sea/90">
