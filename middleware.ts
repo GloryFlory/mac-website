@@ -10,6 +10,8 @@ const VALID_SLUGS = new Set([
   'manas-mira',
   'nick-chrysa',
   'caspian-laura',
+  'mads-gavin',
+  'pri-anna',
   'organisers',
 ]);
 
@@ -29,7 +31,7 @@ export function middleware(request: NextRequest) {
     }
 
     const token = request.cookies.get('portal-token')?.value;
-    if (!token || token !== slug) {
+    if (!token || (token !== slug && token !== 'organisers')) {
       return NextResponse.redirect(new URL('/portal/login', request.url));
     }
   }
