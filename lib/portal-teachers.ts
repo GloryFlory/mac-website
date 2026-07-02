@@ -35,6 +35,7 @@ export interface PortalTeacher {
   portalCode: string;     // private portal access code (not the same as public code)
   isOrganiser?: boolean;
   isBabyLeave?: boolean;
+  isPreFest?: boolean;
   videoSubmitted?: boolean;
   ticketsSold?: number;
   workshops: WorkshopSlot[];
@@ -194,6 +195,40 @@ export const PORTAL_TEACHERS: PortalTeacher[] = [
     affiliateDiscount: 5,
     affiliateKickback: 5,
     referenceTicketPrice: 715,
+  },
+  {
+    slug: 'mads-gavin',
+    name: 'Mads & Gavin',
+    tier: 'Featured',
+    code: 'MACMADS',
+    portalCode: 'MAESTRALE26',
+    isPreFest: true,
+    ticketsSold: 0,
+    workshops: [
+      { label: 'Pre-Fest Workshop (90 min)', count: 4, rateEach: 200 },
+    ],
+    travelComp: { amount: 300, unlocked: true, note: '€150 per person × 2 — included in your compensation package' },
+    accommodation: { duringMAC: true },
+    affiliateDiscount: 0,
+    affiliateKickback: 0,
+    referenceTicketPrice: 0,
+  },
+  {
+    slug: 'pri-anna',
+    name: 'Pri & Anna',
+    tier: 'Featured',
+    code: 'MACPRI',
+    portalCode: 'PONENTE26',
+    isPreFest: true,
+    ticketsSold: 0,
+    workshops: [
+      { label: 'Pre-Fest Workshop (90 min)', count: 4, rateEach: 200 },
+    ],
+    travelComp: { amount: 300, unlocked: true, note: '€150 per person × 2 — included in your compensation package' },
+    accommodation: { duringMAC: true },
+    affiliateDiscount: 0,
+    affiliateKickback: 0,
+    referenceTicketPrice: 0,
   },
   {
     slug: 'caspian-laura',

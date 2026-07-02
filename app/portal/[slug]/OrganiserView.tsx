@@ -22,9 +22,9 @@ const MEMORIES = [
 ];
 
 // ─── Ticket numbers — update manually when sales change ───────────────────────
-const MAIN_FEST_TICKETS_SOLD = 26;  // total tickets sold for Main Fest
+const MAIN_FEST_TICKETS_SOLD = 30;  // total tickets sold for Main Fest
 const MAIN_FEST_CAPACITY    = 74;   // adjust when confirmed
-const PRE_FEST_TICKETS_SOLD = 0;    // total tickets sold for Pre-Fest
+const PRE_FEST_TICKETS_SOLD = 2;    // total tickets sold for Pre-Fest
 const PRE_FEST_CAPACITY     = 30;   // adjust when confirmed
 // ──────────────────────────────────────────────────────────────────────────────
 
@@ -103,8 +103,8 @@ const TASKS: Task[] = [
 
 // Non-organiser teachers — for the affiliate tracker
 const TEACHERS = PORTAL_TEACHERS.filter((t) => !t.isOrganiser);
-// All teachers including organisers — for the readiness grid
-const ALL_TEACHERS = PORTAL_TEACHERS;
+// Non-organiser teachers — for the readiness grid
+const READINESS_TEACHERS = PORTAL_TEACHERS.filter((t) => !t.isOrganiser);
 
 function TicketBar({ sold, capacity, label }: { sold: number; capacity: number; label: string }) {
   const pct = Math.min(Math.round((sold / capacity) * 100), 100);
@@ -274,41 +274,62 @@ export default function OrganiserView() {
 
         {/* Teacher readiness */}
         <section>
-          <h2 className="font-serif text-2xl font-bold text-brand-sea mb-5">Teacher Readiness</h2>
+          <h2 className="font-serif text-2xl font-bold text-brand-sea mb-1">Teacher Readiness</h2>
+          <p className="text-xs text-zinc-400 mb-5">Click any teacher to open their portal (you&apos;re already signed in).</p>
           <div className="grid sm:grid-cols-2 gap-3">
-            {ALL_TEACHERS.map((t) => {
+            {READINESS_TEACHERS.map((t) => {
               const hasVideo = t.videoSubmitted === true;
-              const hasProposals = (t.proposedWorkshops?.length ?? 0) > 0;
+              const proposalCount = t.proposedWorkshops?.length ?? 0;
+              const hasProposals = proposalCount > 0;
+              const isSpecial = t.isBabyLeave;
               const ready = hasVideo && hasProposals;
               return (
-                <div
+                <a
                   key={t.slug}
-                  className="bg-white rounded-xl border px-5 py-4 flex items-center justify-between gap-4"
+                  href={`/portal/${t.slug}`}
+                  className="bg-white rounded-xl border px-5 py-4 flex items-center justify-between gap-4 hover:shadow-md transition-shadow group"
                   style={{ borderColor: ready ? '#bbf7d0' : '#e4e4e7' }}
                 >
                   <div>
-                    <p className="text-sm font-semibold text-zinc-800">{t.name}</p>
-                    <p className="text-xs text-zinc-400">{t.tier}</p>
+                    <p className="text-sm font-semibold text-zinc-800 group-hover:text-brand-sea transition-colors">
+                      {t.name}
+                    </p>
+                    <p className="text-xs text-zinc-400">
+                      {t.isPreFest ? 'Pre-Fest · ' : ''}{t.tier}
+                    </p>
                   </div>
-                  <div className="flex gap-2 flex-shrink-0">
-                    <span
-                      className="text-xs font-semibold px-2 py-0.5 rounded-full"
-                      style={hasVideo
-                        ? { background: '#dcfce7', color: '#16a34a' }
-                        : { background: '#f1f5f9', color: '#94a3b8' }}
-                    >
-                      Video
-                    </span>
-                    <span
-                      className="text-xs font-semibold px-2 py-0.5 rounded-full"
-                      style={hasProposals
-                        ? { background: '#dcfce7', color: '#16a34a' }
-                        : { background: '#f1f5f9', color: '#94a3b8' }}
-                    >
-                      Workshops
-                    </span>
+                  <div className="flex gap-2 flex-shrink-0 items-center">
+                    {!isSpecial && (
+                      <>
+                        <span
+                          className="text-xs font-semibold px-2 py-0.5 rounded-full"
+                          style={hasVideo
+                            ? { background: '#dcfce7', color: '#16a34a' }
+                            : { background: '#f1f5f9', color: '#94a3b8' }}
+                        >
+                          Video
+                        </span>
+                        <span
+                          className="text-xs font-semibold px-2 py-0.5 rounded-full"
+                          title={hasProposals ? `${proposalCount} proposals received` : 'No proposals yet'}
+                          style={hasProposals
+                            ? { background: '#dcfce7', color: '#16a34a' }
+                            : { background: '#fef9c3', color: '#854d0e' }}
+                        >
+                          {hasProposals ? `${proposalCount} workshops` : 'Pending'}
+                        </span>
+                      </>
+                    )}
+                    {isSpecial && (
+                      <span className="text-xs font-semibold px-2 py-0.5 rounded-full" style={{ background: '#f1f5f9', color: '#94a3b8' }}>
+                        Baby leave
+                      </span>
+                    )}
+                    <svg className="w-3.5 h-3.5 text-zinc-300 group-hover:text-brand-sea transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
                   </div>
-                </div>
+                </a>
               );
             })}
           </div>

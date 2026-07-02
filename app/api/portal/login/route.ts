@@ -15,19 +15,6 @@ export async function POST(request: Request) {
 
   const code = ((body as Record<string, string>).code).trim().toUpperCase();
 
-  const masterPassword = process.env.PORTAL_MASTER_PASSWORD;
-  if (masterPassword && code === masterPassword.toUpperCase()) {
-    const response = NextResponse.json({ redirect: '/portal/organisers' });
-    response.cookies.set('portal-token', '__master__', {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === 'production',
-      sameSite: 'lax',
-      maxAge: 60 * 60 * 24 * 30,
-      path: '/',
-    });
-    return response;
-  }
-
   const teacher = PORTAL_CODE_TO_TEACHER.get(code);
 
   if (!teacher) {
