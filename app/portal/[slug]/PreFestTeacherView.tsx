@@ -5,7 +5,7 @@ import WorkshopProposalForm from './WorkshopProposalForm';
 import AffiliateCalculator from './AffiliateCalculator';
 
 const PREFEST_QUOTE: Record<string, string> = {
-  'mads-gavin': "Having you open the Pre-Fest is something we've been excited about since day one. Your depth in Icarians and Whips is exactly what this intensive is built around — we can't wait to see the magic unfold.",
+  'mads-gavin': "Having you join the Pre-Fest is something we've been excited about since day one. Your depth in Icarians is exactly what this intensive is built around - and we can't wait for the FUN you two will bring to the MAC.",
   'pri-anna':   "You bring such a special energy to everything you do, and we know it's going to make the Pre-Fest something really memorable. So glad you're part of this.",
 };
 
