@@ -166,7 +166,7 @@ const PreFestTeacherView: FC<{ teacher: PortalTeacher }> = ({ teacher }) => {
 
           <div className="bg-blue-50 border border-blue-200 rounded-2xl p-4 mb-6">
             <p className="text-sm text-blue-900">
-              <strong>Audience:</strong> Intermediate level, max 30 participants. Base pre-requisites: solid side-stars, experience with basic Icarians, Tarzans, and washing machines. We want it to be challenging but accessible to a wide range of intermediate practitioners.
+              <strong>Audience:</strong> Intermediate/Advanced level, max 30 participants. Base pre-requisites: solid side-stars, experience with basic Icarians, Tarzans, and washing machines. We want it to be challenging but accessible to a wide range of intermediate/advanced practitioners.
             </p>
           </div>
 
@@ -224,7 +224,7 @@ const PreFestTeacherView: FC<{ teacher: PortalTeacher }> = ({ teacher }) => {
               },
               {
                 title: 'Intro Video (optional)',
-                deadline: 'Before Oct 3',
+                deadline: teacher.videoSubmitted ? 'Received — thank you!' : 'Due: 7 July 2026',
                 deadlineGreen: teacher.videoSubmitted ?? false,
                 desc: teacher.videoSubmitted
                   ? "We've received your intro video — you're all set!"
