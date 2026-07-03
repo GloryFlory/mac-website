@@ -211,7 +211,7 @@ export const PORTAL_TEACHERS: PortalTeacher[] = [
     accommodation: { duringMAC: true },
     affiliateDiscount: 5,
     affiliateKickback: 5,
-    referenceTicketPrice: 715,
+    referenceTicketPrice: 429,
   },
   {
     slug: 'pri-anna',
@@ -228,7 +228,7 @@ export const PORTAL_TEACHERS: PortalTeacher[] = [
     accommodation: { duringMAC: true },
     affiliateDiscount: 5,
     affiliateKickback: 5,
-    referenceTicketPrice: 715,
+    referenceTicketPrice: 429,
   },
   {
     slug: 'caspian-laura',
