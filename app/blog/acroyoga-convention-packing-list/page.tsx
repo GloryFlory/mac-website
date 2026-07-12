@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Reveal from '../../components/Reveal';
+import BlogPostingSchema from '../../components/BlogPostingSchema';
 
 export const metadata: Metadata = {
   title: 'Acroyoga Convention Packing List: What to Actually Bring | MAC Blog',
@@ -18,6 +19,12 @@ export const metadata: Metadata = {
 export default function PackingListPost() {
   return (
     <main className="min-h-screen">
+      <BlogPostingSchema
+        headline="Acroyoga Convention Packing List: What to Actually Bring (And What to Leave Home)"
+        description="What to pack for a 5-day acroyoga convention in Malta in October — training gear, grip aids, weather, the social side, and what the hotel already covers."
+        slug="acroyoga-convention-packing-list"
+        datePublished="2026-05-17"
+      />
       {/* Hero */}
       <section className="py-16 sm:py-20 lg:py-24 px-6 bg-gradient-to-b from-brand-sand/20 to-white">
         <div className="max-w-3xl mx-auto">

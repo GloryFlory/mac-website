@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Reveal from '../../components/Reveal';
+import BlogPostingSchema from '../../components/BlogPostingSchema';
 
 export const metadata: Metadata = {
   title: "How to Find a Practice Partner at an Acroyoga Festival (Coming Solo) | MAC Blog",
@@ -18,6 +19,12 @@ export const metadata: Metadata = {
 export default function FindingPartnerPost() {
   return (
     <main className="min-h-screen">
+      <BlogPostingSchema
+        headline="How to Find a Practice Partner at an Acroyoga Festival (When You're Coming Solo)"
+        description="Around half of MAC attendees arrive without a partner. Here's why that's fine — and how the format, the meals, and the opening ceremony do the social work for you."
+        slug="finding-practice-partner-acroyoga-festival"
+        datePublished="2026-05-17"
+      />
       {/* Hero */}
       <section className="py-16 sm:py-20 lg:py-24 px-6 bg-gradient-to-b from-brand-sand/20 to-white">
         <div className="max-w-3xl mx-auto">

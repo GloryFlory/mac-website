@@ -7,7 +7,15 @@
       "Bash(git -C /Users/flo/Code/mac-site add middleware.ts)",
       "Bash(git -C /Users/flo/Code/mac-site commit -m ' *)",
       "Bash(git -C /Users/flo/Code/mac-site add app/portal/\\\\[slug\\\\]/PreFestTeacherView.tsx)",
-      "Bash(git -C /Users/flo/Code/mac-site add app/portal/\\\\[slug\\\\]/PreFestTeacherView.tsx lib/portal-teachers.ts)"
+      "Bash(git -C /Users/flo/Code/mac-site add app/portal/\\\\[slug\\\\]/PreFestTeacherView.tsx lib/portal-teachers.ts)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" https://www.acrointhesun.com)",
+      "Bash(curl -s https://www.acrointhesun.com)",
+      "Bash(curl -s https://www.acrointhesun.com/robots.txt)",
+      "Bash(curl -s https://www.acrointhesun.com/sitemap.xml)",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://www.acrointhesun.com/llms.txt)",
+      "Bash(curl -s http://localhost:3001/blog/is-acroyoga-for-beginners)",
+      "Bash(curl -s http://localhost:3001/sitemap.xml)"
     ]
   }
 }

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Reveal from '../../components/Reveal';
+import BlogPostingSchema from '../../components/BlogPostingSchema';
 
 export const metadata: Metadata = {
   title: 'Is Acroyoga for Beginners? (An Honest Answer) | MAC Blog',
@@ -18,6 +19,12 @@ export const metadata: Metadata = {
 export default function IsAcroyogaForBeginnersPost() {
   return (
     <main className="min-h-screen">
+      <BlogPostingSchema
+        headline="Is Acroyoga for Beginners? (An Honest Answer)"
+        description="You don't need to be flexible, strong, light, or young to start acroyoga. The real barriers are different — and they dissolve faster than you think."
+        slug="is-acroyoga-for-beginners"
+        datePublished="2026-05-17"
+      />
       {/* Hero */}
       <section className="py-16 sm:py-20 lg:py-24 px-6 bg-gradient-to-b from-brand-sand/20 to-white">
         <div className="max-w-3xl mx-auto">

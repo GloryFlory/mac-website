@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Reveal from '../../components/Reveal';
+import BlogPostingSchema from '../../components/BlogPostingSchema';
 
 export const metadata: Metadata = {
   title: 'Solar vs Lunar Acroyoga: What\'s the Difference? | MAC Blog',
@@ -18,6 +19,12 @@ export const metadata: Metadata = {
 export default function SolarVsLunarPost() {
   return (
     <main className="min-h-screen">
+      <BlogPostingSchema
+        headline="Solar vs Lunar Acroyoga: What's the Difference?"
+        description="Not all acroyoga conventions teach the same thing. Here's the honest breakdown of solar and lunar practice — and where MAC sits on the spectrum."
+        slug="solar-vs-lunar-acroyoga"
+        datePublished="2026-05-17"
+      />
       {/* Hero */}
       <section className="py-16 sm:py-20 lg:py-24 px-6 bg-gradient-to-b from-brand-sand/20 to-white">
         <div className="max-w-3xl mx-auto">

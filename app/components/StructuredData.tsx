@@ -29,10 +29,12 @@ export default function StructuredData() {
       ]
     },
     "offers": {
-      "@type": "Offer",
+      "@type": "AggregateOffer",
       "url": "https://www.wetravel.com/trips/mediterranean-acro-convention-2026-mediterranean-acro-convention-4587517817",
-      "price": "599",
       "priceCurrency": "EUR",
+      "lowPrice": "449",
+      "highPrice": "799",
+      "offerCount": "4",
       "availability": "https://schema.org/InStock",
       "validFrom": "2026-01-01",
       "validThrough": "2026-10-07"

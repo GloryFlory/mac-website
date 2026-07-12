@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Button from '../../components/Button';
 import Reveal from '../../components/Reveal';
+import BlogPostingSchema from '../../components/BlogPostingSchema';
 
 export const metadata: Metadata = {
   title: 'What to Expect at Your First Acroyoga Convention | MAC Blog',
@@ -19,6 +20,12 @@ export const metadata: Metadata = {
 export default function FirstConventionPost() {
   return (
     <main className="min-h-screen">
+      <BlogPostingSchema
+        headline="What to Expect at Your First Acroyoga Convention"
+        description="The honest breakdown of what a multi-day acroyoga convention is actually like — skill level, daily structure, community, venue, and why MAC 2026 in Malta is a great first."
+        slug="what-to-expect-first-acroyoga-convention"
+        datePublished="2026-05-17"
+      />
       {/* Hero */}
       <section className="py-16 sm:py-20 lg:py-24 px-6 bg-gradient-to-b from-brand-sand/20 to-white">
         <div className="max-w-3xl mx-auto">
