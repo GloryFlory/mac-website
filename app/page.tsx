@@ -8,6 +8,7 @@ import FaqAccordion from './components/FaqAccordion';
 import FinalCTA from './components/FinalCTA';
 import NewsletterSignup from './components/NewsletterSignup';
 import VenueSection from './components/VenueSection';
+import PartnersSection from './components/PartnersSection';
 import MemoryStrip from './components/MemoryStrip';
 import Button from './components/Button';
 import StructuredData from './components/StructuredData';
@@ -135,7 +136,12 @@ export default function Home() {
         <TeachersPreview />
       </section>
 
-      {/* 6. Memory Strip Section - Editorial Photo Strip */}
+      {/* 6. Partners Section */}
+      <section id="partners" className="scroll-mt-20">
+        <PartnersSection />
+      </section>
+
+      {/* 7. Memory Strip Section - Editorial Photo Strip */}
       <section className="py-12 sm:py-16 bg-gradient-to-b from-brand-sand/10 to-white">
         <div className="max-w-7xl mx-auto px-0">
           {/* YouTube Video - MAC 2025 Aftermovie */}
@@ -241,27 +247,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 7. Pricing Section - Sand Background */}
+      {/* 8. Pricing Section - Sand Background */}
       <section id="pricing" className="scroll-mt-20">
         <DynamicPricingSection />
       </section>
 
-      {/* 8. Schedule Preview - White Background */}
+      {/* 9. Schedule Preview - White Background */}
       <section id="schedule" className="scroll-mt-20">
         <DynamicSchedulePreview />
       </section>
 
-      {/* 9. FAQ Section - White Background */}
+      {/* 10. FAQ Section - White Background */}
       <section id="faq" className="py-20 bg-white scroll-mt-20">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
           <DynamicFaqAccordion />
         </div>
       </section>
 
-      {/* 10. Newsletter Signup */}
+      {/* 11. Newsletter Signup */}
       <NewsletterSignup />
 
-      {/* 11. Final CTA Section - Sea Background */}
+      {/* 12. Final CTA Section - Sea Background */}
       <FinalCTA />
     </main>
   );
