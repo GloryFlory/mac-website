@@ -133,7 +133,7 @@ export default function ParallaxHero({
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           {/* Hero poster image - shows immediately */}
           <Image
-            src="/HeroScreenshot.png"
+            src="/HeroScreenshot.jpg"
             alt="Mediterranean Acro Convention"
             fill
             priority

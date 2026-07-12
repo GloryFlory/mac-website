@@ -15,7 +15,21 @@
       "Bash(python3 -c ' *)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://www.acrointhesun.com/llms.txt)",
       "Bash(curl -s http://localhost:3001/blog/is-acroyoga-for-beginners)",
-      "Bash(curl -s http://localhost:3001/sitemap.xml)"
+      "Bash(curl -s http://localhost:3001/sitemap.xml)",
+      "Bash(curl -s \"http://localhost:3001/_next/image?url=%2FHeroScreenshot.png&w=1920&q=90\" -o /tmp/optimized-hero.bin -D /tmp/hero-headers.txt)",
+      "Read(//tmp/**)",
+      "Bash(curl -s -o /tmp/optimized-hero2.bin -D /tmp/hero-headers2.txt \"http://localhost:3001/_next/image?url=%2FHeroScreenshot.png&w=1920&q=90\")",
+      "Bash(npx eslint *)",
+      "Bash(git stash *)",
+      "Bash(sips -g all /Users/flo/Code/mac-site/public/HeroScreenshot.png)",
+      "Bash(brew install *)",
+      "Bash(ffprobe -v error -select_streams v:0 -show_entries stream=width,height,bit_rate,codec_name,duration -of default=noprint_wrappers=1 /Users/flo/Code/mac-site/public/MACHero1.mp4)",
+      "Bash(ffprobe -v error -show_entries stream=codec_type -of default=noprint_wrappers=1 /Users/flo/Code/mac-site/public/MACHero1.mp4)",
+      "Bash(ffmpeg -y -i MACHero1.mp4 -an -c:v libx264 -crf 27 -preset slow -movflags +faststart -pix_fmt yuv420p /tmp/MACHero1-test.mp4)",
+      "Bash(ffmpeg -y -ss 5 -i /Users/flo/Code/mac-site/public/MACHero1.mp4 -frames:v 1 /private/tmp/claude-501/-Users-flo-Code-mac-site/67179e17-2fa7-4218-a900-6858ee9b3f1d/scratchpad/frame-original.png)",
+      "Bash(ffmpeg -y -ss 5 -i /tmp/MACHero1-test.mp4 -frames:v 1 /private/tmp/claude-501/-Users-flo-Code-mac-site/67179e17-2fa7-4218-a900-6858ee9b3f1d/scratchpad/frame-compressed.png)",
+      "Bash(sips -s format jpeg -s formatOptions 82 -z 1080 1920 HeroScreenshot.png --out /tmp/HeroScreenshot-test.jpg)",
+      "Bash(sips -s format jpeg -s formatOptions 82 -z 1080 1920 HeroScreenshot.png --out HeroScreenshot.jpg)"
     ]
   }
 }

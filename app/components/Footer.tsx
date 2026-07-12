@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-10 mb-10 border-b border-zinc-700">
           <div>
             <p className="font-semibold text-white">Stay in the loop</p>
-            <p className="text-sm text-zinc-400">Early-bird tickets, lineup announcements, and travel tips.</p>
+            <p className="text-sm text-zinc-300">Early-bird tickets, lineup announcements, and travel tips.</p>
           </div>
           {status === 'success' ? (
             <p className="text-sm text-brand-sun font-medium">You&apos;re on the list — see you in Malta!</p>
@@ -168,7 +168,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-zinc-700">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-zinc-400">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-zinc-300">
             <p>© 2026 Mediterranean Acro Convention. All rights reserved.</p>
             <div className="flex gap-6">
               <Link href="/privacy" className="hover:text-white transition-colors">

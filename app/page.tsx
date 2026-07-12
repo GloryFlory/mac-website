@@ -12,6 +12,7 @@ import PartnersSection from './components/PartnersSection';
 import MemoryStrip from './components/MemoryStrip';
 import Button from './components/Button';
 import StructuredData from './components/StructuredData';
+import YouTubeFacade from './components/YouTubeFacade';
 import dynamic from 'next/dynamic';
 import type { Metadata } from 'next';
 
@@ -155,15 +156,7 @@ export default function Home() {
               </p>
             </div>
             <div className="relative w-full rounded-xl overflow-hidden shadow-2xl" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/G-waKLp3U_8?si=QenXpymwUFj1JsRO"
-                title="MAC 2025 Aftermovie"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              />
+              <YouTubeFacade videoId="G-waKLp3U_8" title="MAC 2025 Aftermovie" />
             </div>
           </div>
 
@@ -238,9 +231,9 @@ export default function Home() {
           </div>
           <Button
             href="/pre-fest"
-            variant="secondary"
+            variant="primary"
             size="md"
-            className="bg-brand-sun text-zinc-900 border-brand-sun hover:bg-brand-sun/90 flex-shrink-0"
+            className="flex-shrink-0"
           >
             Find Out More →
           </Button>
