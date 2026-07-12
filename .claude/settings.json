@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -X POST http://localhost:3001/api/portal/login -H 'Content-Type: application/json' -d '{\"code\":\"MAESTRALE26\"}' -c /tmp/cookies.txt -o /dev/null)",
+      "Bash(curl -s -b /tmp/cookies.txt http://localhost:3001/portal/mads-gavin -o /tmp/portal-out.html -w \"%{http_code}\")",
+      "Bash(curl -s -X POST http://localhost:3001/api/portal/login -H 'Content-Type: application/json' -d '{\"code\":\"MAESTRALE26\"}' -v)",
+      "Bash(git -C /Users/flo/Code/mac-site add middleware.ts)",
+      "Bash(git -C /Users/flo/Code/mac-site commit -m ' *)",
+      "Bash(git -C /Users/flo/Code/mac-site add app/portal/\\\\[slug\\\\]/PreFestTeacherView.tsx)",
+      "Bash(git -C /Users/flo/Code/mac-site add app/portal/\\\\[slug\\\\]/PreFestTeacherView.tsx lib/portal-teachers.ts)"
+    ]
+  }
+}
