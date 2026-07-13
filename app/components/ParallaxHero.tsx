@@ -29,13 +29,25 @@ export default function ParallaxHero({
 
   const isVideo = !!backgroundVideo;
 
-  // Randomly select one of the hero videos on mount
+  // Randomly select one of the hero videos on mount, skipping on slow/metered connections
+  // (each video is a multi-MB download purely for background ambiance; the poster image
+  // already provides a complete hero experience on its own)
   useEffect(() => {
-    if (backgroundVideo) {
-      const heroVideos = ['/MACHero1.mp4', '/MACHero2.mp4', '/MACHero3.mp4', '/MACHero4.mp4', '/MACHero5.mp4'];
-      const randomVideo = heroVideos[Math.floor(Math.random() * heroVideos.length)];
-      setSelectedVideo(randomVideo);
-    }
+    if (!backgroundVideo) return;
+
+    const nav = navigator as Navigator & {
+      connection?: { saveData?: boolean; effectiveType?: string };
+    };
+    const connection = nav.connection;
+    const isSlowConnection =
+      connection?.saveData ||
+      ['slow-2g', '2g', '3g'].includes(connection?.effectiveType ?? '');
+
+    if (isSlowConnection) return;
+
+    const heroVideos = ['/MACHero1.mp4', '/MACHero2.mp4', '/MACHero3.mp4', '/MACHero4.mp4', '/MACHero5.mp4'];
+    const randomVideo = heroVideos[Math.floor(Math.random() * heroVideos.length)];
+    setSelectedVideo(randomVideo);
   }, [backgroundVideo]);
 
   useEffect(() => {
@@ -150,7 +162,7 @@ export default function ParallaxHero({
               loop
               muted
               playsInline
-              preload="auto"
+              preload="metadata"
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-w-full min-h-full w-auto h-auto object-cover opacity-0 transition-opacity duration-1000"
               style={{
                 width: '100vw',
