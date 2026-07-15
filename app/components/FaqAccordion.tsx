@@ -1,11 +1,11 @@
 'use client';
 
-import { FC, useState } from 'react';
+import { FC, ReactNode, useState } from 'react';
 
 interface FaqItem {
   id: string;
   question: string;
-  answer: string;
+  answer: ReactNode;
 }
 
 const faqs: FaqItem[] = [
@@ -28,6 +28,27 @@ const faqs: FaqItem[] = [
     id: 'refunds',
     question: 'What\'s your refund policy?',
     answer: 'Cancellations before 31 March 2026 are eligible for a refund minus a €40 admin fee. From 31 March onward, the €299 deposit becomes non-refundable and tickets cannot be refunded. Name changes are permitted until 15 September 2026 (€40 fee applies). We strongly recommend travel insurance. Submit all requests to mediterraneanacroconvention@gmail.com.',
+  },
+  {
+    id: 'insurance',
+    question: 'Does travel insurance cover Acroyoga?',
+    answer: (
+      <>
+        Yes! We confirmed with SafetyWing that Acroyoga is covered under
+        their Nomad Insurance Essential plan with the Adventure Sports
+        add-on. We recommend arranging travel insurance before the
+        event—you can get a quote through our affiliate link:{' '}
+        <a
+          href="https://safetywing.com/?referenceID=26560920&utm_source=26560920&utm_medium=Ambassador"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-brand-sea hover:text-brand-sun underline underline-offset-4 font-medium"
+        >
+          SafetyWing Nomad Insurance
+        </a>
+        .
+      </>
+    ),
   },
   {
     id: 'accommodation',
