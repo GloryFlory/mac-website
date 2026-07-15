@@ -27,6 +27,13 @@ const partners: Partner[] = [
     height: 581,
   },
   {
+    name: 'KM Malta Airlines',
+    logo: '/partners/km-malta-airlines.png',
+    href: 'https://kmmaltairlines.com/en',
+    width: 1772,
+    height: 591,
+  },
+  {
     name: 'AcroPassport',
     href: 'https://acropassport.com/',
   },
