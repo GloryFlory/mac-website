@@ -9,9 +9,34 @@ import PreFestTrackCard from '../components/PreFestTrackCard';
 export const metadata: Metadata = {
   title: "Pre-Festival Intensive 2026 | MAC",
   description: "An exclusive 3-day intensive focusing on Icarians and Whips before MAC 2026. Limited to 30 intermediate/advanced practitioners. Oct 3-5, 2026.",
-  robots: {
-    index: false,
-    follow: false,
+  keywords: [
+    "acroyoga pre-festival intensive",
+    "icarians workshop malta",
+    "whips acroyoga training",
+    "mac pre-fest 2026",
+    "acroyoga intensive malta",
+  ],
+  openGraph: {
+    title: "MAC Pre-Festival Intensive | Icarians & Whips, Oct 3-5 2026",
+    description: "3-day deep dive into Icarians and Whips with two expert couples. Limited to 30 intermediate/advanced practitioners. Malta, Oct 3-5, 2026.",
+    images: [
+      {
+        url: "/pre-fest-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "MAC Pre-Festival Intensive - Icarians & Whips, Malta",
+        type: "image/jpeg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MAC Pre-Festival Intensive | Icarians & Whips, Oct 3-5 2026",
+    description: "3-day deep dive into Icarians and Whips with two expert couples. Malta, Oct 3-5, 2026.",
+    images: ["/pre-fest-og.jpg"],
+  },
+  alternates: {
+    canonical: "https://www.acrointhesun.com/pre-fest",
   },
 };
 
@@ -90,7 +115,7 @@ export default function PreFestPage() {
             <Reveal delay={0.1}>
               <PreFestTrackCard
                 trackNumber={1}
-                title="Icarians & Standing Acro"
+                title="Icarians"
                 teachers="Mads & Gavin"
                 imageUrl="/pre-fest/Mads and Gavin/Mads and Gav.jpg"
                 imageAlt="Mads & Gavin"
@@ -101,8 +126,8 @@ export default function PreFestPage() {
                   { name: 'Mads', url: 'https://www.instagram.com/mads.rayner/' },
                   { name: 'Gavin', url: 'https://www.instagram.com/acrohawk/' },
                 ]}
-                description="Madeleine (Mads) returns to MAC for her second year—and with Maltese roots, this is something of a homecoming! A former competitive artistic gymnast turned acroyoga teacher, Mads brings a love for airtime, flipping, and Icarians. Gavin is a natural mover and experienced coach in love with Standing Acro, Dance Lifts, and Icarians. Together they create a space where you can explore your potential and experience the joy of real collaboration."
-                bio="Madeleine (Mads) returns to MAC for her second year—and with Maltese roots, this is something of a homecoming! A former competitive artistic gymnast turned acroyoga teacher, Mads brings a love for airtime, flipping, and Icarians. Gavin is a natural mover and experienced coach in love with Standing Acro, Dance Lifts, and Icarians. Together they create a space where you can explore your potential and experience the joy of real collaboration."
+                description="Madeleine (Mads) returns to MAC for her second year—and with Maltese roots, this is something of a homecoming! A former competitive artistic gymnast turned acroyoga teacher, Mads brings a love for airtime, flipping, and Icarians. Gavin is a natural mover and experienced coach in love with Dance Lifts and Icarians. Together they create a space where you can explore your potential and experience the joy of real collaboration."
+                bio="Madeleine (Mads) returns to MAC for her second year—and with Maltese roots, this is something of a homecoming! A former competitive artistic gymnast turned acroyoga teacher, Mads brings a love for airtime, flipping, and Icarians. Gavin is a natural mover and experienced coach in love with Dance Lifts and Icarians. Together they create a space where you can explore your potential and experience the joy of real collaboration."
                 highlights={[
                   { label: 'Pop Mechanics', detail: 'Perfect your timing and power generation' },
                   { label: 'Height Progression', detail: 'Build confidence with progressive drills' },

@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     description: "5 days of elite acro training at Malta's luxury Riviera Spa Hotel. Oct 7-11, 2026. 40+ workshops with world-class teachers. All-inclusive experience.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/main-fest-og.jpg",
         width: 1200,
         height: 630,
         alt: "Mediterranean Acro Convention 2026 - Malta",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mediterranean Acro Convention 2026 | Malta",
     description: "5 days of world-class acro training in Malta. Oct 7-11, 2026.",
-    images: ["/og-image.jpg"],
+    images: ["/main-fest-og.jpg"],
   },
   robots: {
     index: true,

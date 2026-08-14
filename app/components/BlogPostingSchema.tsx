@@ -33,7 +33,7 @@ export default function BlogPostingSchema({
         url: 'https://www.acrointhesun.com/icon.png',
       },
     },
-    image: 'https://www.acrointhesun.com/og-image.jpg',
+    image: 'https://www.acrointhesun.com/main-fest-og.jpg',
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': `https://www.acrointhesun.com/blog/${slug}`,

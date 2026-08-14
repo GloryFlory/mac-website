@@ -4,7 +4,7 @@ export default function StructuredData() {
     "@type": "Event",
     "name": "Mediterranean Acro Convention 2026",
     "description": "The world's most luxurious acroyoga convention. 5 days of elite training at Malta's 4-star Riviera Spa Hotel with 40+ workshops and international teachers.",
-    "image": "https://www.acrointhesun.com/og-image.jpg",
+    "image": "https://www.acrointhesun.com/main-fest-og.jpg",
     "startDate": "2026-10-07",
     "endDate": "2026-10-11",
     "eventStatus": "https://schema.org/EventScheduled",
@@ -111,7 +111,7 @@ export default function StructuredData() {
         "name": "When do tickets go on sale?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Tickets are limited to 75 participants to maintain an intimate, high-quality experience. Super Early Bird tickets are now SOLD OUT. Early Bird tickets are available now at €699 (flying away fast!). Regular tickets (€799) will be released later. We recommend booking early to secure your spot at the best price."
+          "text": "Tickets are limited to 75 participants to maintain an intimate, high-quality experience. Super Early Bird and Early Bird tickets are now SOLD OUT. Regular tickets (€799) are available now and selling fast. We recommend booking soon to secure your spot."
         }
       },
       {
