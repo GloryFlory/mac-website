@@ -131,7 +131,7 @@ export const PORTAL_TEACHERS: PortalTeacher[] = [
     code: 'MACROBAGAZ',
     portalCode: 'BARCHETTA26',
     videoSubmitted: true,
-    ticketsSold: 0,
+    ticketsSold: 1,
     workshops: [
       { label: 'Acroyoga Workshop (90 min)', count: 4, rateEach: 90 },
     ],
@@ -166,7 +166,7 @@ export const PORTAL_TEACHERS: PortalTeacher[] = [
     code: 'MIMAMAC',
     portalCode: 'MANDORLA26',
     videoSubmitted: true,
-    ticketsSold: 1,
+    ticketsSold: 3,
     workshops: [
       { label: 'Acroyoga Workshop (90 min)', count: 4, rateEach: 90 },
     ],
@@ -182,7 +182,7 @@ export const PORTAL_TEACHERS: PortalTeacher[] = [
     tier: 'Supporting',
     code: 'MACROPOLIS',
     portalCode: 'CARACALLA26',
-    ticketsSold: 0,
+    ticketsSold: 1,
     workshops: [
       { label: 'Acroyoga Workshop (90 min)', count: 3, rateEach: 90 },
     ],
