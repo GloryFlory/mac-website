@@ -1,4 +1,5 @@
 import ParallaxHero from './components/ParallaxHero';
+import HeroCountdown from './components/HeroCountdown';
 import SocialProofStrip from './components/SocialProofStrip';
 import WhatYouGet from './components/WhatYouGet';
 import TeachersPreview from './components/TeachersPreview';
@@ -59,10 +60,8 @@ export default function Home() {
             Convention
           </h1>
 
-          {/* Date Line */}
-          <p className="text-xl sm:text-2xl md:text-3xl font-light tracking-wide mb-8" style={{ color: '#FFFFFF', textShadow: 'none' }}>
-            Oct 7–11, 2026 <span style={{ color: '#FFFFFF', opacity: 0.9 }}>•</span> Malta
-          </p>
+          {/* Countdown / Date Line */}
+          <HeroCountdown />
 
           {/* Badges */}
           <div className="flex flex-wrap items-center gap-3 justify-center mb-6">
@@ -71,7 +70,7 @@ export default function Home() {
             </div>
             <a href="/pre-fest" className="inline-flex items-center gap-2 px-4 py-2 bg-white/15 backdrop-blur-sm border border-white/30 hover:border-brand-sun hover:bg-white/20 transition-all rounded-full group">
               <span className="w-2 h-2 rounded-full bg-brand-sun flex-shrink-0 animate-pulse"></span>
-              <span className="text-white font-semibold text-sm sm:text-base">NEW: Pre-Fest Intensive · Oct 3–5</span>
+              <span className="text-white font-semibold text-sm sm:text-base">NEW: Pre-Fest Intensive</span>
               <svg className="w-3.5 h-3.5 text-brand-sun group-hover:translate-x-0.5 transition-transform flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
               </svg>
