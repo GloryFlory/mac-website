@@ -1,3 +1,5 @@
+import { testimonials } from '@/lib/testimonials';
+
 export default function StructuredData() {
   const eventSchema = {
     "@context": "https://schema.org",
@@ -68,7 +70,28 @@ export default function StructuredData() {
         "@type": "PerformingGroup",
         "name": "Maria and Flo"
       }
-    ]
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": testimonials.length.toString(),
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": testimonials.map((t) => ({
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": t.name
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": t.rating.toString(),
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "reviewBody": t.quote
+    }))
   };
 
   const organizationSchema = {
