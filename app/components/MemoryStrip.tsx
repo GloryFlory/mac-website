@@ -14,6 +14,18 @@ const MemoryStrip: FC<MemoryStripProps> = ({ images, imageHeight = 300 }) => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const [showScrollHint, setShowScrollHint] = useState(true);
+  const [isDesktop, setIsDesktop] = useState(true);
+
+  useEffect(() => {
+    // Only one of the desktop/mobile image trees should ever be mounted,
+    // otherwise both fetch+transform the full image set simultaneously.
+    const mediaQuery = window.matchMedia('(min-width: 768px)');
+    setIsDesktop(mediaQuery.matches);
+
+    const handleChange = (e: MediaQueryListEvent) => setIsDesktop(e.matches);
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, []);
 
   useEffect(() => {
     // Check for reduced motion preference
@@ -84,7 +96,8 @@ const MemoryStrip: FC<MemoryStripProps> = ({ images, imageHeight = 300 }) => {
       style={{ maxHeight: '400px' }}
     >
       {/* Desktop: Parallax scrolling strip with horizontal scroll */}
-      <div className="hidden md:block py-12 lg:py-16 relative">
+      {isDesktop && (
+      <div className="py-12 lg:py-16 relative">
         <div
           ref={scrollContainerRef}
           className="overflow-x-auto overflow-y-hidden px-24"
@@ -150,9 +163,11 @@ const MemoryStrip: FC<MemoryStripProps> = ({ images, imageHeight = 300 }) => {
           background: 'linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.6) 40%, transparent 100%)'
         }} />
       </div>
+      )}
 
       {/* Mobile: Horizontal swipeable row */}
-      <div className="md:hidden py-8 relative">
+      {!isDesktop && (
+      <div className="py-8 relative">
         <div className="flex gap-3 overflow-x-auto overflow-y-hidden snap-x snap-mandatory px-12">
           {images.map((image, index) => (
             <div
@@ -186,6 +201,7 @@ const MemoryStrip: FC<MemoryStripProps> = ({ images, imageHeight = 300 }) => {
           background: 'linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.6) 40%, transparent 100%)'
         }} />
       </div>
+      )}
     </div>
   );
 };
