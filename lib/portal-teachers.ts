@@ -207,6 +207,14 @@ export const PORTAL_TEACHERS: PortalTeacher[] = [
     workshops: [
       { label: 'Pre-Fest Workshop (90 min)', count: 4, rateEach: 200 },
     ],
+    proposedWorkshops: [
+      { name: 'Linking Basic Icarians', level: 'Intermediate', prereqs: 'Bird 2 Bird & Throne 2 Bird', details: 'Refining & Linking fundamental Icarian skills.' },
+      { name: 'Courbette Crazy', level: 'Intermediate', prereqs: 'Handspring & Lbase Extended H2H (3 secs spotted)', details: "Let's get crazy with a variety of courbettes. Refining your line and getting comfortable with that dive!" },
+      { name: 'Pirouette Paradise', level: 'Intermediate/Advanced', prereqs: 'Lbase Extended F2H & Throne 180', details: 'Prepare to spin as we cover Reverse Pirouettes (int) and the Pirouette (adv).' },
+      { name: 'Triple Threat', level: 'Advanced', prereqs: 'Martini, Castaway, Front Tuck (Spotted)', details: 'If you have these three tricks down, come and learn how to link them! We will be nerding out on precise lines, tempos and all else that goes.' },
+      { name: 'Logs, Rainbows & Varials', level: 'Intermediate/Advanced', prereqs: 'Log 180', details: "Let's 360, make some rainbows, and progress to varials (adv) if you dare." },
+      { name: 'Royal Pancake Breakfast', level: 'Advanced', prereqs: 'Lbase Extended H2H & Base - Castaway', details: "Let's toss that pancake (int) and try to flip it 180 (adv)." },
+    ],
     travelComp: { amount: 300, unlocked: true, note: '€150 per person × 2 — included in your compensation package' },
     accommodation: { duringMAC: true },
     affiliateDiscount: 5,
