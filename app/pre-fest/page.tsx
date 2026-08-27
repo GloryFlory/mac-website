@@ -142,9 +142,9 @@ export default function PreFestPage() {
                 trackNumber={2}
                 title="Whips, Whip-Pops & Icarians"
                 teachers="Pri & Anna"
-                imageUrl="/pre-fest/Pri and Anna/Priand Anna.jpg"
+                imageUrl="/pre-fest/Pri and Anna/Pri and Anna.jpg"
                 imageAlt="Pri & Anna"
-                imagePosition="object-cover"
+                imagePosition="object-[center_26%]"
                 videoUrl="https://drive.google.com/file/d/1pR40YFRJPQL5eteDWTXgTXZ9KctOCGfd/preview"
                 accentColor="sun"
                 instagrams={[
