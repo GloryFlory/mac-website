@@ -16,6 +16,7 @@ interface Teacher {
   youtube?: string;
   website?: string;
   imageObjectPosition?: string;
+  imageFit?: 'cover' | 'contain';
 }
 
 const teachers: Teacher[] = [
@@ -39,7 +40,7 @@ Traveling and sharing this practice fills our hearts. We're inspired by discover
     name: 'Michal and Klara',
     duoName: 'Acro Klaris / Acro Misaris',
     roleTags: ['Flows', 'Icarians', 'Whip-Pops', 'F2F'],
-    imageUrl: '/teachers/Michal and Klara/Eli and Bagaz.jpg',
+    imageUrl: '/teachers/Michal and Klara/Michal and Klara.jpeg',
     videoUrl: 'https://drive.google.com/file/d/1HU2F4eSZYzYFguuWxzS8nPZiWWnAynoG/preview',
     location: 'Slovakia',
     bio: `Klára has dedicated her whole life to sports, and is most defined by aesthetic disciplines—dance, gymnastics, and acrobatics. In her everyday work, she teaches movement preparation for children and parents from as early as 10 months old, gymnastics from age 3, and also works as a physiotherapist.
@@ -124,6 +125,20 @@ Flo has a background in breakdancing and acrobatics, which naturally led him to 
 Maria and Flo are dedicated to making AcroYoga accessible, joyful, and empowering for practitioners at every stage of their journey. They love fostering community, bringing acro enthusiasts from around the world to Malta, and making sure every person feels seen, supported, and valued in their journey. The sky's the limit & Safety is Sexy!`,
     instagram: 'https://www.instagram.com/acroflo_malta/',
   },
+  {
+    id: 9,
+    name: 'Skyhawk Clan',
+    duoName: 'A Surprise Flow Awaits',
+    roleTags: ['Mystery Guest', 'Surprise Flow', 'Balance'],
+    imageUrl: '/teachers/Skyhawk Clan/Skyhawk clan image.jpeg',
+    location: 'Undisclosed',
+    bio: `A hidden favor has been called in. The Skyhawk Clan emerges just once, bringing something entirely different to MAC 2026 — a special surprise session, revealed only on the day.
+
+Expect the unexpected: precision, mystery, and a flow unlike anything else on the schedule. We won't say more — you'll just have to be there.
+
+Come with curiosity. Prepare for balance.`,
+    imageFit: 'contain',
+  },
 ];
 
 const TeachersPreview: FC = () => {
@@ -161,6 +176,7 @@ const TeachersPreview: FC = () => {
                 youtube={teacher.youtube}
                 website={teacher.website}
                 imageObjectPosition={teacher.imageObjectPosition}
+                imageFit={teacher.imageFit}
               />
             </Reveal>
           ))}

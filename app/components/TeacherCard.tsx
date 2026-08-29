@@ -15,6 +15,7 @@ interface TeacherCardProps {
   youtube?: string;
   website?: string;
   imageObjectPosition?: string;
+  imageFit?: 'cover' | 'contain';
 }
 
 const TeacherCard: FC<TeacherCardProps> = ({
@@ -29,6 +30,7 @@ const TeacherCard: FC<TeacherCardProps> = ({
   youtube,
   website,
   imageObjectPosition = 'object-center',
+  imageFit = 'cover',
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -42,7 +44,7 @@ const TeacherCard: FC<TeacherCardProps> = ({
         onClick={() => setIsExpanded(true)}
       >
         {/* Image */}
-        <div className="relative aspect-[3/4] overflow-hidden bg-brand-sand/10">
+        <div className={`relative aspect-[3/4] overflow-hidden ${imageFit === 'contain' ? 'bg-black' : 'bg-brand-sand/10'}`}>
           {isVideo ? (
             <>
               <video
@@ -79,7 +81,7 @@ const TeacherCard: FC<TeacherCardProps> = ({
               alt={`${name}, ${roleTags.join(', ')}`}
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              className={`object-cover ${imageObjectPosition} group-hover:scale-105 transition-transform duration-500`}
+              className={`${imageFit === 'contain' ? 'object-contain' : 'object-cover'} ${imageObjectPosition} group-hover:scale-105 transition-transform duration-500`}
             />
           )}
           {/* Hover overlay hint */}
@@ -204,7 +206,7 @@ const TeacherCard: FC<TeacherCardProps> = ({
             {/* Side by Side: Video and Bio */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-6">
               {/* Left: Video/Image */}
-              <div className="relative aspect-[9/16] md:aspect-[9/16] w-full overflow-hidden rounded-2xl bg-brand-sand/10">
+              <div className={`relative aspect-[9/16] md:aspect-[9/16] w-full overflow-hidden rounded-2xl ${imageFit === 'contain' ? 'bg-black' : 'bg-brand-sand/10'}`}>
                 {hasExpandedVideo ? (
                   isDriveUrl(videoUrl!) ? (
                     <iframe
@@ -231,7 +233,7 @@ const TeacherCard: FC<TeacherCardProps> = ({
                     alt={`${name}, ${roleTags.join(', ')}`}
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover object-center"
+                    className={imageFit === 'contain' ? 'object-contain' : 'object-cover object-center'}
                   />
                 )}
               </div>

@@ -18,6 +18,7 @@ interface Teacher {
   website?: string;
   levels: ('Beginner' | 'Intermediate' | 'Advanced')[];
   imageObjectPosition?: string;
+  imageFit?: 'cover' | 'contain';
 }
 
 const teachers: Teacher[] = [
@@ -42,7 +43,7 @@ Traveling and sharing this practice fills our hearts. We're inspired by discover
     name: 'Michal and Klara',
     duoName: 'Acro Klaris / Acro Misaris',
     roleTags: ['Flows', 'Icarians', 'Whip-Pops', 'F2F'],
-    imageUrl: '/teachers/Michal and Klara/Eli and Bagaz.jpg',
+    imageUrl: '/teachers/Michal and Klara/Michal and Klara.jpeg',
     videoUrl: 'https://drive.google.com/file/d/1HU2F4eSZYzYFguuWxzS8nPZiWWnAynoG/preview',
     location: 'Slovakia',
     bio: `Klára has dedicated her whole life to sports, and is most defined by aesthetic disciplines—dance, gymnastics, and acrobatics. In her everyday work, she teaches movement preparation for children and parents from as early as 10 months old, gymnastics from age 3, and also works as a physiotherapist.
@@ -143,6 +144,21 @@ Together, they love fostering community, organizing workshops for beginners and 
     levels: ['Beginner', 'Intermediate'],
     instagram: 'https://www.instagram.com/acroyoga_malta/',
   },
+  {
+    id: 9,
+    name: 'Skyhawk Clan',
+    duoName: 'A Surprise Flow Awaits',
+    roleTags: ['Mystery Guest', 'Surprise Flow', 'Balance'],
+    imageUrl: '/teachers/Skyhawk Clan/Skyhawk clan image.jpeg',
+    location: 'Undisclosed',
+    bio: `A hidden favor has been called in. The Skyhawk Clan emerges just once, bringing something entirely different to MAC 2026 — a special surprise session, revealed only on the day.
+
+Expect the unexpected: precision, mystery, and a flow unlike anything else on the schedule. We won't say more — you'll just have to be there.
+
+Come with curiosity. Prepare for balance.`,
+    levels: ['Beginner', 'Intermediate', 'Advanced'],
+    imageFit: 'contain',
+  },
 ];
 
 export default function TeachersPage() {
@@ -204,6 +220,7 @@ export default function TeachersPage() {
                   youtube={teacher.youtube}
                   website={teacher.website}
                   imageObjectPosition={teacher.imageObjectPosition}
+                  imageFit={teacher.imageFit}
                 />
               </Reveal>
             ))}
