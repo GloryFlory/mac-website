@@ -106,13 +106,15 @@ export default function GiveawayPage() {
                 className="!h-12 !w-auto"
               />
               <span className="text-white/50 text-xl">×</span>
-              <Image
-                src="/antola-logo.png"
-                alt="Antola Acro Festival"
-                width={177}
-                height={118}
-                className="!h-10 !w-auto"
-              />
+              <div className="bg-white rounded-lg px-3 py-1.5">
+                <Image
+                  src="/km-malta-airlines.png"
+                  alt="KM Malta Airlines"
+                  width={1772}
+                  height={591}
+                  className="!h-8 !w-auto"
+                />
+              </div>
             </div>
 
             <div className="p-8">
@@ -192,13 +194,13 @@ export default function GiveawayPage() {
           className="!h-12 !w-auto"
         />
       </div>
-      <div className="absolute top-6 right-6 opacity-50">
+      <div className="absolute top-6 right-6 opacity-80 bg-white rounded-lg px-3 py-1.5">
         <Image
-          src="/antola-logo.png"
-          alt="Antola Acro Festival"
-          width={177}
-          height={118}
-          className="!h-10 !w-auto"
+          src="/km-malta-airlines.png"
+          alt="KM Malta Airlines"
+          width={1772}
+          height={591}
+          className="!h-8 !w-auto"
         />
       </div>
 
@@ -269,8 +271,8 @@ export default function GiveawayPage() {
             Congratulations!
           </p>
           <p className="mt-2 !text-white/70 max-w-md mx-auto px-4">
-            We can&apos;t wait to welcome and play with you at the Mediterranean Acro Convention
-            and the Antola Acro Fest!
+            You&apos;ve won a return ticket to Malta, courtesy of KM Malta Airlines! We can&apos;t
+            wait to welcome and play with you at the Mediterranean Acro Convention.
           </p>
           <p className="mt-2 !text-white/50 text-sm">We&apos;ll be in touch with more info soon.</p>
         </motion.div>
