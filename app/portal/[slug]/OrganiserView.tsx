@@ -24,8 +24,6 @@ const MEMORIES = [
 // ─── Ticket numbers — update manually when sales change ───────────────────────
 const MAIN_FEST_TICKETS_SOLD = 30;  // total tickets sold for Main Fest
 const MAIN_FEST_CAPACITY    = 74;   // adjust when confirmed
-const PRE_FEST_TICKETS_SOLD = 2;    // total tickets sold for Pre-Fest
-const PRE_FEST_CAPACITY     = 30;   // adjust when confirmed
 // ──────────────────────────────────────────────────────────────────────────────
 
 const TASKS: Task[] = [
@@ -198,10 +196,9 @@ export default function OrganiserView() {
         {/* Ticket sales */}
         <section>
           <h2 className="font-serif text-2xl font-bold text-brand-sea mb-1">Ticket Sales</h2>
-          <p className="text-xs text-zinc-400 mb-5">Update <code className="text-zinc-500">MAIN_FEST_TICKETS_SOLD</code> / <code className="text-zinc-500">PRE_FEST_TICKETS_SOLD</code> in OrganiserView.tsx when new sales come in.</p>
+          <p className="text-xs text-zinc-400 mb-5">Update <code className="text-zinc-500">MAIN_FEST_TICKETS_SOLD</code> in OrganiserView.tsx when new sales come in.</p>
           <div className="bg-white rounded-2xl border border-zinc-200 shadow-sm p-6 space-y-6">
             <TicketBar sold={MAIN_FEST_TICKETS_SOLD} capacity={MAIN_FEST_CAPACITY} label="Main Fest — Oct 7–11, Malta" />
-            <TicketBar sold={PRE_FEST_TICKETS_SOLD} capacity={PRE_FEST_CAPACITY} label="Pre-Fest — Oct 4–6, Malta" />
           </div>
         </section>
 
@@ -295,7 +292,7 @@ export default function OrganiserView() {
                       {t.name}
                     </p>
                     <p className="text-xs text-zinc-400">
-                      {t.isPreFest ? 'Pre-Fest · ' : ''}{t.tier}
+                      {t.tier}
                     </p>
                   </div>
                   <div className="flex gap-2 flex-shrink-0 items-center">
@@ -344,7 +341,6 @@ export default function OrganiserView() {
           <div className="bg-white rounded-2xl border border-zinc-200 shadow-sm px-5 py-4 flex flex-wrap gap-3">
             {[
               { href: '/', label: 'Main website', external: false },
-              { href: '/pre-fest', label: 'Pre-Fest page', external: false },
               { href: '/schedule', label: 'Schedule page', external: false },
               { href: '/teachers', label: 'Teachers page', external: false },
               {

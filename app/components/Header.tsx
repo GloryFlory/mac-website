@@ -18,21 +18,12 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Dynamic navigation based on current page
-  const isPreFest = pathname === '/pre-fest';
-  
-  const navigation = isPreFest
-    ? [
-        { name: 'Teachers', href: '#tracks' },
-        { name: 'Venue', href: '/venue' },
-        { name: 'Info', href: '/info' },
-      ]
-    : [
-        { name: 'Teachers', href: '/teachers' },
-        { name: 'Venue', href: '/venue' },
-        { name: 'Schedule', href: '/schedule' },
-        { name: 'Info', href: '/info' },
-      ];
+  const navigation = [
+    { name: 'Teachers', href: '/teachers' },
+    { name: 'Venue', href: '/venue' },
+    { name: 'Schedule', href: '/schedule' },
+    { name: 'Info', href: '/info' },
+  ];
 
   return (
     <header 
@@ -73,20 +64,8 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            {!isPreFest && (
-              <Link
-                href="/pre-fest"
-                className={`ml-2 px-4 py-2 rounded-full font-semibold text-sm border transition-all duration-200 ${
-                  scrolled
-                    ? 'border-brand-sun/70 text-brand-sea hover:bg-brand-sun/10 hover:border-brand-sun'
-                    : 'border-brand-sun/60 text-white hover:bg-white/10 hover:border-brand-sun'
-                }`}
-              >
-                Pre-Fest
-              </Link>
-            )}
             <Link
-              href={pathname === '/pre-fest' ? '#pricing' : '/#pricing'}
+              href="/#pricing"
               className="ml-4 px-6 py-2.5 bg-brand-sun text-zinc-900 font-semibold rounded-full hover:bg-brand-sun/90 hover:scale-105 transition-all duration-200 shadow-lg"
             >
               Get Tickets
@@ -134,17 +113,8 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              {!isPreFest && (
-                <Link
-                  href="/pre-fest"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="px-4 py-3 rounded-lg font-semibold border border-brand-sun/50 text-brand-sea hover:bg-brand-sun/10 transition-colors"
-                >
-                  Pre-Fest Intensive
-                </Link>
-              )}
               <Link
-                href={pathname === '/pre-fest' ? '#pricing' : '/#pricing'}
+                href="/#pricing"
                 onClick={() => setMobileMenuOpen(false)}
                 className="mt-2 px-4 py-3 bg-brand-sun text-zinc-900 font-semibold rounded-lg text-center hover:bg-brand-sun/90 transition-colors"
               >

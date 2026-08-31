@@ -283,44 +283,6 @@ const PricingSection: FC = () => {
             </div>
           </Reveal>
         </div>
-
-        {/* Pre-Fest Add-On Banner */}
-        <Reveal delay={0.4}>
-          <div className="mt-12 relative rounded-2xl overflow-hidden border-2 border-brand-sun/40 bg-gradient-to-r from-brand-sun/10 via-brand-sand/20 to-brand-sun/10 p-8">
-            <div className="absolute top-4 right-4 px-3 py-1 bg-brand-sun text-zinc-900 rounded-full text-xs font-bold">
-              Add-On
-            </div>
-            <div className="flex flex-col md:flex-row md:items-center gap-6">
-              <div className="flex-1">
-                <p className="text-xs font-bold uppercase tracking-widest text-brand-sea/70 mb-1">October 3–5, 2026</p>
-                <h3 className="font-serif text-2xl font-bold text-brand-sea mb-2">
-                  Pre-Festival Intensive
-                </h3>
-                <p className="text-zinc-600 text-sm leading-relaxed max-w-xl">
-                  Arrive early and spend 3 days deep-diving into Icarians & Standing Acro with <strong>Mads & Gavin</strong>, and Whips, Whip-Pops & Icarians with <strong>Pri & Anna</strong>. Accommodation and meals included. Limited to 30 participants.
-                </p>
-                <div className="flex flex-wrap gap-2 mt-3">
-                  <span className="px-3 py-1 bg-brand-sea/10 text-brand-sea rounded-full text-xs font-medium">Intermediate / Advanced</span>
-                  <span className="px-3 py-1 bg-brand-sea/10 text-brand-sea rounded-full text-xs font-medium">30 spots only</span>
-                  <span className="px-3 py-1 bg-brand-sea/10 text-brand-sea rounded-full text-xs font-medium">Accommodation + meals included</span>
-                </div>
-              </div>
-              <div className="flex flex-col items-start md:items-end gap-3 flex-shrink-0">
-                <div>
-                  <span className="text-3xl font-bold text-brand-sea">€379</span>
-                  <span className="text-sm text-zinc-500 ml-2">with MAC ticket</span>
-                </div>
-                <Button
-                  href="/pre-fest"
-                  variant="primary"
-                  size="md"
-                >
-                  Learn More →
-                </Button>
-              </div>
-            </div>
-          </div>
-        </Reveal>
       </div>
     </section>
   );

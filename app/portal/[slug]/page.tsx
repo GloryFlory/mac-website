@@ -7,7 +7,6 @@ import AffiliateCalculator from './AffiliateCalculator';
 import WorkshopProposalForm from './WorkshopProposalForm';
 import OrganiserView from './OrganiserView';
 import CaspianLauraView from './CaspianLauraView';
-import PreFestTeacherView from './PreFestTeacherView';
 
 export const metadata: Metadata = {
   title: 'Teacher Portal | MAC 2026',
@@ -46,7 +45,6 @@ export default async function TeacherPortalPage({
 
   if (teacher.isOrganiser) return <OrganiserView />;
   if (teacher.isBabyLeave) return <CaspianLauraView />;
-  if (teacher.isPreFest) return <PreFestTeacherView teacher={teacher} />;
 
   const workshopTotal = calcWorkshopTotal(teacher);
   const travelUnlocked = teacher.travelComp.unlocked;

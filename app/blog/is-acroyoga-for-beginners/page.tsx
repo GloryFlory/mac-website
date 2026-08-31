@@ -175,7 +175,7 @@ export default function IsAcroyogaForBeginnersPost() {
                   Beginner tracks available across all five days. Early Bird tickets at €699 (all-inclusive).
                 </p>
                 <p className="text-sm mb-8" style={{ color: 'rgba(255,255,255,0.7)' }}>
-                  Capped at 75 participants. Pre-Fest Intensive (Oct 3–5) available for those who want more.
+                  Capped at 75 participants for an intimate, high-quality experience.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a

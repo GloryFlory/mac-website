@@ -85,7 +85,7 @@ export default function FirstConventionPost() {
                   Mornings start with yoga to prepare the body, followed by the first workshop block. After lunch, the afternoon is intentionally free — time to rest at the Riviera Spa Hotel's pool, book a massage, or quietly practice what you absorbed that morning. Late afternoon brings another session, then dinner together, then an evening lunar session or open jam that usually runs late because nobody wants to stop.
                 </p>
                 <p className="text-zinc-600 leading-relaxed">
-                  Eating three meals a day together in the same place with the same people — that's where the community forms. By day three, you're not strangers anymore. By day five, people are asking to make it longer. MAC listened: that's why the Pre-Fest Intensive now exists, adding three extra days for those who want more.
+                  Eating three meals a day together in the same place with the same people — that's where the community forms. By day three, you're not strangers anymore. By day five, people are asking to make it longer.
                 </p>
                 <figure className="mt-8">
                   <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden">
@@ -195,11 +195,8 @@ export default function FirstConventionPost() {
                 <h3 className="font-serif text-2xl sm:text-3xl font-bold mb-3" style={{ color: 'white' }}>
                   MAC 2026 — October 7–11, Malta
                 </h3>
-                <p className="mb-2" style={{ color: 'rgba(255,255,255,0.85)' }}>
+                <p className="mb-8" style={{ color: 'rgba(255,255,255,0.85)' }}>
                   Early Bird tickets at €699 (all-inclusive). Capped at 75 participants.
-                </p>
-                <p className="text-sm mb-8" style={{ color: 'rgba(255,255,255,0.7)' }}>
-                  Pre-Fest Intensive (Oct 3–5) available for those who want three extra days of deep-dive Icarians & Whips training.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button
